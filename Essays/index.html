@@ -12,6 +12,9 @@
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
     <meta name = "keywords" content = "Playground, Essays, fun, HTML, Ethics, websites ">
+
+    
+    
     <title>ESSAYS HOMEPAGE</title>
 </head>
 
@@ -21,7 +24,7 @@
         <h1>ESSAYS HOMEPAGE</h1>
   
     <nav>
-        
+       <!-- 
         <a href="../Index.html">Home</a> 
         <a href = "../Blogs/index.html">Blog</a>
         <a href = "../Designs/index.html">Designs</a>
@@ -33,14 +36,24 @@
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
         </form>
-                 
+    -->     
     </nav>
 
     <main>
         <h2>Essays</h2>
         <p>more stuff goes here</p>    
     </main>
-   
+
+    <nav>
+        
+    </nav>
+
+    <script type="module"> import { createMenu } from "../Scripts/menu.js"
+        createMenu("Essays") </script>
+
+
+    <script type="module"> import { createEssaysMenu } from "../Scripts/secondnav.js"
+    createEssaysMenu("Essays") </script>
 
 </body>
 </html>

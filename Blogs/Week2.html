@@ -26,6 +26,7 @@
    
 
     <nav>
+        <!--
         <a href="../Index.html">Home</a>
         <a href = "index.html">Blog</a>
         <a href = "../Designs/index.html">Designs</a>
@@ -36,7 +37,7 @@
         <form>
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
-        </form>
+        </form>-->
     </nav>
    
     <!--Each element can have a class esp articles, headings etc....
@@ -236,12 +237,17 @@
 
     <!--secondary NAV-->
     <nav>
-
+<!--
         <a href="Week1.html"> <img src="../WebsitePictures/week1.png" alt="Blog Post 2" width="200" height="200"/></a>
         <a href="Week3.html"> <img src="../WebsitePictures/week3.png" alt="Blog Post 3" width="200" height="200"/></a>
         <a href="Week4.html"> <img src="../WebsitePictures/week4.png" alt="Blog Post 4" width="200" height="200"/></a>
+    -->
     </nav>
 
+    <script type="module" src="../Scripts/menu.js"></script> 
+
+    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
+        createBlogsMenu("Week2") </script>
 
 </body>
 </html>

@@ -13,6 +13,9 @@
      <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
+
+    
+     
      <title>BLOGS HOMEPAGE</title>
 </head>
 
@@ -24,7 +27,7 @@
     
     <nav aria-label="primary">
 
-        <a href="../Index.html">Home</a>
+       <!--<a href="../Index.html">Home</a>
         <a href = "index.html">Blog</a>
         <a href = "../Designs/index.html">Designs</a>
         <a href = "../Essays/index.html">Essays</a>
@@ -33,7 +36,8 @@
         <form>
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
-        </form>
+        </form>-->
+
     </nav>
 
     <main>
@@ -49,17 +53,26 @@
 
     <!--Secondary Nav to blog posts CHANGE THE WEEKS TO BLOGS -->
     <nav aria-label="secondary">
-       
+       <!--
         <a href="Week1.html"> <img src="../WebsitePictures/week1.png" alt="Blog Post 1" width="200" height="200"/></a>
         <a href="Week2.html"><img src="../WebsitePictures/week2.png" alt="Blog Post 2" width="200" height="200"/></a>
         <a href="Week3.html"><img src="../WebsitePictures/week3.png" alt="Blog Post 3" width="200" height="200"/></a>
         <a href="Week4.html"><img src="../WebsitePictures/week4.png" alt="Blog Post 4" width="200" height="200"/></a>
-
+-->
     </nav>
 
     <footer>
         
     </footer>
+
+    <!--<script type = "module" src = "../Scripts/menu.js" ></script>-->
+
+    <script type="module" src="../Scripts/menu.js"></script> 
+
+    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
+    createBlogsMenu("Blogs Home") </script>
+
+    
     
 </body>
 </html>

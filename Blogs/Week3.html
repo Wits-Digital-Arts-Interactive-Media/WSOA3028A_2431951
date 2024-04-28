@@ -11,16 +11,17 @@
      <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, websites ">
-     <title>BLOG POST 3</title>
+     <title>Website Inspiration</title>
 </head>
 
 <body>
     <!--Main TITLE AND MAIN NAV-->
 
-        <h1>BLOG POST 3</h1>
+        <h1>Website Inspiration</h1>
 
     <nav>
 
+        <!--
         <a href="../Index.html">Home</a>
         <a href = "index.html">Blog</a>
         <a href = "../Designs/index.html">Designs</a>
@@ -31,7 +32,7 @@
         <form>
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
-        </form>
+        </form>-->
     </nav>
 
     <main>
@@ -103,13 +104,16 @@
 
     <!--secondary nav-->
     <nav>
-
+<!--
         <a href="Week1.html"> <img src="../WebsitePictures/week1.png" alt="Blog Post 2" width="200" height="200"/></a>
         <a href="Week2.html"> <img src="../WebsitePictures/week2.png" alt="Blog Post 3" width="200" height="200"/></a>
         <a href="Week4.html"> <img src="../WebsitePictures/week4.png" alt="Blog Post 4" width="200" height="200"/></a>
+    -->
     </nav>
 
-
+    <script type="module" src="../Scripts/menu.js"></script> 
+    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
+        createBlogsMenu("Week3") </script>
 
 </body>
 </html>

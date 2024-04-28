@@ -14,9 +14,9 @@
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
     <meta name = "keywords" content = "Playground, Home, fun, HTML ">
-    <!--<script src = "/Scripts/index.js" defer></script>
+    <!--<script src = "/Scripts/index.js" defer></script><base href="/">
     -->
-    <base href="/">
+    
 
     <title>THE PLAYGROUND</title>
 </head>
@@ -26,23 +26,25 @@
 <body>
     <!--Main TITLE AND MAIN NAV-->
 
-        <header>
+    <header>
             <h1>THE PLAYGROUND</h1>
-        </header>
-
-    <nav>
-        <ul>
-        
-        <a href = "Index.html">Home</a>
-        <a href = "Blogs/index.html">Blog</a>
-        <a href = "Designs/index.html">Designs</a>
-        <a href = "Essays/index.html">Essays</a>
-        <a href = "Profile/Profile.html">Profile</a>
-        <a href = "Portfolio/Portfolio.html">Portfolio</a>
-                 
-        </ul>
-    </nav>
     
+       <nav>
+        <!--
+            <ul>
+            
+            <a href = "Index.html">Home</a>
+            <a href = "Blogs/index.html">Blog</a>
+            <a href = "Designs/index.html">Designs</a>
+            <a href = "Essays/index.html">Essays</a>
+            <a href = "Profile/Profile.html">Profile</a>
+            <a href = "Portfolio/Portfolio.html">Portfolio</a>
+                    
+            </ul>
+            -->
+        </nav>
+    
+</header>
 
     <!--Moveable pictures each in its own artcile block for easy manipulation later on when I learn how to incoporate draggable elements-->
     <main>
@@ -58,7 +60,10 @@
     </main>
 
     <!--placed at the end of the page so that the page renders faster-->
-    <script src = "/Scripts/index.js" defer></script>
+    
         
+    <!--<script type = "module" src = "./Scripts/menu.js" ></script>-->
+    <script type="module" src="/Scripts/menu.js"></script> 
+    
 </body>
 </html>

@@ -22,7 +22,7 @@
   
     <nav>
         
-        <a href="../Index.html">Home</a> 
+        <!--<a href="../Index.html">Home</a> 
         <a href = "../Blogs/index.html">Blog</a>
         <a href = "../Designs/index.html">Designs</a>
         <a href = "index.html">Essays</a>
@@ -32,7 +32,8 @@
         <form>
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
-        </form>
+        </form>-->
+        
                  
     </nav>
 
@@ -43,8 +44,17 @@
         </article>
     </main>
 
-    
+    <nav>
+        
+    </nav>
 
+    
+    <script type="module"> import { createMenu } from "../Scripts/menu.js"
+        createMenu("Essays") </script>
+
+
+    <script type="module"> import { createEssaysMenu } from "../Scripts/secondnav.js"
+    createEssaysMenu("Essays") </script>
 
 </body>
 </html>

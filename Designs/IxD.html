@@ -22,7 +22,7 @@
 
     <nav>
    
-        <a href="../Index.html">Home</a>
+        <!--<a href="../Index.html">Home</a>
         <a href = "../Blogs/index.html">Blog</a>
         <a href = "index.html">Designs</a>
         <a href = "../Essays/index.html">Essays</a>
@@ -32,7 +32,8 @@
         <form>
             <input type = "search" name = "q" placeholder = "Search query"/>
             <input type = "submit" value = "Go!"/>
-        </form>
+        </form>-->
+        
                 
     </nav>
 
@@ -139,9 +140,14 @@
 
     <!--SECONDARY NAV-->
     <nav>
-        <a href="Wireframes.html"> <img src="../WebsitePictures/wire.png" alt="Wireframes" width="300" height="300"/></a>
+        <!--<a href="Wireframes.html"> <img src="../WebsitePictures/wire.png" alt="Wireframes" width="300" height="300"/></a>-->
     </nav>
 
+
+    <script type="module" src="../Scripts/menu.js"></script> 
+
+    <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
+    createDesignsMenu("Designs") </script>
 
 </body>
 </html>
