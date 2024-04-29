@@ -49,7 +49,7 @@ const menuItem = [
 ];
 
 
-function createMenu(current){
+export function createMenu(current){
     const nav = document.querySelector('nav');//fetches nav from doc 
     const ul = document.createElement('ul');
 
