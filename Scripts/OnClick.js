@@ -1,6 +1,4 @@
 
-
-
 document.getElementById("image1").addEventListener("click", open1());
     
 function open1() {
