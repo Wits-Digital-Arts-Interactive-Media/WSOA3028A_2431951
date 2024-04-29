@@ -9,19 +9,19 @@ function open1() {
 
 document.getElementById("image2").addEventListener("click", open2());
     
-function open1() {
+function open2() {
   document.getElementById("text2").hidden = false;
 };
 
 document.getElementById("image3").addEventListener("click", open3());
     
-function open1() {
+function open3() {
   document.getElementById("text3").hidden = false;
 };
 
 document.getElementById("image4").addEventListener("click", open4());
     
-function open1() {
+function open4() {
   document.getElementById("text4").hidden = false;
 };
 
