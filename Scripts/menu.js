@@ -78,4 +78,4 @@ export function createMenu(current){
 
 };
 
-document.addEventListener("DOMContentLoaded",()=> createMenu())
+//document.addEventListener("DOMContentLoaded",()=> createMenu())
