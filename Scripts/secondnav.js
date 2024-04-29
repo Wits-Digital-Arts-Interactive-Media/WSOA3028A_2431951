@@ -1,27 +1,27 @@
 //script to handle secondary navigation to navigate to specific subpages of the homepages...
-
+const root = "/WSOA3028A_2431951";
 
 const BlogItems = [
-    { name: "Week1",  href: "/Blogs/Week1.html", Image: "/WebsitePictures/week1.png"},
-    { name: "Week2", href: "/Blogs/Week2.html" },
-    { name: "Week3", href: "/Blogs/Week3.html" },
-    { name: "Week4", href: "/Blogs/Week4.html" },
-    { name: "Week6", href: "/Blogs/Week6.html" },
-    { name: "Week8", href: "/Blogs/Week8.html" },
-    { name: "Week9", href: "/Blogs/Week9.html" },
-    { name: "Week10", href: "/Blogs/Week10.html" },
+    { name: "Week1",  href: root+ "/Blogs/Week1.html", Image: "/WebsitePictures/week1.png"},
+    { name: "Week2", href:  root+"/Blogs/Week2.html" },
+    { name: "Week3", href:  root+"/Blogs/Week3.html" },
+    { name: "Week4", href: root+ "/Blogs/Week4.html" },
+    { name: "Week6", href:  root+"/Blogs/Week6.html" },
+    { name: "Week8", href:  root+"/Blogs/Week8.html" },
+    { name: "Week9", href:  root+"/Blogs/Week9.html" },
+    { name: "Week10", href:  root+"/Blogs/Week10.html" },
 ];
 
 const DesignItems = [
-    { name: "IxD",  href: "/Designs/IxD.html" },
-    { name: "First Wireframes", href: "/Designs/Wireframes.html" },
-    { name: "Final Wireframes", href: "/Designs/WireframesFinal.html" },
+    { name: "IxD",  href:  root+"/Designs/IxD.html" },
+    { name: "First Wireframes", href:  root+"/Designs/Wireframes.html" },
+    { name: "Final Wireframes", href:  root+"/Designs/WireframesFinal.html" },
     
 ];
 
 const EssayItems = [
-    { name: "Essay1",  href: "/Essays/Essay1.html" },
-    { name: "Esssay2", href: "/Essays/Essay2.html" },
+    { name: "Essay1",  href:  root + "/Essays/Essay1.html" },
+    { name: "Esssay2", href:  root + "/Essays/Essay2.html" },
    
 ];
 
