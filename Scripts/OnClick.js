@@ -1,49 +1,73 @@
 
-document.getElementById("image1").addEventListener("click", open1());
-    
-function open1() {
-  document.getElementById("text1").hidden = false;
+
+export function click()
+{
+
+  var image = document.getElementById("image1");
+  var text = document.getElementById("text1");
+  image.onclick = function(){
+    text.hidden = !text.hidden;
+  };
+
 };
 
-document.getElementById("image2").addEventListener("click", open2());
-    
-function open2() {
-  document.getElementById("text2").hidden = false;
-};
+function stopPropagation(event)
+{
+  event.stopPropagation();
+}
 
-document.getElementById("image3").addEventListener("click", open3());
-    
-function open3() {
-  document.getElementById("text3").hidden = false;
-};
 
-document.getElementById("image4").addEventListener("click", open4());
-    
-function open4() {
-  document.getElementById("text4").hidden = false;
-};
+/*potential code for all images being clickable:
 
-/*
-document.addEventListener("DOMContentLoaded", ()=> open1());
-document.addEventListener("DOMContentLoaded", ()=> open2());
-document.addEventListener("DOMContentLoaded", ()=> open3());
-document.addEventListener("DOMContentLoaded", ()=> open4());*/
+const ImageItems = [{name:Image1}, {name: Image2}, {name: Image3}];
+const TextItems = [{name:text1}, {name: text2}, {name: text3}];
 
-/*
 function click()
 {
 
-    var image = document.getElementById("image1");
-    
-    image.addEventListener("click", convert());
+  for(let image of ImageItems )
+  {
+    image = document.getElementById("image"+)
+    for(let text of TextItems)
+      {
+        text = document.getElementById("text"+)
+        if(ImageItems[image].addEventListener("click"))
+          {
+            TextItems[text].hidden = false;
+          }
+        
+      }
+ 
+  }
+
+
+
     
 };
 
 
-function convert() {
 
-    let text = document.getElementById("text1"); 
-    console.log("done");
-    text.hidden = false;
-   
-};*/
+var textOverImages = document.getElementsByClassName("onClickTextOverImage");
+var previousTextOverImage;
+for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+};
+
+
+
+*/
