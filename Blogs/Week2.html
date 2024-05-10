@@ -25,20 +25,11 @@
     
    
 
-    <nav>
-        <!--
-        <a href="../Index.html">Home</a>
-        <a href = "index.html">Blog</a>
-        <a href = "../Designs/index.html">Designs</a>
-        <a href = "../Essays/index.html">Essays</a>
-        <a href = "../Profile/Profile.html">Profile</a>
-        <a href = "../Portfolio/Portfolio.html">Portfolio</a>
-        
-        <form>
-            <input type = "search" name = "q" placeholder = "Search query"/>
-            <input type = "submit" value = "Go!"/>
-        </form>-->
-    </nav>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
    
     <!--Each element can have a class esp articles, headings etc....
     
@@ -52,9 +43,8 @@
 
     <main>
         <article class="h-entry">
-            <!--<h2 class = "p-name">WEEK 2</h2>--> 
-     
-            <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-18 08:00:00">18<sup>th</sup>March 2024</time> </p>
+         
+            <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">4<sup>th</sup>March 2024</time> </p>
 
                      <img src="../WebsitePictures/placeholder.png" alt="placeholder" width="520" height="320"/> 
                      <h2>Discuss your folder structure and URL scheme. Outline your decision-making.</h2>
@@ -231,24 +221,26 @@
                          and not only the technicality of it but also the ethical nature of it. </p>
      
          </article>
+
+         <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
      
     </main>
    
 
-    <!--secondary NAV-->
-    <nav>
-<!--
-        <a href="Week1.html"> <img src="../WebsitePictures/week1.png" alt="Blog Post 2" width="200" height="200"/></a>
-        <a href="Week3.html"> <img src="../WebsitePictures/week3.png" alt="Blog Post 3" width="200" height="200"/></a>
-        <a href="Week4.html"> <img src="../WebsitePictures/week4.png" alt="Blog Post 4" width="200" height="200"/></a>
-    -->
-    </nav>
+    <footer>
+        <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
+            <nav>
+        
+            </nav>
+    </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Blogs") </script>
 
     <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
         createBlogsMenu("Week2") </script>
+    
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>

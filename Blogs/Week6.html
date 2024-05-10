@@ -20,14 +20,17 @@
 
         <h1>Critical Analysis of Websites</h1>
 
-    <nav>
+    <header>
+        <nav>
 
-
-    </nav>
+        </nav>
+    </header>
 
     <main>
                 
-            <article>
+            <article class = "h-entry">
+
+                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-01 08:00:00">1<sup>st</sup>April 2024</time> </p>
 
                 <h2>Simple Analysis on websites</h2>
                 <p>
@@ -108,19 +111,25 @@
                             </li>
 
         </article>
+
+        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
     
 
-    <!--SECONDARY NAV-->
-    <nav>
-
-    </nav>
+    <footer>
+        <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
+            <nav>
+        
+            </nav>
+    </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Blogs") </script>
 
     <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
         createBlogsMenu("Week6") </script>
+    
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>

@@ -19,27 +19,18 @@
 
         <h1>Website Inspiration</h1>
 
-    <nav>
+    <header>
+        <nav>
 
-        <!--
-        <a href="../Index.html">Home</a>
-        <a href = "index.html">Blog</a>
-        <a href = "../Designs/index.html">Designs</a>
-        <a href = "../Essays/index.html">Essays</a>
-        <a href = "../Profile/Profile.html">Profile</a>
-        <a href = "../Portfolio/Portfolio.html">Portfolio</a>
-    
-        <form>
-            <input type = "search" name = "q" placeholder = "Search query"/>
-            <input type = "submit" value = "Go!"/>
-        </form>-->
-    </nav>
+        </nav>
+    </header>
 
     <main>
                 <!--WEEK 3 BLOG POST IN TABULAR FORM-->
-            <article>
+            <article class = "h-entry">
 
-        
+                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-25 08:00:00">11<sup>th</sup>March 2024</time> </p>
+               
                 <img src="../WebsitePictures/placeholder.png" alt="RANDOM" width="520" height="320"/> 
                 <h2>Working through the slides for Interaction Design for the web, define and discuss your user alignment, 
                     and map out your site's content, experience, and interface elements.</h2>
@@ -98,24 +89,27 @@
                     </p>  
         </article>
 
+        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+
     </main>
     
 
 
     <!--secondary nav-->
-    <nav>
-<!--
-        <a href="Week1.html"> <img src="../WebsitePictures/week1.png" alt="Blog Post 2" width="200" height="200"/></a>
-        <a href="Week2.html"> <img src="../WebsitePictures/week2.png" alt="Blog Post 3" width="200" height="200"/></a>
-        <a href="Week4.html"> <img src="../WebsitePictures/week4.png" alt="Blog Post 4" width="200" height="200"/></a>
-    -->
-    </nav>
+    <footer>
+        <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
+            <nav>
+        
+            </nav>
+    </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Blogs") </script>
 
     <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
         createBlogsMenu("Week3") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>
