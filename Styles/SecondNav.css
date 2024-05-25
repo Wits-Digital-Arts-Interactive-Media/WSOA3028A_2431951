@@ -1,0 +1,12 @@
+.container{
+    border:1px solid lightblue;
+    display:flex;
+    flex-direction: column;
+}
+
+.box{
+    width: 1rem;
+    height: 1rem;
+    background: blanchedalmond;
+    margin: 1rem;
+}

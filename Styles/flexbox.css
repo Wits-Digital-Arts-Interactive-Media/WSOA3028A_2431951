@@ -1,0 +1,12 @@
+.container{
+    border:3px solid lightblue;
+    display:flex;
+    flex-direction: column;
+}
+
+.box{
+    width: 20rem;
+    height: 20rem;
+    background: rgba(187, 225, 234, 0.603);
+    margin: 5rem;
+}

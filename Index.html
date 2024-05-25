@@ -14,60 +14,58 @@
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
     <meta name = "keywords" content = "Playground, Home, fun, HTML ">
-    <!--<script src = "/Scripts/index.js" defer></script><base href="/">
-    -->
     
+    <link rel="stylesheet" href="/Styles/normalize.css">
+    <link rel="stylesheet" href="/Styles/Menu.css">
+      
 
-    <script type="module"> import { createMenu } from "./Scripts/menu.js"
-        createMenu("Home") </script>
-        
     <title>THE PLAYGROUND</title>
 </head>
 
 <!--notes from class 10/04/2024: Making the title, and h1 the same it increases the SCO visibility. Remember the footers!-->
 
 <body>
-    <!--Main TITLE AND MAIN NAV-->
+    <!--Main TITLE AND MAIN NAV<h1>THE PLAYGROUND</h1>-->
 
     <header>
-            <h1>THE PLAYGROUND</h1>
-    
-       <nav>
-        <!--
-            <ul>
-            
-            <a href = "Index.html">Home</a>
-            <a href = "Blogs/index.html">Blog</a>
-            <a href = "Designs/index.html">Designs</a>
-            <a href = "Essays/index.html">Essays</a>
-            <a href = "Profile/Profile.html">Profile</a>
-            <a href = "Portfolio/Portfolio.html">Portfolio</a>
-                    
-            </ul>
-            -->
-        </nav>
-    
-</header>
+        
 
-    <!--Moveable pictures each in its own artcile block for easy manipulation later on when I learn how to incoporate draggable elements-->
-    <main>
+       
 
-        <article>
-            <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
-        </article>
+       <nav id="mySideNav" class="sidenav"> 
 
-        <article>
-            <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
-        </article>
+       </nav>
     
-    </main>
+    </header>
+
+    <!--<div class="sidenav">
+        <label for="LOGO">THE PLAYGROUND</label>
+    </div>-->
+    
+
+    <!--<span onclick="openNav()">open</ span>-->
+
+    <div id="main">
+        <!--Moveable pictures each in its own artcile block for easy manipulation later on when I learn how to incoporate draggable elements-->
+        <main>
+        
+            <article>
+                <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
+            </article>
+
+            <article>
+                <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
+            </article>
+        
+        </main>
+    </div>
 
     <!--placed at the end of the page so that the page renders faster-->
-    
-        
-    <!--<script type = "module" src = "./Scripts/menu.js" ></script><script type="module" src="/Scripts/menu.js"></script> -->
-    
+    <script type="module"> import { createMenu } from "./Scripts/menu.js"
+        createMenu("Home") </script>
 
-    
+    <script type="module"> import { openNav } from "./Scripts/menu.js"
+    openNav() </script>
+
 </body>
 </html>

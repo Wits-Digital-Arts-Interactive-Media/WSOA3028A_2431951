@@ -1,57 +1,25 @@
 //script to handle menu on all homepages
-
-
-/*const root = "/WSOA3028A_2431951"
-
-const menuItem = [
-    { name: "Home", href: root + "/Index.html" },
-    //Type Coercion - it is taking a const, adding it to a string and making it the string it expects
-    { name: "Blogs", href: `${root}/Blogs/index.html` },
-    //back-tick syntax (template strings) `...` - allows the use of whitespace, ", ', interpolation, and substitution
-    //allows for string interpolation ${ } - automatically replaces variables and expressions with real values
-    { name: "Essays", href: `${root}/Essays/index.html` },
-    { name: "Portfolio", href: `${root}/Portfolio/profile.html` },
-    { name: "Designs", href: `${root}/Designs/index.html` },
-]
-
-
-export function initialise(currentPage) {
-    const nav = document.querySelector("header > nav")
-    const ul = document.createElement("ul")
-
-    for (let item of menuItem) {
-        const li = document.createElement("li")
-
-        if (currentPage != menuItem.name) {
-            const a = document.createElement("a")
-            a.innerText = menuItem.name
-            a.setAttribute("href", menuItem.href)
-            li.appendChild(a)
-        } else { li.innerText = menuItem.name }
-
-        ul.appendChild(li)
-    }
-    nav.appendChild(ul)
-}
-
-*/
-
-
 const root = "/WSOA3028A_2431951";
 
 const menuItem = [
-    { name: "Home",  href: root +"/Index.html" },
+    { name: "Home",  href: root +"/Index.html"},
     { name: "Blogs", href: root +"/Blogs/index.html" },
-    { name: "Essays", href:root + "/Essays/index.html" },
+    { name: "Essays", href:root + "/Essays/index.html"},
     { name: "Portfolio", href: root +"/Portfolio/index.html" },
     { name: "Designs", href:root + "/Designs/index.html" },
     { name: "Profile", href: root +"/Profile/index.html" },
 ];
 
 
+
 export function createMenu(current){
     const nav = document.querySelector('nav');//fetches nav from doc 
+    
+    //const div = document.querySelector('div');
     const ul = document.createElement('ul');
+    //const logo = document.createElement('label');
+    
+    
 
     for(let item of menuItem){
         const li = document.createElement('li');
@@ -60,22 +28,40 @@ export function createMenu(current){
             a.innerText = item.name
             //a.href = item.name;
             a.setAttribute("href", item.href)
+            a.classList.add("active") 
             li.appendChild(a)
-        } else { li.innerText = item.name }
+        } else { li.innerText = item.name
+            
+         }
 
         ul.appendChild(li)
        
-       /* const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.innerText = item.name;
-        a.href = item.name;
-        li.appendChild(a);
-        ul.appendChild(li);*/
-  }
-
+    }
+    
+    //div.appendChild(ul);
     nav.appendChild(ul);
 
 
 };
 
+export function openNav() {
+    //document.getElementById("mySidenav").width = "250px";
+   // document.getElementById("main").style.marginLeft = "250px";
+   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  };
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  };
+
 //document.addEventListener("DOMContentLoaded",()=> createMenu())
+ /* const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.innerText = item.name;
+        a.href = item.name;
+        li.appendChild(a);
+        ul.appendChild(li);*/
+
