@@ -55,9 +55,12 @@ nav ul li a{
 nav ul li a.active{
     display: block;
     padding: 8px 16px;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
 
 }
 
-
+nav a:hover {
+    background-color: rgba(246, 217, 241, 0.945);
+    color: blueviolet;
+}

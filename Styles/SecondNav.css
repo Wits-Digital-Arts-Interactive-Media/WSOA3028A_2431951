@@ -1,10 +1,13 @@
 /* Place the navbar at the bottom of the page and make it stick */
 .navbar2 {
+    color: blueviolet;
     background-color: rgba(231, 196, 237, 0.521);
     overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height:80px;
+
 }
 
 .navbar2 ul{
@@ -20,16 +23,15 @@
     margin-right: 10px;
     margin-top:10px;
     
+    
 }
 
 /* Style the links inside the navigation bar */
 .navbar2 ul li a {
-    
     background-color: azure;
     padding:10px 30px;
     color: blueviolet;
     border-radius:100px ;
-
 
 }
 
@@ -41,11 +43,9 @@
 
 /* Add a color to the active/current link */
 .navbar2 a.active {
-    float: left;
     display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+    color: blueviolet;
+    padding: 8px 16px;
     text-decoration: none;
     font-size: 17px;
 
@@ -53,9 +53,6 @@
 }
 
 
-li{
-    list-style: none;
-}
 
 /*flex-wrap: wrap;
     align-content: center;

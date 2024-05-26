@@ -52,7 +52,7 @@ export function createBlogsMenu(current){
 };
 
 export function createDesignsMenu(current){
-    const div = document.querySelectorAll('div'); //fetches nav from doc 
+    const div = document.querySelector('.navbar2'); //fetches nav from doc 
     const ul = document.createElement('ul');
     
     for(let item of DesignItems){
@@ -63,7 +63,7 @@ export function createDesignsMenu(current){
             //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
-            
+            a.classList.add("active")
         } else { li.innerText = item.name; }
 
         ul.appendChild(li);
@@ -73,7 +73,7 @@ export function createDesignsMenu(current){
 
 
 export function createEssaysMenu(current){
-    const nav = document.querySelectorAll('nav'); //fetches nav from doc 
+    const div = document.querySelector('.navbar2'); //fetches nav from doc 
     const ul = document.createElement('ul');
     
     for(let item of EssayItems){
@@ -84,10 +84,11 @@ export function createEssaysMenu(current){
             //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
+            a.classList.add("active")
         } else { li.innerText = item.name; }
 
         ul.appendChild(li);
   }
-    nav[1].appendChild(ul);
+    div.appendChild(ul);
 };
 

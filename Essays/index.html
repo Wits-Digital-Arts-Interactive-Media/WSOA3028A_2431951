@@ -7,7 +7,10 @@
     <meta name = "description" content = "Essays home page. The essays are in-depth analyses on topics pertaining
                                             to Ethics on the Internet and ethical design practice.">
     <meta name = "author" content = "Ivy Chepkwony">
-
+    <link rel="stylesheet" href="/Styles/normalize.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/SecondNav.css">
+      
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
@@ -21,20 +24,23 @@
 
 <body>
 
-        <h1>ESSAYS HOMEPAGE</h1>
-  
-    <nav>
-
+        
+  <header>
+    <nav aria-label="primary">
+        <label>THE PLAYGROUND</label>
     </nav>
-
+    <h1>ESSAYS HOMEPAGE</h1>
+  </header>
+        
     <main>
         <h2>Essays</h2>
         <p>A collection of essays and in-depth analysis concerning this course</p>    
     </main>
 
-    <nav>
-
-    </nav>
+    <footer>
+        <div class="navbar2">
+        </div>
+    </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Essays") </script>
