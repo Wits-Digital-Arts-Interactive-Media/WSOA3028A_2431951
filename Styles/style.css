@@ -9,7 +9,7 @@ body{
   classes --> .classname
 */
 
-nav[aria-label="primary"]{
+.sidenav{
     color: blueviolet;
     background: rgba(231, 196, 237, 0.521);
     backdrop-filter: blur(5px);
@@ -18,7 +18,7 @@ nav[aria-label="primary"]{
     
 }
 
-nav ul{
+.sidenav ul{
     list-style-type: none;
     float: right;
     margin-right: 40px;
@@ -26,14 +26,14 @@ nav ul{
 
 }
 
-nav ul li{
+.sidenav ul li{
     display: inline-block;
     margin-right: 10px;
     margin-top:10px;
     
 }
 
-nav ul li a{
+.sidenav ul li a{
     
     background-color: azure;
     padding:10px 30px;
@@ -52,7 +52,7 @@ nav ul li a{
 
 }
 
-nav ul li a.active{
+.sidenav ul li a.active{
     display: block;
     padding: 8px 16px;
     font-size: 17px;
@@ -60,7 +60,7 @@ nav ul li a.active{
 
 }
 
-nav a:hover {
+.sidenav a:hover {
     background-color: rgba(246, 217, 241, 0.945);
     color: blueviolet;
 }

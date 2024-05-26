@@ -16,9 +16,9 @@
     <meta name = "keywords" content = "Playground, Home, fun, HTML ">
     
     <link rel="stylesheet" href="./Styles/normalize.css">
-    <link rel="stylesheet" href="./Styles/Menu.css">
-      
-
+    <!--<link rel="stylesheet" href="./Styles/Menu.css">-->
+    <link rel="stylesheet" href="./Styles/grid.css">
+    <link rel="stylesheet" href="./Styles/draggable.css">
     <title>THE PLAYGROUND</title>
 </head>
 
@@ -26,46 +26,81 @@
 
 <body>
     <!--Main TITLE AND MAIN NAV<h1>THE PLAYGROUND</h1>-->
+<div class="container">
 
-    <header>
+   
+   
+    <div id="mySideNav" class="sidenav"> 
+    </div>   
+
+    <div class="item3">
+        <h1>Drag the letters</h1>
+
+        <div id="1draggable" class="draggable">
+            <p>T</p> 
+        </div>
+
+        <div id="2draggable" class="draggable">
+            <p>H</p> 
+        </div>
+
+        <div id="3draggable" class="draggable">
+            <p>E</p> 
+        </div>
+
+        <div id="4draggable" class="draggable">
+            <p>P</p> 
+        </div>
+
+        <div id="5draggable" class="draggable">
+            <p>L</p> 
+        </div>
+
+        <div id="6draggable" class="draggable">
+            <p>A</p> 
+        </div>
         
+        <div id="7draggable" class="draggable">
+            <p>Y</p> 
+        </div>
 
-       
+        <div id="8draggable" class="draggable">
+            <p>G</p> 
+        </div>
 
-       <nav id="mySideNav" class="sidenav"> 
-
-       </nav>
-    
-    </header>
-
-    <!--<div class="sidenav">
-        <label for="LOGO">THE PLAYGROUND</label>
-    </div>-->
-    
-
-    <!--<span onclick="openNav()">open</ span>-->
-
-    <div id="main">
-        <!--Moveable pictures each in its own artcile block for easy manipulation later on when I learn how to incoporate draggable elements-->
-        <main>
+        <div id="9draggable" class="draggable">
+            <p>R</p> 
+        </div>
         
-            <article>
-                <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
-            </article>
+        <div id="10draggable" class="draggable">
+            <p>O</p> 
+        </div>
 
-            <article>
-                <img src="WebsitePictures/move.png" alt="move" width="500" height="341"/> 
-            </article>
-        
-        </main>
+        <div id="11draggable" class="draggable">
+            <p>U</p> 
+        </div>
+
+        <div id="12draggable" class="draggable">
+            <p>N</p> 
+        </div>
+
+        <div id="13draggable" class="draggable">
+            <p>D</p> 
+        </div>
     </div>
 
+
+
+</div>
     <!--placed at the end of the page so that the page renders faster-->
     <script type="module"> import { createMenu } from "./Scripts/menu.js"
         createMenu("Home") </script>
 
     <script type="module"> import { openNav } from "./Scripts/menu.js"
     openNav() </script>
+
+    <script src = "Scripts/draggable.js" ></script>
+
 
 </body>
 </html>

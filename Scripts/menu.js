@@ -13,7 +13,7 @@ const menuItem = [
 
 
 export function createMenu(current){
-    const nav = document.querySelector('nav');//fetches nav from doc 
+    const div = document.querySelector('.sidenav');//fetches nav from doc 
     
     //const div = document.querySelector('div');
     const ul = document.createElement('ul');
@@ -37,7 +37,7 @@ export function createMenu(current){
     }
     
     //div.appendChild(ul);
-    nav.appendChild(ul);
+    div.appendChild(ul);
 
 
 };
