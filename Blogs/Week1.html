@@ -18,9 +18,15 @@
     <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
         createBlogsMenu("Week1") </script>
 
+    <script src = "../Scripts/FlipOver.js" ></script>
+
+
+
     <link rel="stylesheet" href="/Styles/normalize.css">
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/flexbox.css">
+    <link rel="stylesheet" href="/Styles/FlipCard.css">
+       
+     
+
 
      <title>Getting Started</title>
 </head>
@@ -51,26 +57,37 @@
         
             <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">4<sup>th</sup>March 2024</time> </p>
            
-            <div class="container">
+            <div id="flip" class="container">
 
-                <figure>
-                    <figcaption>Click on the image to reveal the text</figcaption>
-                    <img id = "image1" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320" />
-                </figure>
+                <div class="flip-Front">
+                    <figure>
+                        <figcaption>Click on the image to reveal the text</figcaption>
+                        <img id = "image1" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320" />
+                    </figure>
+                <button id="FlipFrontBtn">Flip</button>
+                </div>
 
-                <div id = "text1" hidden class="box">
+                <div id = "text1"  class="flip-Back">
                     <h2>Your experience setting up GitHub and publishing to Pages.</h2> 
                     <P>
                         I had assistance in setting up the GitHub and VS Code as I had missed 2 weeks of class. However, it was  
                         fairly a straight-forward and it was done in less than 10 minutes. Navigating VS Code is also mostly 
                         straight-forward, however, it is a bit more complicated to push to changes to my repository as opposed 
                         to using the GitHub application which I am more familiar with.</P>
+                
+                <button id="FlipBackBtn">Flip</button>
+
                 </div>
                 
+                <div class="flip-Front">
+                    <figure>
+                        <figcaption>Click on the image to reveal the text</figcaption>
+                        <img id = "image1" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320" />
+                    </figure>
+                <button id="FlipFrontBtn">Flip</button>
+                </div>
 
-                <img id = "image2" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320"/>
-
-                <div id = "text2" class="box">
+                <div id = "text1"  class="flip-Back">
                     <h2>Reflection on the readings you selected - relating it to your experience with the internet today</h2> 
                     
                     <p >The 1945 paper “As We May Think” by Vannevar Bush, is an interesting collection of Bush’s thoughts and predictions regarding the future of technology and science. Reading it in 2024, leaves goosebumps because of how surprisingly accurate most of his 
@@ -93,12 +110,20 @@
                     Memex today has even been coined as a name for the program “DARPA Memex Program” which was inspired by the idea of the memex to combat human trafficking on the web by using AI search technologies. 
                     
                     It is incredibly interesting that just from observing human nature and making a hypothesis based off what one knows, something like the Internet could be formed today.</p>
+                
+                <button id="FlipBackBtn">Flip</button>
 
                 </div>
                 
-                <img id = "image3" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320"/>
-               
-                <div id = "text3"  class="box">
+                <div class="flip-Front">
+                    <figure>
+                        <figcaption>Click on the image to reveal the text</figcaption>
+                        <img id = "image1" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320" />
+                    </figure>
+                <button id="FlipFrontBtn">Flip</button>
+                </div>
+
+                <div id = "text1"  class="flip-Back">
                     <h2>Interesting things you have found about the history of the web</h2>
                 <p>
                     <li>The first node-to-node communication was done in 1969, with one computer in Standford and another in UCLA. The word “LOGIN” was to be transmitted from one computer to the other, however, the message crashed and only the words “LO” was transmitted.</li>
@@ -106,17 +131,25 @@
                     <li>The first spam email was sent in 1978, because someone sent emails to ARPANET users to try to sell them computers.</li>
                     <li>The first item sold over the internet was marijuana – the deal was made online, but the people met in person. In 1994 however, the first actual online transaction took place when a man by the name of Dan Kohn sold his CD.</li>
                 </p>
+
+                <button id="FlipBackBtn">Flip</button>
                 
                 </div >
                 
-            
-                <img id= "image4" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320"/> 
-               
-                <div id = "text4" class="box" >  <h2>Your goals for this course</h2> 
+                <div class="flip-Front">
+                    <figure>
+                        <figcaption>Click on the image to reveal the text</figcaption>
+                        <img id = "image1" src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320" />
+                    </figure>
+                <button id="FlipFrontBtn">Flip</button>
+                </div>
+
+                <div id = "text1"  class="flip-Back"> <h2>Your goals for this course</h2> 
         
                     <li>To successfully understand how websites are made and to create a functioning, creative and interactive website that I am proud of </li>
                     <li>To understand how the WWW works</li>
                     <li>To learn the basics of html (since it is my first time learning a markup language)</li>
+                    <button id="FlipBackBtn">Flip</button>
                 </div>
         
                 <img src="../WebsitePictures/placeholder.png" alt="placeholder" width="390" height="320"/>
@@ -160,11 +193,12 @@
     
     
 
-    <script type="module"> import { click } from "../Scripts/OnClick.js"
-        click() </script>
+    <!--<script type="module"> import { click } from "../Scripts/OnClick.js"
+        click() </script>-->
 
     <script src = "../Scripts/BackToTop.js" ></script>
 
+    
 
 </body>
 </html>

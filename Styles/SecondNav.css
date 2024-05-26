@@ -1,12 +1,29 @@
 .container{
     border:1px solid lightblue;
+    height:center;
     display:flex;
-    flex-direction: column;
+    flex-direction: column;/*main axis is vertical*/
+    justify-content: center;/*main axis*/
+    align-items: center ; /*2nd axis*/
+  
+
 }
 
 .box{
-    width: 1rem;
-    height: 1rem;
-    background: blanchedalmond;
+    width: 20rem;
+    height: 20rem;
+    background:rgb(205, 232, 255);
     margin: 1rem;
+    flex-basis:15rem;
+    flex-grow: 1;
+    flex-shrink:1;
+
+    
 }
+
+li{
+    list-style: none;
+}
+
+/*flex-wrap: wrap;
+    align-content: center;*/
