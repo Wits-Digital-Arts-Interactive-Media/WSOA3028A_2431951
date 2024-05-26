@@ -1,12 +1,21 @@
-
 document.addEventListener('DOMContentLoaded', function(event) {
-    const flipButtons = document.querySelectorAll('flip-button');
+    const flipButtons = document.querySelectorAll("button");
+    
+    console.log(flipButtons.length);
 
     flipButtons.forEach(button => {
-        console.log('event listner added');
+        
         button.addEventListener('click', function() {
-            const flipElement = document.querySelector('flip');
-            flipElement.classList.toggle('do-flip');
+            const elementId = this.dataset.target; // Assuming you set a data attribute like data-target="element1"
+            const elementToChange = document.getElementById(elementId);
+
+
+            if (elementToChange) {
+                elementToChange.classList.toggle("do-flip");
+                console.log('flip element');
+            } else {
+                console.log('Element with class "flip" not found.');
+            }
             
         });
     });

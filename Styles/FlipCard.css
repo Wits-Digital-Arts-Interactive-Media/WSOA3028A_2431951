@@ -1,8 +1,8 @@
 
 
-#flip{
-  width: 30rem;
-  height: 30rem;
+.Elementflip{
+  width: 40rem;
+  height: 100rem;
   text-align: center;
   
   
@@ -17,13 +17,14 @@
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+
 .do-flip {
   -o-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-.flip-button{
+.flipbutton{
   position: absolute;
   bottom: 8px;
   right: 8px;
@@ -34,15 +35,15 @@
   visibility: visible;
   font-family:"Lucida Console", "Courier New", monospace;
   font-weight: 600;
-  font-size: .7em;
-  padding: 0;
+  font-size: 1em;
+  padding: 5px;
   color: rgb(0, 0, 0);
   border: 1px solid rgb(197, 196, 196);
   display: inline-block;
 }
-#flip .flip-Front, #flip .flip-Back{
-  width: 30rem;
-  height: 30rem;
+#el1 .flipFront, #el1 .flipBack, #el2 .flipFront, #el2 .flipBack, #el3 .flipFront, #el3 .flipBack, #el4 .flipFront, #el4 .flipBack{
+  width: 60rem;
+  height: 80rem;
   position: absolute;
   -o-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -53,24 +54,25 @@
   -moz-box-shadow: 5px 6px 32px 2px rgba(243, 202, 236, 0.522);;
   box-shadow: 5px 6px 32px 2px rgba(241, 216, 235, 0.175);;
 }
-#flip .flip-Front {
-    background: rgb(244, 200, 215);
+.Elementflip .flipFront {
+    background: rgba(238, 207, 217, 0.881);
     border:1px solid rgb(0, 0, 0);
 }
-#flip .flip-Back{
-    background: rgb(244, 200, 215);;
+.Elementflip .flipBack{
+    background: rgba(238, 207, 217, 0.881);
     border: 1px solid rgb(0, 0, 0);
     -o-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-#flip .flip-Front p, #flip .flip-Back p {
+#el1 .flipFront , #el1 .flipBack , #el2 .flipFront , #el2 .flipBack , #el3 .flipFront , #el3 .flipBack , #el4 .flipFront , #el4 .flipBack {
   color: rgb(0, 0, 0);
   font-family:"Lucida Console", "Courier New", monospace;
-  line-height: 1.5rem;
+  text-align: justify;
   display: block;
   position: absolute;
-  top: 20%;
+  top: 15%;
   width: 100%;
+  padding: 25px 25px 25px 25px;
 }
