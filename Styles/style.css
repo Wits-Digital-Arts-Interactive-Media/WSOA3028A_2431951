@@ -34,10 +34,11 @@ nav ul li{
 }
 
 nav ul li a{
-    display: block;
-    padding: 8px 16px;
-    font-size: 15px;
-    text-decoration: none;
+    
+    background-color: azure;
+    padding:10px 30px;
+    color: blueviolet;
+    border-radius:100px ;
 }
 
 
@@ -51,11 +52,11 @@ nav ul li a{
 
 }
 
-a.active{
-    background-color: azure;
-    padding:10px 30px;
-    color: blueviolet;
-    border-radius:100px ;
+nav ul li a.active{
+    display: block;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-decoration: none;
 
 }
 

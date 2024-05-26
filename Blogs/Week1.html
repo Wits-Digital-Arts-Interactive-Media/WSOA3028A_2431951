@@ -12,38 +12,27 @@
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, 1945 ">
 
-     <script type="module"> import { createMenu } from "../Scripts/menu.js"
-        createMenu("Blogs") </script>
-
-    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
-        createBlogsMenu("Week1") </script>
-
-   
-
     <link rel="stylesheet" href="/Styles/normalize.css">
     <link rel="stylesheet" href="/Styles/FlipCard.css">
     <link rel="stylesheet" href="/Styles/flexbox.css">
+    <link rel="stylesheet" href="/Styles/SecondNav.css">
+    <link rel="stylesheet" href="/Styles/style.css">
+    
     
 
 
      <title>Getting Started</title>
 </head>
 
-<!--Tables should be avoided except for tabular data...CSS will mess everything up so remove all the tables
-
-    make use of the "p-summary" class for summaries of blog posts: <p class= "p-summary"> summary of blog </p>
-
--->
-
 
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
 
-        <h1>Getting Started</h1>
+    <h1>Getting Started</h1>
 
     <header>
-        <nav>
+        <nav aria-label="primary">
 
         </nav>
     </header>
@@ -126,10 +115,13 @@
                     <div id = "text3"  class="flipBack">
                         <h2>Interesting things you have found about the history of the web</h2>
                     <p>
-                        <li>The first node-to-node communication was done in 1969, with one computer in Standford and another in UCLA. The word “LOGIN” was to be transmitted from one computer to the other, however, the message crashed and only the words “LO” was transmitted.</li>
-                        <li>Computers used to be as big as a house up until the late 1900s. In just a few decades however, computers now are small enough to fit into our hands, and some can even be fit into a small backpack. The rapid development of technology is not only inspiring but also almost scary. </li>
-                        <li>The first spam email was sent in 1978, because someone sent emails to ARPANET users to try to sell them computers.</li>
-                        <li>The first item sold over the internet was marijuana – the deal was made online, but the people met in person. In 1994 however, the first actual online transaction took place when a man by the name of Dan Kohn sold his CD.</li>
+                        <o.>
+                            <li>The first node-to-node communication was done in 1969, with one computer in Standford and another in UCLA. The word “LOGIN” was to be transmitted from one computer to the other, however, the message crashed and only the words “LO” was transmitted.</li>
+                            <li>Computers used to be as big as a house up until the late 1900s. In just a few decades however, computers now are small enough to fit into our hands, and some can even be fit into a small backpack. The rapid development of technology is not only inspiring but also almost scary. </li>
+                            <li>The first spam email was sent in 1978, because someone sent emails to ARPANET users to try to sell them computers.</li>
+                            <li>The first item sold over the internet was marijuana – the deal was made online, but the people met in person. In 1994 however, the first actual online transaction took place when a man by the name of Dan Kohn sold his CD.</li>
+                    
+                    </ol>
                     </p>
 
                     <button class="flipbutton" data-target="el3">Flip</button>
@@ -144,15 +136,16 @@
                 </div>
 
                 <div id = "text4"  class="flipBack"> <h2>Your goals for this course</h2> 
-        
-                    <li>To successfully understand how websites are made and to create a functioning, creative and interactive website that I am proud of </li>
-                    <li>To understand how the WWW works</li>
-                    <li>To learn the basics of html (since it is my first time learning a markup language)</li>
+                    <ol>
+                        <li>To successfully understand how websites are made and to create a functioning, creative and interactive website that I am proud of </li>
+                        <li>To understand how the WWW works</li>
+                        <li>To learn the basics of html (since it is my first time learning a markup language)</li>
+                    </ol>
+                    
                     <button class="flipbutton" data-target="el4">Flip</button>
                 </div>
             </div>
 
-            </div>
             <h2>References</h2> <!--refernce properly using <figure> -> <blockquote> -> <figcaption> -> <cite> -> href=website ... how to render certain text that uses special characters that would otherwise be misunderstood by the code: <code>&lt;text&gt;</code>-->
                 <figure>
                     <blockquote>
@@ -170,6 +163,9 @@
                     </blockquote>
                 </figure>
 
+            </div>
+            
+
 
     </article>
 
@@ -178,14 +174,12 @@
     </main>
     
 
-
-
+<!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
     <footer>
-    <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
-        <nav>
-    
-        </nav>
+        <div class="navbar2">
+        </div>
     </footer>
+    
     
     
     
@@ -204,6 +198,14 @@
                 
                 
                 -->
+
+    
+
+    <script type="module"> import { createMenu } from "../Scripts/menu.js"
+    createMenu("Blogs") </script>
+
+    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
+    createBlogsMenu("Week1") </script>
 
     <script src = "../Scripts/BackToTop.js" ></script>
     <script src = "../Scripts/FlipOver.js" ></script>

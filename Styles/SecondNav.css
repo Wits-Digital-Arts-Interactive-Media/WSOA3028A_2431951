@@ -1,15 +1,75 @@
-.container{
+/* Place the navbar at the bottom of the page and make it stick */
+.navbar2 {
+    background-color: rgba(231, 196, 237, 0.521);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar2 ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 40px;
+    
+
+}
+
+.navbar2 ul li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top:10px;
+    
+}
+
+/* Style the links inside the navigation bar */
+.navbar2 ul li a {
+    
+    background-color: azure;
+    padding:10px 30px;
+    color: blueviolet;
+    border-radius:100px ;
+
+
+}
+
+/* Change the color of links on hover */
+.navbar2 a:hover {
+    background-color: rgba(246, 217, 241, 0.945);
+    color: blueviolet;
+}
+
+/* Add a color to the active/current link */
+.navbar2 a.active {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+
+}
+
+
+li{
+    list-style: none;
+}
+
+/*flex-wrap: wrap;
+    align-content: center;
+    .navbar2{
     border:1px solid lightblue;
-    height:center;
     display:flex;
-    flex-direction: column;/*main axis is vertical*/
-    justify-content: center;/*main axis*/
-    align-items: center ; /*2nd axis*/
+    flex-direction: row;/*main axis is vertical
+    justify-content: space-between ;/*main axis
+    align-items: center; /*2nd axis
   
 
 }
 
-.box{
+.navbar2 a{
     width: 20rem;
     height: 20rem;
     background:rgb(205, 232, 255);
@@ -19,11 +79,4 @@
     flex-shrink:1;
 
     
-}
-
-li{
-    list-style: none;
-}
-
-/*flex-wrap: wrap;
-    align-content: center;*/
+}*/

@@ -30,9 +30,7 @@ export function createMenu(current){
             a.setAttribute("href", item.href)
             a.classList.add("active") 
             li.appendChild(a)
-        } else { li.innerText = item.name
-            
-         }
+        } else { li.innerText = item.name}
 
         ul.appendChild(li)
        

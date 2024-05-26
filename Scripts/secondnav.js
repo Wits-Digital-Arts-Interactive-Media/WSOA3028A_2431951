@@ -27,24 +27,27 @@ const EssayItems = [
 
 
 export function createBlogsMenu(current){
-    const div = document.querySelector('div'); //fetches nav from doc 
+    const div = document.querySelector('.navbar2'); //fetches nav from doc 
     const ul = document.createElement('ul');
     
     for(let item of BlogItems){
         const li = document.createElement('li');
+        
         if (current != item.name) {
             const a = document.createElement("a");
             a.innerText = item.name;
             //a.href = item.name;
             a.setAttribute("href", item.href);
             a.setAttribute("Image", item.Image);
-            
             li.appendChild(a)
-            a.classList.add("box")
-        } else { li.innerText = item.name; }
+            a.classList.add("active")
+        } else { li.innerText = item.name; 
+            
+        }
 
         ul.appendChild(li);
-  }
+    }
+
     div.appendChild(ul);
 };
 
@@ -60,7 +63,7 @@ export function createDesignsMenu(current){
             //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
-            a.classList.add("box")
+            
         } else { li.innerText = item.name; }
 
         ul.appendChild(li);
