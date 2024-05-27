@@ -10,6 +10,10 @@ const BlogItems = [
     { name: "Week8", href:  root+"/Blogs/Week8.html" },
     { name: "Week9", href:  root+"/Blogs/Week9.html" },
     { name: "Week10", href:  root+"/Blogs/Week10.html" },
+    { name: "Week11", href:  root+"/Blogs/Week11.html" },
+    { name: "Week12", href:  root+"/Blogs/Week12.html" },
+    { name: "Week13", href:  root+"/Blogs/Week13.html" },
+    
 ];
 
 const DesignItems = [
