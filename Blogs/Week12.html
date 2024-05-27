@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META STUFF-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Eighth Blog post reflecting on digital inequalities">
+    <meta name = "author" content = "Ivy Chepkwony">
+
+    <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
+    <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <link rel="stylesheet" href="../Styles/FlipCard.css">
+    <link rel="stylesheet" href="../Styles/flexbox.css">
+    <link rel="stylesheet" href="../Styles/SecondNav.css">
+    <link rel="stylesheet" href="../Styles/style.css">
+
+    <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
+    <title>CSS, Ethical coding practices and Responsive Design</title>
+</head>
+
+<body>
+
+    <!--Main TITLE AND MAIN NAV-->
+
+       
+    <header>
+        <nav class="sidenav">
+
+        </nav>
+        <h1>CSS, Ethical coding practices and Responsive Design</h1>
+
+    </header>
+    
+
+    <main>
+                <!--WEEK 4 IN TABULAR FORM-->
+            <article class = "h-entry">
+
+                <h2>Reflecting on CSS:</h2>
+                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-29 08:00:00">29<sup>th</sup>April 2024</time> </p>
+
+                    <p>I had to re-realize, even at this stage, how important using the correct URL path was. I got a fright when trying to deploy my website and the CSS scripts did not show up. However, due to a small fix after many hours (adding a “./”) everything was fixed. It made me realize how thorough I must be and how important the basics are, to ensure that small mistakes do not take up so much time.</p>
+
+                    
+                    <p> I had to edit a few variables that handled the navigations a bit to work with the CSS – differentiating between querySelectorAll and querySelector for classes and ids and when to use what. 
+                    </p>
+
+                    
+                    <p> I have added draggable elements on the front page. In this way, users upon visiting the page, immediately can exercise control to some degree. It invites the user to engage and have some enjoyment upon falling on the homepage. It also invites the user to be curios to explore the rest of my website further. The CSS aspect only influences the way the elements look. Most of this was done in javascript. 
+                    </p>
+
+                    <p>
+                        The Card Flipping mechanic relies on CSS quite a bit. I had to really understand flexboxes and how to make use of meaningful ‘divs’. Learning about transitions in CSS was interesting.
+                        Referring to the right classes and ids was a challenge at first and understanding what was referring to what was difficult at first especially when I was in the process of making it functional for multiple elements, however it was possible. Right now the styling itself is not quite perfect, because there is a lot I still want to add to make it more like the wireframes.
+                    </p>
+
+                    <p>The second navigation and home page was more challenging than I thought. The second nav initially (especially on the landing pages) were intended to have pictures and have a scroll function. However, at this moment it simply functions as part of the footer, until I have more time to research and understand how to implement exactly what I want.</p>
+
+                    <p>
+                        The homepage required my understanding of grids, which once I experimented a bit, I got the hang of it and got a basic layout similar to my most recent iteration of my homepage wireframe.
+
+                        The colour styling still needs more work. And the consistent implementation of already introduced css styles still needs to happen – time ran out. 
+                    </p>
+
+                <h2>Reading: Values at Play: Design Tradeoffs in Socially-Oriented
+                    Game Design
+                    </h2>
+                    <p>This reading is a useful reading for practical approaches to good design and development (especially in the web or software development sphere). In presenting these practical approaches, the moral and ethical obligations are addressed. As a web developer I often wonder “how” can I communicate and get across my values and uphold my ethical responsibilities therefore, this practical approach in the form of describing the process of creating the RAPUNSEL game, helps me see specific approaches I can use in my own coding practice. </p>
+
+                    <p>
+                        <li>
+                            Revisiting previous actions, designs, choices and reframing them with new information or new understanding. 
+                        </li>
+                        <li>
+                            Iterations and prototyping is essential.
+                        </li>
+                        <li>
+                            As a web developer and studying Game Design, prototyping and iteration has come up often. New ideas, new values, new methods often emerge from a cyclical approach to building or developing something. This means that old ideas are also revisited. It is important to revisit the old to build upon it, because, it gives an indication of whether or not the intended requirements and goals were met and therefore why or why not. 
+                        </li>
+                    </p>
+
+                    <p>
+                        In my own coding practice, iteration is something I try to incorporate by revisiting old code to see how I can improve it. It also has helped me see ways I can adapt previous approaches to new situations. 
+                    </p>
+
+                    <p>
+                        I will admit however, that there is more I could be doing. For example, for the sake of other developers that will come across my work, I have a responsibility to ensure that they can understand what is happening in my code. For example, putting meaningful comments, and correct indenting and consistent code structure. These are three things I do not do well. On the user’s behalf, meta data is also very important. At the moment, I often find myself viewing it as an after-thought when it shouldn’t be. When surfing the web, meta data is often what helps the user identify exactly what they need – in the browser, the meta data influences how information is prioritized and how information is presented. Useful meta data will mean that the user is more likely to find exactly what they want. From a representation perspective, it becomes difficult to argue that I am being underrepresented if I am not taking the relevant and available approaches to ensuring my work is seen. The little things matter.  
+                    </p>
+
+                <h2>
+                    Responsive design
+                </h2>
+
+                <p>
+                    Responsive design requires careful understanding of relative measurements especially. It is beneficial for the user such that on any device, the elements on the page are scalable and thus can be viewed comfortably for the most part. It ties in well with the theme of accessibility. The difficult thing with responsive design however, is that is requires a lot of time to get it right. It also depends on browser compatibility, making it difficult to ensure that across multiple browsers the designs are consistent.
+                </p>
+                
+
+        </article>
+        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+    </main>
+    
+    <footer>
+        <!--SECONDARY NAV-->
+        <div class="navbar2">
+        </div>
+
+    </footer>
+    
+    <script type="module"> import { createMenu } from "../Scripts/menu.js"
+        createMenu("Blogs") </script> 
+
+    <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
+        createBlogsMenu("Week10") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
+
+</body>
+</html>
