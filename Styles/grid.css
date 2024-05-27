@@ -1,3 +1,4 @@
+
 .container {
     display: grid;
     justify-items: center ;
@@ -21,7 +22,8 @@
     position: relative;
     height:100vh;
     overflow: auto;
-    font-size: 1rem;
+    font-size: 16px;
+    
 }
 
 .item3 {

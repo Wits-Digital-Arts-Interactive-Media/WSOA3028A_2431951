@@ -1,3 +1,5 @@
+
+
 body{
     font-family:"Lucida Console", "Courier New", monospace;
     /* backgorund image -- > background: url()*/
@@ -5,9 +7,7 @@ body{
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
 }
 
-/*ids--> #idname
-  classes --> .classname
-*/
+
 
 .sidenav{
     color: blueviolet;
@@ -16,7 +16,18 @@ body{
     height: 80px;
     width: 100%;
     
+    
 }
+
+.sidenav .logo{
+    font-size: 30px ;
+    background-color: azure;
+    border-radius: 50px ;
+    padding:10px 30px;
+    display: inline-block;
+    float: left;
+    margin-top:10px;
+  }
 
 .sidenav ul{
     list-style-type: none;

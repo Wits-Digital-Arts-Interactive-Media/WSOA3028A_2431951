@@ -10,7 +10,10 @@ body{
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
 }
 
+.logo{
+  font-size: 1rem ;
 
+}
 .sidenav{
   float:right;
   color: #695d5d;
