@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../Styles/normalize.css">
     <link rel="stylesheet" href="../Styles/FlipCard.css">
     <link rel="stylesheet" href="../Styles/flexbox.css">
-    <link rel="stylesheet" href="../Styles/SecondNav.css">
+
     <link rel="stylesheet" href="../Styles/style.css">
     
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, websites ">
@@ -28,13 +28,12 @@
 
     
 
-    <header>
+    <header class="header">
+        <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
-            <label class="logo">THE PLAYGROUND</label>
         </nav>
-        <h1>URL SCHEME & WEBSITE INSPIRATION</h1>
     </header>
-   
+    
     <!--Each element can have a class esp articles, headings etc....
     
         The h-card is a list of info about the author that is microformatted....ie: <span class = "p-locality"> Johannesburg</span>
@@ -48,7 +47,7 @@
     <main>
         <article class="h-entry">
 
-
+            <h1>URL SCHEME & WEBSITE INSPIRATION</h1>
 
             <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">4<sup>th</sup>March 2024</time> </p>
 
@@ -231,10 +230,11 @@
     </main>
    
 
-    <footer>
-        <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
-        <div class="navbar2">
-        </div>
+    <div class="navbar2">
+    </div>
+
+    <footer class="footer">
+        <p>Ivy C C</p>
     </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"

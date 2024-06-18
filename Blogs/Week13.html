@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../Styles/normalize.css">
     <link rel="stylesheet" href="../Styles/FlipCard.css">
     <link rel="stylesheet" href="../Styles/flexbox.css">
-    <link rel="stylesheet" href="../Styles/SecondNav.css">
+
     <link rel="stylesheet" href="../Styles/style.css">
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
@@ -26,22 +26,23 @@
     <!--Main TITLE AND MAIN NAV-->
 
        
-    <header>
+    <header class="header">
+        <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
-            <label class="logo">THE PLAYGROUND</label>
         </nav>
-        <h1>The internet as an ethical space</h1>
-
-    </header>
+    </header> 
     
 
     <main>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
 
-                <h2>Reading reflection: The internet as a moral space: the legacy of Roger Silverstone Shani Orgad</h2>
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-24 08:00:00">24<sup>th</sup>May 2024</time> </p>
+                <h1>The internet as an ethical space</h1>
 
+               <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-24 08:00:00">24<sup>th</sup>May 2024</time> </p>
+
+               <h2>Reading reflection: The internet as a moral space: the legacy of Roger Silverstone Shani Orgad</h2>
+                
                         <p>These are some points that stood out to me:</p>
 
                     <h3>
@@ -84,13 +85,15 @@
         </article>
         <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
-    
-    <footer>
-        <!--SECONDARY NAV-->
-        <div class="navbar2">
-        </div>
 
+    <!--SECONDARY NAV-->
+    <div class="navbar2">
+    </div>
+
+    <footer class="footer">
+        <p>Ivy C C</p>
     </footer>
+    
     
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Blogs") </script> 

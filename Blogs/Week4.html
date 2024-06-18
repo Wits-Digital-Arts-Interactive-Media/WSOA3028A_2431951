@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../Styles/normalize.css">
     <link rel="stylesheet" href="../Styles/FlipCard.css">
     <link rel="stylesheet" href="../Styles/flexbox.css">
-    <link rel="stylesheet" href="../Styles/SecondNav.css">
+  
     <link rel="stylesheet" href="../Styles/style.css">
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
@@ -26,17 +26,17 @@
     <!--Main TITLE AND MAIN NAV-->
 
        
-    <header>
+    <header class="header">
+        <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
-            <label class="logo">THE PLAYGROUND</label>
         </nav>
-        <h1>Reflection on HTML basics</h1>
-
     </header>
 
     <main>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
+
+                <h1>Reflection on HTML basics</h1>
 
                 <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-18 08:00:00">18<sup>th</sup>March 2024</time> </p>
 
@@ -81,12 +81,12 @@
 
         <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
-    
+  
+    <div class="navbar2">
+    </div>
 
-    <footer>
-        <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
-            <div class="navbar2">
-            </div>
+    <footer class="footer">
+        <p>Ivy C C</p>
     </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
