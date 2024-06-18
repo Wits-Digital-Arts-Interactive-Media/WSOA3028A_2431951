@@ -2,17 +2,17 @@
 const root = "/WSOA3028A_2431951";
 
 const BlogItems = [
-    { name: "Week1",  href: root+ "/Blogs/Week1.html", Image: "/WebsitePictures/week1.png"},
-    { name: "Week2", href:  root+"/Blogs/Week2.html" },
-    { name: "Week3", href:  root+"/Blogs/Week3.html" },
-    { name: "Week4", href: root+ "/Blogs/Week4.html" },
-    { name: "Week6", href:  root+"/Blogs/Week6.html" },
-    { name: "Week8", href:  root+"/Blogs/Week8.html" },
-    { name: "Week9", href:  root+"/Blogs/Week9.html" },
-    { name: "Week10", href:  root+"/Blogs/Week10.html" },
-    { name: "Week11", href:  root+"/Blogs/Week11.html" },
-    { name: "Week12", href:  root+"/Blogs/Week12.html" },
-    { name: "Week13", href:  root+"/Blogs/Week13.html" },
+    { name: "Week1",  href: root+ "/Blogs/Week1.html", src: "/WebsitePictures/week1.png"},
+    { name: "Week2", href:  root+"/Blogs/Week2.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week3", href:  root+"/Blogs/Week3.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week4", href: root+ "/Blogs/Week4.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week6", href:  root+"/Blogs/Week6.html" , src: "/WebsitePictures/week1.png"},
+    { name: "Week8", href:  root+"/Blogs/Week8.html" , src: "/WebsitePictures/week1.png"},
+    { name: "Week9", href:  root+"/Blogs/Week9.html" , src: "/WebsitePictures/week1.png"},
+    { name: "Week10", href:  root+"/Blogs/Week10.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week11", href:  root+"/Blogs/Week11.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week12", href:  root+"/Blogs/Week12.html", src: "/WebsitePictures/week1.png" },
+    { name: "Week13", href:  root+"/Blogs/Week13.html" , src: "/WebsitePictures/week1.png"},
     
 ];
 
@@ -25,28 +25,47 @@ const DesignItems = [
 
 const EssayItems = [
     { name: "Essay1",  href:  root + "/Essays/Essay1.html" },
-    { name: "Esssay2", href:  root + "/Essays/Essay2.html" },
+    { name: "Essay2", href:  root + "/Essays/Essay2.html" },
    
 ];
+
+async function fetchMetaContent(url) {
+    const response = await fetch(url);
+    const html = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    return doc.querySelector('meta[name="description"]').getAttribute('content');
+  }
+
 
 
 export function createBlogsMenu(current){
     const div = document.querySelector('.navbar2'); //fetches nav from doc 
     const ul = document.createElement('ul');
-    
+
     for(let item of BlogItems){
         const li = document.createElement('li');
+
+        const img = document.createElement('img');
+        img.setAttribute("src", item.src);
+        li.appendChild(img);
+
+        const text = document.createElement('figcaption')
+        fetchMetaContent(item.href).then(metaContent => {
+            text.innerText = metaContent;
+            li.appendChild(text);
+          });
+
         
         if (current != item.name) {
             const a = document.createElement("a");
             a.innerText = item.name;
-            //a.href = item.name;
             a.setAttribute("href", item.href);
-            a.setAttribute("Image", item.Image);
-            li.appendChild(a)
-            a.classList.add("active")
-        } else { li.innerText = item.name; 
-            
+            li.appendChild(a);
+            a.classList.add("active");
+        } 
+        else { 
+            li.innerText = item.name; 
         }
 
         ul.appendChild(li);
@@ -61,6 +80,14 @@ export function createDesignsMenu(current){
     
     for(let item of DesignItems){
         const li = document.createElement('li');
+
+        const text = document.createElement('figcaption')
+        fetchMetaContent(item.href).then(metaContent => {
+            text.innerText = metaContent;
+            li.appendChild(text);
+          });
+
+
         if (current != item.name) {
             const a = document.createElement("a");
             a.innerText = item.name;
@@ -82,6 +109,15 @@ export function createEssaysMenu(current){
     
     for(let item of EssayItems){
         const li = document.createElement('li');
+
+        const text = document.createElement('figcaption')
+        fetchMetaContent(item.href).then(metaContent => {
+            text.innerText = metaContent;
+            li.appendChild(text);
+          });
+
+
+
         if (current != item.name) {
             const a = document.createElement("a");
             a.innerText = item.name;

@@ -10,19 +10,13 @@ const menuItem = [
     { name: "Profile", href: root +"/Profile/index.html" },
 ];
 
-
-
 export function createMenu(current){
     const div = document.querySelector('.sidenav');//fetches nav from doc 
-    
-    //const div = document.querySelector('div');
     const ul = document.createElement('ul');
-    //const logo = document.createElement('label');
-    
-    
 
     for(let item of menuItem){
         const li = document.createElement('li');
+        li.classList.add("transition");
         if (current != item.name) {
             const a = document.createElement("a")
             a.innerText = item.name
@@ -35,14 +29,15 @@ export function createMenu(current){
         ul.appendChild(li)
        
     }
-    
-    //div.appendChild(ul);
-    div.appendChild(ul);
 
+    div.appendChild(ul);
 
 };
 
 export function openNav() {
+     
+    //const div = document.querySelector('div');
+       //const logo = document.createElement('label')
     //document.getElementById("mySidenav").width = "250px";
    // document.getElementById("main").style.marginLeft = "250px";
    // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";

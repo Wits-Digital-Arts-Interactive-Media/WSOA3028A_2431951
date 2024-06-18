@@ -1,57 +1,69 @@
-/* Place the navbar at the bottom of the page and make it stick */
 .navbar2 {
-    color: blueviolet;
-    background-color: rgba(231, 196, 237, 0.521);
-    overflow: hidden;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height:80px;
-    flex-wrap: wrap;
+    background-color: rgba(80, 197, 213, 0.542);
+    margin: 20px 0;
+    width: 100%; /* Full width */
+  }
+  
+  .navbar2 ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: grid; /* Use grid for the list as well */
+    grid-template-columns: repeat(2, 1fr); /* Create two columns for list items */
+    grid-gap: 20px;
+  }
+  
+  .navbar2 li {
+    text-align: center; /* Center text in each list item */
+  }
+
+  .navbar2 ul li a {
+    background-color: rgba(63, 194, 63, 0.797);
+    border-radius:100px ;
+    color: black;
 
 }
+  
+  .navbar2 a.active{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+  }
+
+
+  .navbar2 a:hover {
+    background-color: #fbf0a1c8;
+    transform: scale(1.2); /* Increase size by 10% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 
 
 .navbar2 ul{
     list-style-type: none;
-    float: right;
-    margin-right: 40px;
+    
     
 
 }
 
 .navbar2 ul li{
     display: inline-block;
-    margin-right: 10px;
-    margin-top:10px;
+    
     
     
 }
-
-/* Style the links inside the navigation bar */
+Style the links inside the navigation bar 
 .navbar2 ul li a {
-    background-color: azure;
-    padding:10px 30px;
-    color: blueviolet;
+    background-color: rgba(63, 194, 63, 0.797);
+    /*padding:10px 30px;
     border-radius:100px ;
 
-}
+}*/
 
-/* Change the color of links on hover */
-.navbar2 a:hover {
-    background-color: rgba(246, 217, 241, 0.945);
-    color: blueviolet;
-}
-
-/* Add a color to the active/current link */
-.navbar2 a.active {
-    display: block;
-    color: blueviolet;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-
-}
+/* Change the color of links on hover 
+*/
 
 
 
@@ -60,13 +72,14 @@
     .navbar2{
     border:1px solid lightblue;
     display:flex;
-    flex-direction: row;/*main axis is vertical
-    justify-content: space-between ;/*main axis
-    align-items: center; /*2nd axis
+    flex-direction: row;main axis is vertical
+    justify-content: space-between ;main axis
+    align-items: center; 2nd axis
   
 
 }
-
+margin-right: 10px;
+    margin-top:10px;
 .navbar2 a{
     width: 20rem;
     height: 20rem;
@@ -76,5 +89,14 @@
     flex-grow: 1;
     flex-shrink:1;
 
+        padding: 8px 16px;
+}
     
-}*/
+float: right;
+    margin-right: 40px;
+
+  flex-wrap: wrap;
+    position: relative;
+    bottom: 0; overflow: auto;
+    
+*/

@@ -44,3 +44,12 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+$(document).ready(function() {
+  $(".item3 .draggable").each(function() {
+      var l = Math.floor(Math.random() * $(".item3").width());
+      var t = Math.floor(Math.random() * $(".item3").height());
+      $(this).css("left", l);
+      $(this).css("top", t);
+  })
+})

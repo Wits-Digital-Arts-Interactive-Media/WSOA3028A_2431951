@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="../Styles/normalize.css">
     <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/SecondNav.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
       
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
@@ -26,21 +26,24 @@
 <body>
 
         
-  <header>
-    <nav class="sidenav">
-        <label>THE PLAYGROUND</label>
-    </nav>
-    <h1>ESSAYS HOMEPAGE</h1>
-  </header>
+    <header class="header">
+        <label class="logo">THE PLAYGROUND</label>
+        <nav class="sidenav">
+        </nav>
+    </header>
         
     <main>
-        <h2>Essays</h2>
-        <p>A collection of essays and in-depth analysis concerning this course</p>    
+        <article class="Summary">
+            <h1>Essays</h1>
+            <p>A collection of essays and in-depth analysis concerning this course</p> 
+        </article>   
     </main>
 
+    <div class="navbar2">
+    </div>
+
     <footer>
-        <div class="navbar2">
-        </div>
+        <p>Ivy C C</p>
     </footer>
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
@@ -48,7 +51,7 @@
 
 
     <script type="module"> import { createEssaysMenu } from "../Scripts/secondnav.js"
-    createEssaysMenu("Essays") </script>
+    createEssaysMenu("Essays Home") </script>
 
 </body>
 </html>
