@@ -8,6 +8,8 @@
                                             to Ethics on the Internet and ethical design practice.">
     <meta name = "author" content = "Ivy Chepkwony">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="../Styles/normalize.css">
     <link rel="stylesheet" href="../Styles/Essays.css">
     <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
@@ -19,7 +21,7 @@
 
     
     
-    <title>ESSAYS HOMEPAGE</title>
+    <title>ESSAYS...</title>
 </head>
 
 
@@ -32,17 +34,20 @@
         </nav>
     </header>
         
+    <h1 class="Essays_Homepage" data-text="Essays...">Essays...</h1> 
+
     <main>
         <article class="Summary">
-            <h1>Essays</h1>
-            <p>A collection of essays and in-depth analysis concerning this course</p> 
+            <span id="part1">A collection of essays,</span> 
+            <span id="part2">and an in-depth analysis concerning this course,</span>
+            <span id="part3">Scroll and select an Essay to read below</span> 
         </article>   
     </main>
 
     <div class="navbar2">
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
 
@@ -52,6 +57,10 @@
 
     <script type="module"> import { createEssaysMenu } from "../Scripts/secondnav.js"
     createEssaysMenu("Essays Home") </script>
+
+    <script src = "../Scripts/AnimateLetters.js" ></script>
+
+    <script src = "../Scripts/scrollAnimation.js" ></script>
 
 </body>
 </html>

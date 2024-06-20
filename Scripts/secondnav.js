@@ -51,7 +51,7 @@ export function createBlogsMenu(current){
 
         li.id = `blogItem${itemId++}`;
         li.classList.add("revealUp")
-        
+
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {
             text.innerText = metaContent;
@@ -89,6 +89,7 @@ export function createDesignsMenu(current){
             li.appendChild(text);
           });
 
+        li.classList.add("revealUp")
 
         if (current != item.name) {
             const a = document.createElement("a");
@@ -119,6 +120,7 @@ export function createEssaysMenu(current){
           });
 
 
+        li.classList.add("revealUp")
 
         if (current != item.name) {
             const a = document.createElement("a");

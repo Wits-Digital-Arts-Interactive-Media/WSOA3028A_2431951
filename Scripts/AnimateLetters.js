@@ -1,24 +1,13 @@
-/*window.onload = function() {
-    var p = document.getElementById('animated-text');
-    var text = p.innerText;
-    p.innerHTML = '';
-    for (var i = 0; i < text.length; i++) {
-      var span = document.createElement('span');
-      span.innerText = text[i];
-      span.setAttribute('data-text', text[i]);
-      p.appendChild(span);
-    }
-  };*/
-
-  var words = ['Have fun reading my blog posts,', 'as I journal my experience throughout the semester.', 'Scroll and select a blog post to read below'],
-  part,
-  i = 0,
-  offset = 0,
-  len = words.length,
-  forwards = true,
-  skip_count = 0,
-  skip_delay = 15,
-  speed = 70;
+console.log(document.getElementById("part1").innerText)
+var words = [document.getElementById("part1").innerText,document.getElementById("part2").innerText, document.getElementById("part3").innerText],
+part,
+i = 0,
+offset = 0,
+len = words.length,
+forwards = true,
+skip_count = 0,
+skip_delay = 15,
+speed = 70;
 var wordflick = function () {
 setInterval(function () {
   if (forwards) {
@@ -49,10 +38,22 @@ setInterval(function () {
       offset--;
     }
   }
-  $('.word').text(part);
+  $('.Summary').text(part);
 },speed);
 };
 
 $(document).ready(function () {
 wordflick();
 });
+
+/*window.onload = function() {
+    var p = document.getElementById('animated-text');
+    var text = p.innerText;
+    p.innerHTML = '';
+    for (var i = 0; i < text.length; i++) {
+      var span = document.createElement('span');
+      span.innerText = text[i];
+      span.setAttribute('data-text', text[i]);
+      p.appendChild(span);
+    }
+  };*/

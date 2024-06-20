@@ -13,11 +13,13 @@
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
      <link rel="stylesheet" href="../Styles/normalize.css">
      <link rel="stylesheet" href="../Styles/profile.css">
 
      
-     <title>PROFILE</title>
+     <title>THIS IS ME...</title>
 </head>
 
 <body>
@@ -30,19 +32,20 @@
         <nav class="sidenav">
         </nav>
     </header>
-    
+
+    <h1 class="Profile_Homepage" data-text="THIS IS ME...">THIS IS ME...</h1>
 
     <main>
         <article class="Summary" >
-            <h1>PROFILE PAGE</h1>
             <p class = "h-card">
                 <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website</a>,
-                <span class = "p-name">Ivy Chepkwony</span>
-                <span class = "p-org">Univerisity of Witwatersrand</span>
-                <span class = "p-locality">JHB</span>
+                <span id="part1" class = "p-name">Ivy Chepkwony</span>
+                <span id="part2" class = "p-org">Univerisity of Witwatersrand</span>
+                <span id="part3" class = "p-locality">JHB</span>
                 <span class = "p-country-name">South Africa</span>
             </p>
-
+        </article>
+        <article class="More">
             <p>
                 Welcome to my website I hope you enjoy getting to know me and what goes on in my brain ! 
             </p>
@@ -63,7 +66,7 @@
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Profile") </script>
 
-    
+    <script src = "../Scripts/AnimateLetters.js" ></script>
     
 </body>
 </html>

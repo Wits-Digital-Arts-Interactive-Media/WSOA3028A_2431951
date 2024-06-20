@@ -11,6 +11,8 @@
    <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
    <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
    
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
    <link rel="stylesheet" href="../Styles/normalize.css">
    <link rel="stylesheet" href="../Styles/Designs.css">
    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
@@ -18,7 +20,7 @@
    <meta name = "keywords" content = "Playground, Designs, fun, HTML ">
 
    
-   <title>DESIGNS HOMEPAGE</title>
+   <title>DESIGNS...</title>
 </head>
 
 <body>
@@ -32,20 +34,21 @@
         </nav>
     </header>
 
+    <h1 class=Designs_Homepage" data-text="DESIGNS...">DESIGNS...</h1>
+
     <main>
             <!--DESIGN NAV PAGE SUMMARY-->
         <article class="Summary">
-            <h1>DESIGNS</h1>
-            <p>
-                Go check out my planning for this website!
-            </p>
+            <span id="part1">Go check out my planning for this website!</span>
+            <span id="part2">Have a look at the IxD and Wireframes</span>
+            <span id="part3">Scroll and select a design to view below!</span>
         </article>
     </main>
 
     <div class="navbar2">
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
      
@@ -58,6 +61,9 @@
     <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
     createDesignsMenu("Designs") </script>
 
+    <script src = "../Scripts/AnimateLetters.js" ></script>
+
+    <script src = "../Scripts/scrollAnimation.js" ></script>
 
 </body>
 </html>
