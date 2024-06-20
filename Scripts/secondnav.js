@@ -37,7 +37,7 @@ async function fetchMetaContent(url) {
     return doc.querySelector('meta[name="description"]').getAttribute('content');
   }
 
-
+let itemId = 1;
 
 export function createBlogsMenu(current){
     const div = document.querySelector('.navbar2'); //fetches nav from doc 
@@ -45,11 +45,13 @@ export function createBlogsMenu(current){
 
     for(let item of BlogItems){
         const li = document.createElement('li');
-
         /*const img = document.createElement('img');
         img.setAttribute("src", item.src);
         li.appendChild(img);*/
 
+        li.id = `blogItem${itemId++}`;
+        li.classList.add("revealUp")
+        
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {
             text.innerText = metaContent;

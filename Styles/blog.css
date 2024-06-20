@@ -69,7 +69,7 @@ main{
     grid-area: Summary;
     justify-self: center;
     background-color: azure;
-    font-size: 16px;
+    font-size: 30px;
     line-height:30px;
     padding:10px 30px 10px 30px;  /*also takes 4 values, spacing WITHIN element*/
     /*margin:10px 50px; takes up to 4 values -- top, bottom left right, space of element in context of other elements*/
@@ -88,7 +88,7 @@ h1{
     justify-self: center;
     font-weight: bolder;
     position: relative;
-    -webkit-text-stroke: 1vw azure;
+    -webkit-text-stroke: 1.5vw azure;
     text-transform: uppercase;
 }
 
@@ -120,20 +120,23 @@ h1::before {
 
 .navbar2 {
     grid-area: navbar2;
-    background-color: azure;
+    
     margin-left:20px;
     margin-right:20px;
     border-radius: 20px;
+    margin-left:10%;
+    margin-right:10%;
   }
   
   .navbar2 ul {
+    
     list-style-type: none; /* Remove default list styling */
     padding: 0;
     display: grid; /*Use grid for the list as well */
-    grid-template-columns: repeat(2, 1fr);  /*Create two columns for list items*/
-    grid-gap: 50px; 
+    grid-template-columns: repeat(1, 1fr);  /*Create two columns for list items*/
+    grid-gap: 200px; 
+    
   }
-  
 
   .navbar2 li {
     display: grid; 
@@ -143,25 +146,32 @@ h1::before {
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth opacity transition */
+    background-color: azure;
+    scale:0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start:contain 100px ;
+    animation-range-end:contain 100px ;
+  }
+
+  @keyframes fade-in{
+    to{scale:1.1;}
   }
 
   .navbar2 li figcaption {
     order: 2;
     margin-bottom: 10px; /* Space below the image */
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%; /* Space below the image */
   }
 
   .navbar2 li figcaption:hover {
     background-color: rgba(203, 57, 4, 0.534); 
-    transform: scale(1.09); /* Increase size by 10% */
+    transform: scale(1.2); /* Increase size by 10% */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar2 li img {
-    height: 100px; /* Example height, adjust as needed */
-    order: 1;
-    justify-self: center;
-    margin-top: 10px; /* Space below the image */
-    margin-bottom: 10px; /* Space below the image */
   }
 
   .navbar2 li a {
@@ -189,6 +199,14 @@ h1::before {
     transform: scale(1.2); /* Increase size by 10% */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.navbar2 li img {
+    height: 100px; /* Example height, adjust as needed */
+    order: 1;
+    justify-self: center;
+    margin-top: 10px; /* Space below the image */
+    margin-bottom: 10px; /* Space below the image */
+  }
 
 .footer{
     grid-area: footer;
