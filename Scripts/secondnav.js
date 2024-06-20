@@ -37,6 +37,23 @@ async function fetchMetaContent(url) {
     return doc.querySelector('meta[name="description"]').getAttribute('content');
   }
 
+async function fetchBlogTitle(url) {
+    const response = await fetch(url);
+    const html = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    return doc.querySelector('.blog_heading').innerText;
+  }
+
+async function fetchBlogDate(url) {
+    const response = await fetch(url);
+    const html = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    return doc.querySelector('.dt-published').innerText;
+  }
+
+
 let itemId = 1;
 
 export function createBlogsMenu(current){
@@ -52,16 +69,32 @@ export function createBlogsMenu(current){
         li.id = `blogItem${itemId++}`;
         li.classList.add("revealUp")
 
+        const title = document.createElement('h2')
+        fetchBlogTitle(item.href).then(bloghead => {
+            title.innerText = bloghead;
+            li.appendChild(title);
+        });
+
+        const date = document.createElement('h4')
+        fetchBlogDate(item.href).then(blogdate => {
+            date.innerText = blogdate;
+            li.appendChild(date);
+        });
+
+
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {
             text.innerText = metaContent;
             li.appendChild(text);
           });
-
+        
+        
+  
+        
         
         if (current != item.name) {
             const a = document.createElement("a");
-            a.innerText = item.name;
+            a.innerText = "Read More";
             a.setAttribute("href", item.href);
             li.appendChild(a);
             a.classList.add("active");

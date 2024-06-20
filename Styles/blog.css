@@ -1,7 +1,8 @@
 body{
     font-family:"Lucida Console", "Courier New", monospace;
-    background-color: rgba(16, 131, 43, 0.681);
-    /*height: 100vh; vh = viewing height...this is so that on a smaller screen, there is no white space*/
+    
+    background-color: rgba(0, 0, 0, 0.874);
+    /*background-color: rgba(16, 131, 43, 0.681); height: 100vh; vh = viewing height...this is so that on a smaller screen, there is no white space*/
     display: grid; /* Use grid for the list as well */
     grid-template-areas:
     'header header'
@@ -45,7 +46,7 @@ body{
 }
 
 .header .sidenav ul li a{
-    background-color: rgba(63, 194, 63, 0.797);
+    background-color: rgba(203, 57, 4, 0.534); 
     padding:10px 30px;
     color: rgb(0, 0, 0);
     border-radius:100px ;
@@ -85,11 +86,13 @@ h1{
     height:auto;
     font-size: 100px;
     border-radius: 50px ;
+    border-width: 50px;
     justify-self: center;
     font-weight: bolder;
     position: relative;
-    -webkit-text-stroke: 1.5vw azure;
+    -webkit-text-stroke: 1.5vw rgba(240, 255, 255, 0);
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 0);
 }
 
 h1::before {
@@ -160,13 +163,31 @@ h1::before {
     to{scale:1.1;}
   }
 
-  .navbar2 li figcaption {
-    order: 2;
+  .navbar2 li h4 {
+    order: 1;
+    text-decoration: underline;
     margin-bottom: 10px; /* Space below the image */
     margin-right: 10%;
     margin-left: 10%;
     margin-top: 5%; /* Space below the image */
   }
+
+  .navbar2 li h2 {
+    order: 2;
+    margin-bottom: 10px; /* Space below the image */
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%; /* Space below the image */
+  }
+
+  .navbar2 li figcaption {
+    order: 3;
+    margin-bottom: 10px; /* Space below the image */
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%; 
+  }
+
 
   .navbar2 li figcaption:hover {
     background-color: rgba(203, 57, 4, 0.534); 
@@ -176,10 +197,10 @@ h1::before {
   }
 
   .navbar2 li a {
-    background-color: rgba(63, 194, 63, 0.797);
+    background-color: rgba(203, 57, 4, 0.534); 
     border-radius:100px ;
     color: black;
-    order: 3;
+    order: 4;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px; /* Space below the image */
@@ -213,4 +234,22 @@ h1::before {
     grid-area: footer;
     background-color: azure;
     font-size: 16px;
+}
+
+.scroll-watcher{
+  border-radius: 100px;
+  height:10px;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+  background-color:rgba(203, 57, 4, 0.768);
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher{
+  to{scale:1 1;}
 }
