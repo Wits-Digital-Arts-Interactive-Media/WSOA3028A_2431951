@@ -13,11 +13,11 @@
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="/WebsitePictures/logo.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
     
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, websites ">
     <title>URL SCHEME & WEBSITE INSPIRATION</title>
@@ -46,12 +46,24 @@
     -->
 
     <main>
+
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
+
         <article class="h-entry">
 
-            <h1 class="entry_heading">URL SCHEME & WEBSITE INSPIRATION</h1>
+            <div class="intro">
+                <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                <h1 class="entry_heading" data-text="URL_SCHEME_&_WEBSITE_INSPIRATION">URL_SCHEME_&_WEBSITE_INSPIRATION</h1>
+                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">6<sup>th </sup>March 2024</time> </p>
 
-            <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">6<sup>th </sup>March 2024</time> </p>
+            </div>
+        </article>
 
+        <article class="maintext">
+
+            <div class="item">
                      <h2>Discuss your folder structure and URL scheme. Outline your decision-making.</h2>
                          <P>
                          For my folder structure and URL scheme, I decided to follow the general convention because it is my first website that I am making and so I am adopting a simpler and easier outlook for not only the users but for my sake of understanding as well. After all, this assignment is about HTML fundamentals, so I think it makes the most sense to 
@@ -90,13 +102,14 @@
                          <em>NB: wireframes are under the <a href="../DesignsFolder/Designs.html">Designs</a> tab.</em>
      
          
-                         <img src="../WebsitePictures/MAD1.png" alt="Homepage" width="520" height="320"/> 
-                         <img src="../WebsitePictures/MAD2.png" alt="MAD2" width="520" height="320"/>
-                     
-                     <h2>Put in links to websites that are inspirational, and start collecting reference material here.</h2>
+                         
+            </div>      
+            <div class="item">
+                    
+                         <h2>Put in links to websites that are inspirational, and start collecting reference material here.</h2>
              
      
-                         <h3><cite><a href = "https://mad.ac/careers">MAD:</a></cite></h3>
+                         <h3><cite><a href = "https://mad.ac/careers" class="h3">MAD:</a></cite></h3>
      
                          <p>As the name suggests, MAD website is “MAD” in the sense that the website is very unconventional and innovative. The website primarily promotes user interactivity by allowing the user to move objects and panels around on the homepage (such as the Logo, the About, the social media handles etc).
                          The user finds themselves intrigued and thus stays exploring the website for a long time. The website is quite informal and casual. This can be seen primarily in the design, the theme, and the layout of the website.</p>
@@ -113,14 +126,14 @@
                          The images are either scrollable, or moveable (depending on the page). On the about page, the images are horizontally scrollable, with simple but striking captions underneath and soft round borders (making it user friendly). On the “Careers” page, the images still have soft round borders, but they are 
                          moveable (as on the homepage). I would like to mostly draw from this website’s idea of moving objects around on the website as means to engage the user – particularly the images. </p>
                      
-             
+                         <img src="../WebsitePictures/MAD1.png" alt="Homepage" width="520" height="320"/> 
+                         <img src="../WebsitePictures/MAD2.png" alt="MAD2" width="520" height="320"/>
      
              
                      
-                         <img src="../WebsitePictures/YUSUKE1.png" alt="Homepage" width="520" height="320"/> 
+                         
                      
-                     
-                         <h3><cite><a href = "https://yusukefukunaga.com/">Yusuke Fukunaga Portfolio:</a></cite></h3>
+                         <h3><cite><a href = "https://yusukefukunaga.com/" class="h3">Yusuke Fukunaga Portfolio:</a></cite></h3>
      
                          <p>This website is actually only a portfolio for a Japanese developer – Yusuke Fukunaga. He implements an “infinite parallel scroll” to display all his works. The website (aside from the parallel scroll) is simple. He uses only black and white colours. 
                          This focuses the user’s attention to his portfolio page which is what is most important. I would like to experiment with a scrolling effect similar to this kind on my website too. It makes for great interactivity with the user as the user finds themself 
@@ -128,43 +141,50 @@
                          ethical nature of it is questionable in some cases.</p>
                      
                      
-                 
+                         <img src="../WebsitePictures/YUSUKE1.png" alt="Homepage" width="520" height="320"/> 
+                     
                     
                  
              
                  
-                         <img src="../WebsitePictures/RELILA1.png" alt="Homepage" width="520" height="320"/>
-                         <img src="../WebsitePictures/RELILA2.png" alt="MAD2" width="520" height="320"/>
-                     
-                     
+                         
      
-                     <h3><cite><a href = "https://relilla.com/">Relilla:</a></cite></h3>
+                     <h3><cite><a href = "https://relilla.com/" class="h3">Relilla:</a></cite></h3>
      
                      <p>This website interestingly enough was developed by Yusuke Fukunaga. I’m most interested in the minimalist tendencies of this website. It is not purely minimalist, however, the website makes use of negative (white) spaces, 
                      small sized font, short text, and occasionally large images. The website is an online store for self-care products; thus the stylistic choices are for the purposes of promoting “clean” products. The website appears very pristine and neat. 
                      The colours are soft and muted – black, white, grey, beige, pale dark blues and greens – making it a very relaxing website to engage with. 
                      I would like to also implement this “elegant but soft” look on my website.</p>
+
+                     <img src="../WebsitePictures/RELILA1.png" alt="Homepage" width="520" height="320"/>
+                     <img src="../WebsitePictures/RELILA2.png" alt="MAD2" width="520" height="320"/>
                      
-                         <img src="../WebsitePictures/humanint1.png" alt="Homepage" width="520" height="320"/> 
-                         <img src="../WebsitePictures/humanint2.png" alt="MAD2" width="520" height="320"/>
                      
                      
-                         <h3><cite><a href = "https://www.humaninteraction.com/">Human Interaction:</a></cite></h3>
+                        
+                         <h3><cite><a href = "https://www.humaninteraction.com/" class="h3">Human Interaction:</a></cite></h3>
      
                          <p>From this website I am most interested in the layout of the text. There is a vertical split between the text and the images/other media in most parts of the website. 
                          This makes it that the user reads the website in a horizontal manner, like a book. Starting from the left to the right is how people read (in the west), and so there is a natural inclination
                          to approach reading websites in that manner too. I would like to incorporate this in my website. </p>
-     
-                         <img src="../WebsitePictures/publicdomain1.png" alt="MAD2" width="520" height="320"/>
-                         <img src="../WebsitePictures/publicdomain2.png" alt="MAD2" width="520" height="320"/>
+
+                         <img src="../WebsitePictures/humanint1.png" alt="Homepage" width="520" height="320"/> 
+                         <img src="../WebsitePictures/humanint2.png" alt="MAD2" width="520" height="320"/>
                      
-     
                      
-                         <h3><cite><a href = "https://public---domain.com/">Public Domain:</a></cite></h3>
+                     
+                         <h3><cite><a href = "https://public---domain.com/" class="h3">Public Domain:</a></cite></h3>
               
                         <p> Like the MAD website, this website also makes use of moving objects and panels around. The interface is designed like an Apple computer screen (MacBook). </p>
+
+                        
      
-                  
+                        <img src="../WebsitePictures/publicdomain1.png" alt="MAD2" width="520" height="320"/>
+                        <img src="../WebsitePictures/publicdomain2.png" alt="MAD2" width="520" height="320"/>
+                    
+    
+            </div>
+            <div class="item">
                      <h2>Reflect on interaction and the www: what does interaction mean to you?</h2>
      
                          <p>
@@ -185,8 +205,8 @@
                          I design thinking of I can prompt the user to desired events and thus ensure that the outcome of the event is appropriate and fitting for both the user and me. </p> 
      
                      
-                 
-                 
+            </div>   
+            <div class="item">
                      <h2>Reflect on Moulthrop, S. (2003) ‘You Say You Want a Revolution? Hypertext and the Laws of Media (1991)’: how does it speak to the internet today? </h2>
                          
                          <p>In “You say you want a revolution”, Moulthrop quotes McLuhan who left behind what he calls “Laws of Media” which when summarized comes down to four basic questions that we all ought to ask ourselves when looking at inventions
@@ -223,15 +243,18 @@
                          and literacy are challenged in a world where hypertext exists. What I pull from this comment is that, if we want to envision the limits of the internet today, we might need to discard or at least deconstruct to reconstruct our understanding of the distribution of information 
                          and not only the technicality of it but also the ethical nature of it. </p>
      
-    
+            </div>
+
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
         </article>
 
-         <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+         
      
     </main>
    
 
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
     <footer class="footer">

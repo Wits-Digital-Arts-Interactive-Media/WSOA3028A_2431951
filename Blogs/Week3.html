@@ -10,11 +10,13 @@
      <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
      <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
- 
-    <link rel="stylesheet" href="../Styles/style.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+     <link rel="stylesheet" href="../Styles/normalize.css">
+     <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+     <link rel="stylesheet" href="../Styles/blogsubpage.css">
+     
+     
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, websites ">
      <title>Website Inspiration</title>
@@ -33,17 +35,26 @@
 
     <main>
                 <!--WEEK 3 BLOG POST IN TABULAR FORM-->
+            <div id="main">
+                <button class="openbtn">☰ Other Blogs</button>  
+            </div>
+            
             <article class = "h-entry">
 
-                <h1 class="entry_heading">Website Inspiration</h1>
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                    <h1 class="entry_heading" data-text="Website_Inspiration">Website_Inspiration</h1>
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-25 08:00:00">11<sup>th </sup>March 2024</time> </p>
+                </div>
+            </article>
 
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-25 08:00:00">11<sup>th </sup>March 2024</time> </p>
-               
+            <article class="maintext">
 
-                <h2>Working through the slides for Interaction Design for the web, define and discuss your user alignment, 
-                    and map out your site's content, experience, and interface elements.</h2>
+                <div class="item">
+                    <h2>Working through the slides for Interaction Design for the web, define and discuss your user alignment, 
+                        and map out your site's content, experience, and interface elements.</h2>
+                        
                     
-                
                     <h3>User Alignment</h3>
                     <h4>What I want the user to see and do:</h4>
                     <p> I want the user to “play around” on the website. In the sense that I want to user to be engaged and have fun with particularly the various interface elements 
@@ -73,36 +84,39 @@
                     
                     <h4>Informational Components:</h4>
                     <li>Introduce a tools tip icon particularly on the portfolio section</li>
-
-
-                <h2>Reflect on how the exercise above relates to what you know about your structure and URL scheme and how it relates to semantic markup.</h2>
-                <p>
-                    The exercise above helped me revisit my folder structure and URL scheme which also in turn relates to the semantic markup. By clearly defining the user alignment, 
-                    I was able to see how, through interface elements, I can direct my users to view the information I want them to see but also helped me to realize that through my folder structure and URL scheme, 
-                    content should be easily accessible in order for users to have a pleasant experience. If my folder structure and URL scheme is simple and straightforward, so will the user experience be satisfying. 
-                    </p>
-
+                </div>
+                <div class="item">
+                    <h2>Reflect on how the exercise above relates to what you know about your structure and URL scheme and how it relates to semantic markup.</h2>
                     <p>
-                    Semantic markup is a part of creating this user experience because semantic markup is about how the HTML elements are used appropriately for their intending purpose to express the interface elements 
-                    accordingly. By embedding tags correctly and using the appropriate tags, the browser will convey to user my designs as I intend and therefore the user can respond and interact appropriately without getting confused.
-                    For example, I will try avoiding 'div' and 'span' tags as a means of separating content on the page because they do not convey much meaning, and I will instead opt for 'article' and 'section' tags to section parts of my page. 
+                        The exercise above helped me revisit my folder structure and URL scheme which also in turn relates to the semantic markup. By clearly defining the user alignment, 
+                        I was able to see how, through interface elements, I can direct my users to view the information I want them to see but also helped me to realize that through my folder structure and URL scheme, 
+                        content should be easily accessible in order for users to have a pleasant experience. If my folder structure and URL scheme is simple and straightforward, so will the user experience be satisfying. 
+                        </p>
 
-                </p> 
+                        <p>
+                        Semantic markup is a part of creating this user experience because semantic markup is about how the HTML elements are used appropriately for their intending purpose to express the interface elements 
+                        accordingly. By embedding tags correctly and using the appropriate tags, the browser will convey to user my designs as I intend and therefore the user can respond and interact appropriately without getting confused.
+                        For example, I will try avoiding 'div' and 'span' tags as a means of separating content on the page because they do not convey much meaning, and I will instead opt for 'article' and 'section' tags to section parts of my page. 
 
+                    </p> 
+                </div>
                
-                
-                <h2>Reflect on your development progress for the week.</h2>
-                    <p>
-                        In all seriousness, not much progress was made this week, as I was still trying to catch up week 2 work – particularly the reading for week 2 took me some time to process and understand in order to comprehend properly. 
-                    </p>  
-        </article>
+                <div class="item">
+                    <h2>Reflect on your development progress for the week.</h2>
+                        <p>
+                            In all seriousness, not much progress was made this week, as I was still trying to catch up week 2 work – particularly the reading for week 2 took me some time to process and understand in order to comprehend properly. 
+                        </p>  
+                </div>
 
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
+        </article>
 
     </main>
     
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
+
 
     <footer class="footer">
         <p>Ivy C C</p>
