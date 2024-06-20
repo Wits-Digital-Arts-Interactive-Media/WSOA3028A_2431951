@@ -42,7 +42,7 @@ async function fetchBlogTitle(url) {
     const html = await response.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    return doc.querySelector('.blog_heading').innerText;
+    return doc.querySelector('.entry_heading').innerText;
   }
 
 async function fetchBlogDate(url) {
@@ -116,6 +116,19 @@ export function createDesignsMenu(current){
     for(let item of DesignItems){
         const li = document.createElement('li');
 
+        const title = document.createElement('h2')
+        fetchBlogTitle(item.href).then(bloghead => {
+            title.innerText = bloghead;
+            li.appendChild(title);
+        });
+
+        const date = document.createElement('h4')
+        fetchBlogDate(item.href).then(blogdate => {
+            date.innerText = blogdate;
+            li.appendChild(date);
+        });
+
+
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {
             text.innerText = metaContent;
@@ -126,7 +139,7 @@ export function createDesignsMenu(current){
 
         if (current != item.name) {
             const a = document.createElement("a");
-            a.innerText = item.name;
+            a.innerText = "Read More";
             //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
@@ -146,6 +159,19 @@ export function createEssaysMenu(current){
     for(let item of EssayItems){
         const li = document.createElement('li');
 
+        const title = document.createElement('h2')
+        fetchBlogTitle(item.href).then(bloghead => {
+            title.innerText = bloghead;
+            li.appendChild(title);
+        });
+
+        const date = document.createElement('h4')
+        fetchBlogDate(item.href).then(blogdate => {
+            date.innerText = blogdate;
+            li.appendChild(date);
+        });
+
+
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {
             text.innerText = metaContent;
@@ -157,7 +183,7 @@ export function createEssaysMenu(current){
 
         if (current != item.name) {
             const a = document.createElement("a");
-            a.innerText = item.name;
+            a.innerText = "Read More";
             //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);

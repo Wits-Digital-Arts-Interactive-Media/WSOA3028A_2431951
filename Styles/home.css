@@ -2,7 +2,7 @@ body{
     font-family:"Lucida Console", "Courier New", monospace;
     /* backgorund image -- > background: url()*/
     background-size: cover;
-    background-color: rgba(16, 131, 43, 0.681);
+    background-color: rgba(0, 0, 0, 0.874);
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
 }
 
