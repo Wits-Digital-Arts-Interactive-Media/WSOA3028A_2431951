@@ -46,9 +46,9 @@ export function createBlogsMenu(current){
     for(let item of BlogItems){
         const li = document.createElement('li');
 
-        const img = document.createElement('img');
+        /*const img = document.createElement('img');
         img.setAttribute("src", item.src);
-        li.appendChild(img);
+        li.appendChild(img);*/
 
         const text = document.createElement('figcaption')
         fetchMetaContent(item.href).then(metaContent => {

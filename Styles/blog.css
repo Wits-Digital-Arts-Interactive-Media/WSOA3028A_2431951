@@ -5,10 +5,11 @@ body{
     display: grid; /* Use grid for the list as well */
     grid-template-areas:
     'header header'
+    'h1 h1'
     'Summary Summary'
     'navbar2 navbar2'
     'footer footer';
-    grid-gap: 20px;
+    grid-gap: 50px;
 
 }
 
@@ -63,8 +64,10 @@ body{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 main{
     grid-area: Summary;
+    justify-self: center;
     background-color: azure;
     font-size: 16px;
     line-height:30px;
@@ -76,9 +79,43 @@ main{
     margin-left: auto;
 }
 
-main .Summary h1{
-    color: rgb(193, 46, 176);
+h1{
+    grid-area: h1;
+    background-color: rgba(240, 255, 255, 0);
+    height:auto;
+    font-size: 100px;
+    border-radius: 50px ;
+    justify-self: center;
     font-weight: bolder;
+    position: relative;
+    -webkit-text-stroke: 1vw azure;
+    text-transform: uppercase;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: rgb(203, 57, 4);
+    -webkit-text-stroke: 0vw azure;
+    border-right: 4px solid  rgb(203, 57, 4);
+    overflow: hidden;
+    animation: animate1 6s linear infinite;
+    
+}
+
+@keyframes animate1 {
+
+
+    0% ,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
 }
 
 .navbar2 {
@@ -94,7 +131,7 @@ main .Summary h1{
     padding: 0;
     display: grid; /*Use grid for the list as well */
     grid-template-columns: repeat(2, 1fr);  /*Create two columns for list items*/
-    grid-gap: 20px; 
+    grid-gap: 50px; 
   }
   
 
@@ -102,7 +139,7 @@ main .Summary h1{
     display: grid; 
     text-align: center; /* Center text in each list item */
     align-items: center; /* Center items vertically */
-    border: 2.5px solid rgb(193, 46, 176);/* Example border: 2px solid black */
+    border: 2.5px solid rgb(203, 57, 4); /* Example border: 2px solid black */
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -114,7 +151,7 @@ main .Summary h1{
   }
 
   .navbar2 li figcaption:hover {
-    background-color: rgba(197, 98, 185, 0.639);
+    background-color: rgba(203, 57, 4, 0.534); 
     transform: scale(1.09); /* Increase size by 10% */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }

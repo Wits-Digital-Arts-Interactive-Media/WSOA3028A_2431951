@@ -14,12 +14,14 @@
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <link rel="stylesheet" type="text/css" href="../Styles/normalize.css">
-     <link rel="stylesheet" type="text/css" href="../Styles/style.css">
+     <link rel="stylesheet" type="text/css" href="../Styles/blog.css">
+     
      <!--<link rel="stylesheet" type="text/css" href="../Styles/SecondNav.css">-->
        
      
-     <title>BLOGS HOMEPAGE</title>
+     <title>BLOGS</title>
 </head>
 
 <body>
@@ -31,14 +33,15 @@
         </nav>
     </header>
     
+    <h1 class="Blogs_Homepage" data-text="BLOGS...">BLOGS...</h1>
 
     <main>
             <!--Blog posts summary-->
+            
             <article class="Summary">
-                <h1>BLOGS HOMEPAGE</h1>
-                <p>
-                    Have fun reading my blog posts, as I journal my experience throughout the semester. 
-                </p>
+                <div class="word">
+                    <!--Have fun reading my blog posts, as I journal my experience throughout the semester. -->
+                </div>
             </article>
     </main>
 
@@ -61,7 +64,7 @@
     <script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
     createBlogsMenu("Blogs Home") </script>
 
-    
+    <script src = "../Scripts/AnimateLetters.js" ></script>
     
 </body>
 </html>
