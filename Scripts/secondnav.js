@@ -87,20 +87,21 @@ export function createBlogsMenu(current){
             text.innerText = metaContent;
             li.appendChild(text);
           });
-        
-        
-  
-        
-        
+
+        const a = document.createElement("a");
         if (current != item.name) {
-            const a = document.createElement("a");
+            
             a.innerText = "Read More";
             a.setAttribute("href", item.href);
             li.appendChild(a);
-            a.classList.add("active");
+            a.classList.add("not_active");
+            console.log(item.name)
         } 
         else { 
-            li.innerText = item.name; 
+            a.innerText = "You Are Here"; 
+            //a.setAttribute("href", item.href);
+            li.appendChild(a);
+            a.classList.add("active")
         }
 
         ul.appendChild(li);
@@ -136,7 +137,7 @@ export function createDesignsMenu(current){
           });
 
         li.classList.add("revealUp")
-
+        
         if (current != item.name) {
             const a = document.createElement("a");
             a.innerText = "Read More";
@@ -144,7 +145,10 @@ export function createDesignsMenu(current){
             a.setAttribute("href", item.href);
             li.appendChild(a);
             a.classList.add("active")
-        } else { li.innerText = item.name; }
+
+        } else { li.innerText = item.name; 
+            
+        }
 
         ul.appendChild(li);
   }
@@ -195,3 +199,22 @@ export function createEssaysMenu(current){
     div.appendChild(ul);
 };
 
+
+document.addEventListener('DOMContentLoaded', function(event) {
+
+    const open = document.querySelector(".openbtn");
+
+    open.addEventListener('click', function() {
+        document.getElementById("Sidebar").style.width = "32vw";
+        document.getElementById("main").style.marginLeft = "250px";
+    })
+    
+
+    const close = document.querySelector(".closebtn");
+
+    close.addEventListener('click', function() {
+        document.getElementById("Sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    })
+
+});
