@@ -43,19 +43,13 @@ body{
     background-color: #fbf0a1c8;
   }
 
-.sidenav {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(80, 197, 213, 0.542);  
-    height: 80px;
-    width: 100%;
-    overflow: auto;
-    font-size: 16px;
-}
+  .sidenav{
+    background-color: azure;
+  }
 
-.sidenav ul{
+ .sidenav ul{
     list-style-type: none;
-
+   
 }
 
 .sidenav ul li{
@@ -65,26 +59,24 @@ body{
     
 }
 
-
-  /* The navigation menu links */
-  .sidenav ul li a{
-    background-color: rgba(63, 194, 63, 0.797);
+ .sidenav ul li a{
+    background-color: rgba(203, 57, 4, 0.534); 
     padding:10px 30px;
     color: rgb(0, 0, 0);
     border-radius:100px ;
+}
+.sidenav ul li a.active{
+    display: block;
+    padding: 8px 16px;
+    font-size: 17px;
     text-decoration: none;
+    transition: font-size 0.8s ease-in;
 }
 
-.sidenav a.active{ 
-    color: rgb(0, 0, 0);
-    /*transition: background-color 0.5s ease-in-out, transform 0.5s linear;*/
-
-}
-    
 .sidenav a:hover {
-      background-color: #fbf0a1c8;
-      transform: scale(1.2); /* Increase size by 10% */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fbf0a1c8;
+    transform: scale(1.2); /* Increase size by 10% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
  

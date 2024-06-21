@@ -10,12 +10,11 @@
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
-
-    <link rel="stylesheet" href="../Styles/style.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
     <title>Crtitical Analysis of Websites</title>
@@ -24,7 +23,7 @@
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
         
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -33,98 +32,152 @@
     </header>
 
     <main>
+
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 
-            <article class = "h-entry">
-
-                <h1 class="entry_heading">Critical Analysis of Websites</h1>
-
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                <h1 class="entry_heading" data-text="Critical_Analysis_of_Websites">Critical_Analysis_of_Websites</h1>
                 <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-01 08:00:00">1<sup>st </sup>April 2024</time> </p>
-
+            </div>
+        </article>
+        
+        <article class="maintext">
+            <div class="item">
                 <h2>Simple Analysis on websites</h2>
                 <p>
                     A basic list of pros and cons was drawn up on the following websites. It was decided at the end that the Dischem website would be used in the Essay1 analysis because it had more range in pros and cons to expand upon. 
                 </p>
-                        <h3>Trivago</h3>
-                        <p>
-                            Trivago is a travel website sourcing information from various other websites to package the information in a convenient manner for users looking for accomodation. 
-                        </p>
-                        <h4>Pros</h4>
-                            <li>
-                                Option to refresh page periodically so that users are always getting the updated results given the intention of the audience. In addition to the fact that the page does not refresh automatically.
-                            </li>
-                            <li>
-                                Navigation is made easy for user. In addition to the fact that information is sourced from many sites giving users more options to suit their needs
-                            </li>
-                            <li>
-                                Average pricing is easily viewable by city on the landing page
-                            </li>
-                            <li>
-                                Cookie options are given to user thus user can choose their preferences.
-                            </li>
+
+                <div class="table">
+
+                        <div class="cell">
+                            <h3 ><cite><a class="h3" href = "https://www.trivago.co.za/?themeId=280&sem_keyword=trivago&sem_creativeid=72224537016781&sem_matchtype=be&sem_network=o&sem_device=c&sem_campaignid=446438843&sem_adgroupid=1155588576618417&sem_targetid=72224992367281&cipc=br&cip=2719111111&msclkid=931eb32c68621df9055dd559106169ea">Trivago</a></cite></h3>
+                            <p>
+                                Trivago is a travel website sourcing information from various other websites to package the information in a convenient manner for users looking for accomodation. 
+                            </p>
+                        </div>
+                        
+                        <div class="cell">
+                            <h4 >Pros</h4>
+                                <li>
+                                    Option to refresh page periodically so that users are always getting the updated results given the intention of the audience. In addition to the fact that the page does not refresh automatically.
+                                </li>
+                                <li >
+                                    Navigation is made easy for user. In addition to the fact that information is sourced from many sites giving users more options to suit their needs
+                                </li>
+                                <li >
+                                    Average pricing is easily viewable by city on the landing page
+                                </li>
+                                <li >
+                                    Cookie options are given to user thus user can choose their preferences.
+                                </li>
+                        </div>
+
+                        <div class="cell">
                         <h4>Cons</h4>
-                            <li>
+                            <li >
                                 First time users might be overwhelmed with the choice of options</li>
  
-            
-                        <h3>Rocomamas</h3>
-                        <p>
-                            Rocomamas is a fast-food resturant website.
-                        </p>
-                        <h4>Pros</h4>
-                            <li>
-                                Colour scheme is inviting and kept consistent - Three colours are used throughout and White text on orange and black background to stand out
-                            </li>
-                            <li>
-                                Readable and large text
-                            </li>
-                        <h4>Cons</h4>
-                            <li>
-                                Pricing is in small text, pictures are very large. Bearing in mind it is a restuant and so their primary goal is to intice users into buying their food.</li>
-    
+                        </div>
 
-    
-                        <h3>Hooligan</h3>
-                        <p>
-                            Hooligan is a website hosting the services of a group software developers.
-                        </p>
-                        <h4>Pros</h4>
-                            <li>
-                                Readable and legible text
-                            </li>
-                            <li>
-                                Visuals aid/support the text. Diagrams, pictures, charts etc are used 
-                            </li>
-                            <li>
-                                Options available to user for cookies preferences thus user is given control
-                            </li>
-                        <h4>Cons</h4>
+                        <div class="cell">
+                            <h3><cite><a class="h3" href = "https://rocomamas.com/za">Rocomamas</a></cite></h3>
+                            <p>
+                                Rocomamas is a fast-food resturant website.
+                            </p>
+                        </div>
+
+                        <div class="cell">
+                            <h4 > Pros</h4>
+                                <li >
+                                    Colour scheme is inviting and kept consistent - Three colours are used throughout and White text on orange and black background to stand out
+                                </li>
+                                <li >
+                                    Readable and large text
+                                </li>
+                        </div>
+                        <div class="cell">
+                        <h4> Cons</h4>
+                        <li >
+                            Pricing is in small text, pictures are very large. Bearing in mind it is a restuant and so their primary goal is to intice users into buying their food.</li>
+
+
+                        </div>
+
+
+                        <div class="cell">
+                            <h3><cite><a class="h3" href = "https://hooligan.co.za/">Hooligan</a></cite></h3>
+                            <p>
+                                Hooligan is a website hosting the services of a group software developers.
+                            </p>
+                        </div>
+
+
+                        <div class="cell">
+                            <h4 >Pros</h4>
+                                <li >
+                                    Readable and legible text
+                                </li>
+                                <li >
+                                    Visuals aid/support the text. Diagrams, pictures, charts etc are used 
+                                </li>
+                                <li >
+                                    Options available to user for cookies preferences thus user is given control
+                                </li>
+                        </div>
+
+
+                        <div class="cell">
+                        <h4 >Cons</h4>
                             <li>
                                 Too many colours used in combination. White, blue, black, orange, green, purple – this is a matter of styling however.</li>
 
-                        <h3>Dischem</h3>
-                        <p>Dischem is a parma-retail store. One of the biggest in South Africa.</p>
-                        <h4>Pros</h4>
-                            <li>
+                           
+                        </div>
+
+                        <div class="cell">
+                            <h3><cite><a class="h3" href = "https://www.dischem.co.za/Dischem">Dischem</a></cite></h3>
+                            <p>Dischem is a parma-retail store. One of the biggest in South Africa.</p>
+                        </div>
+
+                        
+                        <div class="cell">
+                        <h4 >Pros</h4>
+                            <li >
                                 Legible and readable text
                             </li>
-                            <li>
+                            <li >
                                 Good user feedback especially when purchasing/adding items to cart
                             </li>
-                           
-                        <h4>Cons</h4>
-                            <li>
+                        </div>
+
+                        <div class="cell">
+
+                        <h4 >Cons</h4>
+                            <li >
                                 Cookies & privacy policy is in a small area, and no options for cookies are given</li>
-                            <li>
+                            <li >
                                 Countdown for special offers – can subtly emotionally manipulate user  
                             </li>
 
+                        </div>
+
+                </div>
+        
+            </div>
+
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
         </article>
 
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
     
 
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
     <footer class="footer">

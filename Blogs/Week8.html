@@ -10,21 +10,22 @@
 
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
+    
+    
 
-    <link rel="stylesheet" href="../Styles/style.css">
-
-    <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
+    <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection, COVID, Corona, Pandemic ">
     <title>COVID-19 Woke us up: The socio-economic Disparities in Internet Access</title>
 </head>
 
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
       
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -33,25 +34,37 @@
     </header>
 
     <main>
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                    <h1 class="entry_heading" data-text="COVID_Woke_us_up">COVID-19 Woke us up:The socio-economic Disparities in Internet Access </h1>
 
-                <h1 class="entry_heading">COVID-19 Woke us up: The socio-economic Disparities in Internet Access</h1>
-
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-15 08:00:00">15<sup>th </sup>April 2024</time> </p>
-
-              
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-15 08:00:00">15<sup>th </sup>April 2024</time> </p>
                     
-                        <p>The following readings were chosen for this reflection:<p>
-                        <li>
+                </div>
+            </article>
+
+            <article class="maintext">
+                <div class="item">
+              
+                        <h2>The following readings were chosen for this reflection:</h2>
+                        <h3>
                             Reading 1 - The Need for global internet connectivity by Claire Daniolou
-                        </li>
-                        <li>
+                        </h3>
+                        <h3>
                             Reading 2 – Internet Access is a fundamental right. Especially, amidst a pandemic by Spyros Kasapis 
-                        </li>
-                        <li>
+                        </h3>
+                        <h3>
                             Reading 3 -  Digital Divide Widens by Maria Tataki & Dimitris Glynos
-                        </li>
+                        </h3>
+
+                </div>
+
+                <div class="item">
 
                         <p>I chose to critically engage with three articles, that speak to the need for digital access across the globe given the 2020 COVID-19 Global pandemic. The pandemic of 2020 brought to light a lot of the issues prevalent in our world today pertaining to access to the internet. Given the nature of the pandemic and the need for a complete lockdown, many individuals had to migrate from working on site to working remotely – including students. Unfortunately, few people tend to thrive in such an economical and social shift – a lot of jobs require on-site interaction to be effective, working remotely therefore is a huge economical setback for many businesses and individuals. 
 
@@ -77,15 +90,16 @@
                     <p>
                         Technological access should no longer be thought of as a luxury that few can afford, but rather as a basic need for all people around the globe. Our youth especially in low-income countries can not progress unless the need for technological and internet access is addressed on a broader scale (not only in private institutions but public institutions too). 
                     </p>
-                
 
+                </div>
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
         </article>
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
     
 
 <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
 

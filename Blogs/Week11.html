@@ -11,11 +11,13 @@
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
 
-    <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
+    
+    
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
     <title>Reflecting on interaction Design and taking a look at Technocolonialism</title>
@@ -25,7 +27,7 @@
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
        
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -35,21 +37,35 @@
     
 
     <main>
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
 
-                <h1 class="entry_heading">Reflecting on interaction Design and taking a look at Technocolonialism</h1>
+                    <h1 class="entry_heading" data-text="IxD_&_Technocolonialism">Reflecting on interaction Design and taking a look at Technocolonialism</h1>
 
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-13 08:00:00">13<sup>th </sup>May 2024</time> </p>
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-13 08:00:00">13<sup>th </sup>May 2024</time> </p>
 
-                <h2>Javascript Reflection:</h2>
+                </div>
+            </article>
 
-                <p> I started working on the Card Flip mechanic which at first seemed like a daunting task however with a bit of research and debugging it is looking hopeful. The card flip mechanic especially on the sections within the blog posts go well with the “Playground” theme of the website. In terms of interaction design, it invites the user to (like the draggable elements) feel in control since they can decided to view the information or not by a click of a button that reveals the blog post content. The hardest part of this mechanic is getting it to work for multiple elements, and essentially modifying the code to be scalable for future use. </p>
+            
+            <article class="maintext">
+                <div class="item">
+                    <h2>Javascript Reflection:</h2>
+
+                         <p> I started working on the Card Flip mechanic which at first seemed like a daunting task however with a bit of research and debugging it is looking hopeful. The card flip mechanic especially on the sections within the blog posts go well with the “Playground” theme of the website. In terms of interaction design, it invites the user to (like the draggable elements) feel in control since they can decided to view the information or not by a click of a button that reveals the blog post content. The hardest part of this mechanic is getting it to work for multiple elements, and essentially modifying the code to be scalable for future use. </p>
 
                     
                         <p> I do need to, however, redo my wireframes for the essays especially since the card flip mechanic does not really suit it.</p>
 
-                <h2>Reflection: The Road to Technocolonialism</h2>
+                </div>
+
+                <div class="item">
+                    <h2>Reflection: The Road to Technocolonialism</h2>
                     <p>
                         This reading was very interesting, and I personally feel that the subject matter discussed in this reading is not spoken about enough. Not enough people are concerned about what is happening currently. </p>
                 
@@ -74,7 +90,7 @@
                         African leaders and African citizens alike, need to pay more attention to what is happening. Our data is the new diamond and gold that these superpowers are fighting over. If we fail to pay attention and do something about it, we will be fighting for independence once again. Same script, different movie. 
                     </p>
 
-                    <h3>Personal experience</h3>
+                    <h3 class="h3">Personal experience</h3>
                     <p>
                         Between 2019 and 2020, Former President Donald Trump signed an executive order to block Huawei from trading with US tech companies and sourcing from them. This was partly done in an attempt to address national security risks. 
                     </p>
@@ -94,16 +110,17 @@
                         For example, most applications are available on the istore or google play, however, few apps are available on other platforms like the Huawei store and thus, for me to get access to some applications on my phone, I have to download APK versions of everything – a long winded process that I have to bet on because the APK versions do not always work and the version of apps available on the Huawei store always glitch on my phone. As an African, this neo-technological cold war between the US and China has direct impact on what information I can access and not access.
 
                     </p>
+                </div>
 
-                    
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button> 
 
         </article>
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
 
 
     <!--SECONDARY NAV-->
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
     <footer class="footer">

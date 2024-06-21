@@ -12,11 +12,12 @@
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/normalize.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
+    
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, Geography, Africa ">
     <title>Geography and Web Developement: An African perspective</title>
@@ -25,7 +26,7 @@
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
         
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -34,18 +35,25 @@
     </header>
 
     <main>
-                <!--WEEK 4 IN TABULAR FORM-->
-            <article class = "h-entry">
-
-                <h1 class="entry_heading">Geography and Web Developement: An African perspective</h1>
-
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-22 08:00:00">22<sup>nd </sup>April 2024</time> </p>
-
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                
+            <article class = "h-entry">
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                    <h1 class="entry_heading" data-text="Geography_and_Web_Developement">Geography and Web Developement: An African perspective</h1>
+
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-22 08:00:00">22<sup>nd </sup>April 2024</time> </p>
+                </div>
+            </article>
+
+            <article class="maintext">
+                <div class="item">
                 <h2>Reflect on how you think the readings you have done relate and how they impact your thinking about web dev as a South African.</h2>
                 
                     
-                        <h3>Reading 1 - Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information by Mark Graham, Stefano De Sabbata and Matthew A. Zook</h3>
+                        <h3 class="h3">Reading 1 - Towards a study of information geographies: (im)mutable augmentations and a mapping of the geographies of information by Mark Graham, Stefano De Sabbata and Matthew A. Zook</h3>
                         <p>The first reading discusses Internet access and availability as it pertains to geography in three aspects – geographical access and distribution, geographical participation and sourcing, and geographical representation. 
 
                             With regards to the first aspect, the internet usage across the globe was surveyed. It was found that Internet usage is Africa on average is far lower than most of Asia and Europe. Usage of the internet is also attributed to the cost of broadband. African countries interestingly have high broadband costs, however, the concern is more the fact that the average income in African countries is low relative to the price of broadband. It is obvious therefore, that not only high broadband costs but also average income of certain countries is directly linked to their access and usage of the internet. 
@@ -67,7 +75,7 @@
              
 
                     
-                        <h3>Reading 2 - How Geography Shapes – and is shaped by – the internet by Shane Greenstein, Chris Forman, Avi Goldfarb</h3>
+                        <h3 class="h3">Reading 2 - How Geography Shapes – and is shaped by – the internet by Shane Greenstein, Chris Forman, Avi Goldfarb</h3>
                         <p> The second reading discussed the following consequences that follow the use of the internet – essentially the impacts of internet usage. The Consequences for Wealth &Productivity, consumer behaviour and globalization & trade, stood out to me particularly. Essentially the outcome of use of the internet on a productivity and economical level was both divergent and convergent with regards to income growth. On the one hand, employment and wages increased in regions previously isolated economically (such as rural areas and small towns). However, on the other hand, those in high-income locations (especially inner cities), were disproportionately benefitted. It is also worth noting that skilled labour influences the economic growth stemming from internet use – one can never benefit from the internet unless one is somewhat educated or skilled in how it works. On a consumerism level, convenience (for consumers) is increased, and distribution and search costs are lowered simply from internet usage in industries that previously used traditional methods. Having said that, regulations also matter, so depending on the consumer’s or buyers location, costs and limitations could vary. 
 
 
@@ -75,25 +83,28 @@
                     <p>
                         This second reading also touched on something worth noting as a developer. Users in rural areas are most valued on their usage of technology as a means to cut costs of isolation economically. However, in these areas, the key foundations to access to the internet are not fleshed out well (broadband, labour etc…) and thus making it expensive to adopt in reality even though theoretically it should cut down long term costs and bring about innovation to places that need it the most. Having said that, the development of advanced technologies also means that low-income areas can implement basic technologies cost effectively to some extent because regions of high income start to require advanced technologies which are vastly more expensive than the basics. 
                     </p>
-                    <h3>
-                        conclusions and thoughts
+                    <h3 class="h3">
+                        Conclusions and Thoughts
                     </h3>
                     <p>
                         Overall, as an aspiring African web developer, both readings drew similar conclusions in those regions with lower-income, and less skilled labour (generally “developing countries” particularly in Africa and the middle east), tend to suffer the most in this age of fast developing technologies – the 4th industrial revolution. More needs to be done not only concerning access, but also education. As a developer however, my part to play is in making what I develop accessible (from an interface level, database level etc), and easy to use to reach those that have been left behind by high-income countries that dominate the market. The first reading especially made me think about information distribution and how integral it is as building blocks for societies today, if you have limited access to information, or if the information itself is not taken from a variety of sources, it can really disadvantage you in this rat race that we are all trying to run. It has also made me ponder, given my earlier critique on the platforms measured against, whether or not African countries should be making the effort towards integrating into the platforms already existing, or be investing into creating their own alternative platforms as a means to platform our voices. Or maybe both solutions are good? Either way, as an African, I can see how much of a long way we have to go, but at the same time, I acknowledge the efforts that countless of individuals and organizations are already doing to bridge this gap and divide.
 
 
                     </p>
+
+                </div>
                 
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
+            </article>
 
-        </article>
-
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+        
     </main>
     
 
 
 <!--SECONDARY NAV...images can have a <title> element, alt is for when the image is broken it will give a description-->
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
 

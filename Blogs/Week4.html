@@ -10,12 +10,11 @@
 
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
-  
-    <link rel="stylesheet" href="../Styles/style.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
     <title>Reflection on HTML basics</title>
@@ -24,7 +23,7 @@
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
        
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -33,56 +32,62 @@
     </header>
 
     <main>
+
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 <!--WEEK 4 IN TABULAR FORM-->
-            <article class = "h-entry">
-
-                <h1 class="entry_heading">Reflection on HTML basics</h1>
-
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                <h1 class="entry_heading" data-text="Reflection_on_HTML_basics">Reflection_on_HTML_basics</h1>
                 <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-18 08:00:00">18<sup>th </sup>March 2024</time> </p>
-
-            
-                <h2>Reflect on your work for Website 1.</h2>
-                
-                    
-                        <h3>Where have you struggled? </h3>
-                        <p>Because I started the course two weeks late, I did struggle a bit to catch-up the workload and manage my time. However, in terms
-                        of the website itself, I struggled with formatting my website (which I know we will cover in more detail when we learn CSS) because 
-                        parts of my website rely on correct formatting to get my points across. I think I also struggled at first with understanding HTML (even
-                        though I know a lot about coding), I realized that there was a lot that I had to understand about how the internet works and how websites
-                        operate before I could dive into making my own website. It was super useful however, that once I understood some of the basics, I could
-                        refer to the MDN website for the specfic code i needed on various html elements.
-
-                    </p>
-
-                    
-                        <h3>What are you proud of?  </h3>
-                        <p> I am most proud of the fact that I have challenged myself to include elements on my website that require more coding knowledge to execute it.
-                        For example the draggable elements. Ever since I discovered it, and discovered that there such unique and interesting websites out there, I have
-                        been inspired to be creative. A website does not have to be formal and rigid (depending on the audience and intention of course), but I really love
-                        the fact that I get to experiment with creative ways to encourage user interaction.
-                        
-                    </p>
-
-                    
-                        <h3>What do you want to change going forward? </h3>
-                        <p> Going forward, I would definetly like to give more time on a daily basis to work on my website instead of only revisisting it at the end of the week.
-                        In this way, I can be more productive and do more with my website and I have more opportunity and time to be iterative in my process, allowing me to 
-                        think more critically through my processes and it would allow me to be more detailed and thorough. 
-
-                        Going forward, I might rework my wireframes a bit, because last minute I got inspired by yet another website that made use of buttons and hovering over
-                        text in such a creative way to get better user interaction. So essentially, as I am finishing this assignment, I am being met with more out-of-the-box ideas that I would Like
-                        to incoporate to truly make my website a playground!
-
-                        
-                    </p>
-                
-
+            </div>
         </article>
 
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+        <article class="maintext">
+            <div class="item">
+                <h2>Reflect on your work for Website 1.</h2>     
+                    <h3 class="h3">Where have you struggled? </h3>
+
+                    <p>Because I started the course two weeks late, I did struggle a bit to catch-up the workload and manage my time. However, in terms
+                    of the website itself, I struggled with formatting my website (which I know we will cover in more detail when we learn CSS) because 
+                    parts of my website rely on correct formatting to get my points across. I think I also struggled at first with understanding HTML (even
+                    though I know a lot about coding), I realized that there was a lot that I had to understand about how the internet works and how websites
+                    operate before I could dive into making my own website. It was super useful however, that once I understood some of the basics, I could
+                    refer to the MDN website for the specfic code i needed on various html elements.
+
+                     </p>
+
+                    <h3 class="h3">What are you proud of?  </h3>
+                    <p> I am most proud of the fact that I have challenged myself to include elements on my website that require more coding knowledge to execute it.
+                    For example the draggable elements. Ever since I discovered it, and discovered that there such unique and interesting websites out there, I have
+                    been inspired to be creative. A website does not have to be formal and rigid (depending on the audience and intention of course), but I really love
+                    the fact that I get to experiment with creative ways to encourage user interaction.
+                    
+                    </p>
+
+                
+                    <h3 class="h3">What do you want to change going forward? </h3>
+                    <p> Going forward, I would definetly like to give more time on a daily basis to work on my website instead of only revisisting it at the end of the week.
+                    In this way, I can be more productive and do more with my website and I have more opportunity and time to be iterative in my process, allowing me to 
+                    think more critically through my processes and it would allow me to be more detailed and thorough. 
+
+                    Going forward, I might rework my wireframes a bit, because last minute I got inspired by yet another website that made use of buttons and hovering over
+                    text in such a creative way to get better user interaction. So essentially, as I am finishing this assignment, I am being met with more out-of-the-box ideas that I would Like
+                    to incoporate to truly make my website a playground!
+
+                    
+                    </p>
+            
+            </div>
+
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
+        </article>
     </main>
   
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
     <footer class="footer">

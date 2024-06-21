@@ -203,18 +203,36 @@ export function createEssaysMenu(current){
 document.addEventListener('DOMContentLoaded', function(event) {
 
     const open = document.querySelector(".openbtn");
+    const nav = document.getElementById("Sidebar");
+    nav.style.visibility = "hidden";
 
     open.addEventListener('click', function() {
-        document.getElementById("Sidebar").style.width = "32vw";
-        document.getElementById("main").style.marginLeft = "250px";
+        if (nav.style.visibility === "hidden") {
+            nav.style.visibility = "visible"; // Show the element
+            nav.style.width = "32vw";
+            document.getElementById("main").style.marginLeft = "250px";
+            open.style.visibility = "hidden";
+        } else {
+            nav.style.visibility = "hidden"; // Hide the element
+        }
+        
+        
     })
     
 
     const close = document.querySelector(".closebtn");
 
     close.addEventListener('click', function() {
-        document.getElementById("Sidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
+        const element = document.getElementById("Sidebar"); // Replace with your element's ID
+        if (element.style.visibility === "visible") {
+            element.style.visibility = "hidden";// Hide the element 
+            element.style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            open.style.visibility = "visible";
+    }   else {
+             element.style.visibility = "visible"; // Show the element
+    }
+        
     })
 
 });

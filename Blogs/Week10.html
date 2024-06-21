@@ -10,13 +10,12 @@
 
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
-
-    <link rel="stylesheet" href="../Styles/style.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
+    
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
     <title>A Close Reading on Digital Inequalities in the Age of AI and Big Data</title>
@@ -25,7 +24,7 @@
 <body>
 
     <!--Main TITLE AND MAIN NAV-->
-
+    <div class="scroll-watcher"></div>
        
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
@@ -35,14 +34,20 @@
     
 
     <main>
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
-                <h1 class="entry_heading">A Close Reading on Digital Inequalities in the Age of AI and Big Data</h1>
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                    <h1 class="entry_heading" data-text="Digital_Inequalities">A Close Reading on Digital Inequalities in the Age of AI and Big Data</h1>
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-29 08:00:00">29<sup>th </sup>April 2024</time> </p>
+                </div>
+            </article>
 
-                
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-04-29 08:00:00">29<sup>th </sup>April 2024</time> </p>
-
-
+            <article class="maintext">
+                <div class="item">
                 <h2>Reflection on Readings</h2>
 
 
@@ -72,19 +77,21 @@
                     <p>
                         In the last tier, the digital divide in the gain from internet use is discussed. There is beneficial gain and harmful gain from using the internet. For example, some users may profit (beneficial towards the individual) in a disproportionate amount to others (harmful to others) thus enlarging some socio-economic gaps further – such as the Winkelvoss brothers who, despite being already economically privileged, became the first billionaires in cryptocurrency. Furthermore, there is also research on the risks of internet use from a privacy and social-wellbeing perspective particularly on children and uneducated users. Users that are often underprivileged (socially, and economically), often are not educated on the risks that come with internet and social media use, thus putting them at greater risk of internet scams, fraud, and predators online in addition to the fact that they also the users most often surveyed and tracked (by governments and other organizations) without their informed consent since surveillance technology has advanced a lot recently. 
                     </p>
-
+                </div>
+                <div class="item">
                 <h2>Reflection on Javascript</h2>
                     <p>
                         I experimented with the clickable images in javascript on a basic scale. In week 1, the first image is clickable and the text is revealed. This function will be fixed so that it is applicable to other images on the same page - the code needs scaling. Unfortunately due to time constraints, I did not make it scalable and only showed how it would work for the one image.
                     </p>
+                </div>
                 
-
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
         </article>
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
     </main>
 
     <!--SECONDARY NAV-->
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
     <footer class="footer">

@@ -12,11 +12,14 @@
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/FlipCard.css">
-    <link rel="stylesheet" href="../Styles/flexbox.css">
- 
-    <link rel="stylesheet" href="../Styles/style.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/blogsubpage.css">
+    
+    
+
 
     <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
     <title>CSS, Ethical coding practices and Responsive Design</title>
@@ -26,7 +29,8 @@
 
     <!--Main TITLE AND MAIN NAV-->
 
-       
+    <div class="scroll-watcher"></div>
+
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
@@ -35,12 +39,20 @@
     
 
     <main>
+        <div id="main">
+            <button class="openbtn">☰ Other Blogs</button>  
+        </div>
                 <!--WEEK 4 IN TABULAR FORM-->
             <article class = "h-entry">
+                <div class="intro">
+                    <span><a class="blogHome" href="index.html">&lt;&lt; Blogs Homepage</a></span>
+                    <h1 class="entry_heading" data-text="Ethical_coding,Responsive_Design">CSS, Ethical coding practices and Responsive Design</h1>
+                    <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-20 08:00:00">20<sup>th </sup>May 2024</time> </p>
+                </div>
+            </article>
 
-                <h1 class="entry_heading">CSS, Ethical coding practices and Responsive Design</h1>
-                <p> this blog entry is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-05-20 08:00:00">20<sup>th </sup>May 2024</time> </p>
-
+            <article class="maintext">
+                <div class="item">
                 <h2>Reflecting on CSS:</h2>
                     <p>I had to re-realize, even at this stage, how important using the correct URL path was. I got a fright when trying to deploy my website and the CSS scripts did not show up. However, due to a small fix after many hours (adding a “./”) everything was fixed. It made me realize how thorough I must be and how important the basics are, to ensure that small mistakes do not take up so much time.</p>
 
@@ -64,49 +76,57 @@
 
                         The colour styling still needs more work. And the consistent implementation of already introduced css styles still needs to happen – time ran out. 
                     </p>
+                </div>
+                <div class="item">
+                    <h2>Reading: Values at Play: Design Tradeoffs in Socially-Oriented
+                        Game Design
+                        </h2>
+                        <p>This reading is a useful reading for practical approaches to good design and development (especially in the web or software development sphere). In presenting these practical approaches, the moral and ethical obligations are addressed. As a web developer I often wonder “how” can I communicate and get across my values and uphold my ethical responsibilities therefore, this practical approach in the form of describing the process of creating the RAPUNSEL game, helps me see specific approaches I can use in my own coding practice. </p>
 
-                <h2>Reading: Values at Play: Design Tradeoffs in Socially-Oriented
-                    Game Design
+                        <p>
+                            <li>
+                                Revisiting previous actions, designs, choices and reframing them with new information or new understanding. 
+                            </li>
+                            <li>
+                                Iterations and prototyping is essential.
+                            </li>
+                            <li>
+                                As a web developer and studying Game Design, prototyping and iteration has come up often. New ideas, new values, new methods often emerge from a cyclical approach to building or developing something. This means that old ideas are also revisited. It is important to revisit the old to build upon it, because, it gives an indication of whether or not the intended requirements and goals were met and therefore why or why not. 
+                            </li>
+                        </p>
+
+                        <p>
+                            In my own coding practice, iteration is something I try to incorporate by revisiting old code to see how I can improve it. It also has helped me see ways I can adapt previous approaches to new situations. 
+                        </p>
+
+                        <p>
+                            I will admit however, that there is more I could be doing. For example, for the sake of other developers that will come across my work, I have a responsibility to ensure that they can understand what is happening in my code. For example, putting meaningful comments, and correct indenting and consistent code structure. These are three things I do not do well. On the user’s behalf, meta data is also very important. At the moment, I often find myself viewing it as an after-thought when it shouldn’t be. When surfing the web, meta data is often what helps the user identify exactly what they need – in the browser, the meta data influences how information is prioritized and how information is presented. Useful meta data will mean that the user is more likely to find exactly what they want. From a representation perspective, it becomes difficult to argue that I am being underrepresented if I am not taking the relevant and available approaches to ensuring my work is seen. The little things matter.  
+                        </p>
+                </div>
+                <div class="item">
+                    <h2>
+                        Responsive design
                     </h2>
-                    <p>This reading is a useful reading for practical approaches to good design and development (especially in the web or software development sphere). In presenting these practical approaches, the moral and ethical obligations are addressed. As a web developer I often wonder “how” can I communicate and get across my values and uphold my ethical responsibilities therefore, this practical approach in the form of describing the process of creating the RAPUNSEL game, helps me see specific approaches I can use in my own coding practice. </p>
 
                     <p>
-                        <li>
-                            Revisiting previous actions, designs, choices and reframing them with new information or new understanding. 
-                        </li>
-                        <li>
-                            Iterations and prototyping is essential.
-                        </li>
-                        <li>
-                            As a web developer and studying Game Design, prototyping and iteration has come up often. New ideas, new values, new methods often emerge from a cyclical approach to building or developing something. This means that old ideas are also revisited. It is important to revisit the old to build upon it, because, it gives an indication of whether or not the intended requirements and goals were met and therefore why or why not. 
-                        </li>
+                        Responsive design requires careful understanding of relative measurements especially. It is beneficial for the user such that on any device, the elements on the page are scalable and thus can be viewed comfortably for the most part. It ties in well with the theme of accessibility. The difficult thing with responsive design however, is that is requires a lot of time to get it right. It also depends on browser compatibility, making it difficult to ensure that across multiple browsers the designs are consistent.
                     </p>
 
-                    <p>
-                        In my own coding practice, iteration is something I try to incorporate by revisiting old code to see how I can improve it. It also has helped me see ways I can adapt previous approaches to new situations. 
-                    </p>
+                </div>
 
-                    <p>
-                        I will admit however, that there is more I could be doing. For example, for the sake of other developers that will come across my work, I have a responsibility to ensure that they can understand what is happening in my code. For example, putting meaningful comments, and correct indenting and consistent code structure. These are three things I do not do well. On the user’s behalf, meta data is also very important. At the moment, I often find myself viewing it as an after-thought when it shouldn’t be. When surfing the web, meta data is often what helps the user identify exactly what they need – in the browser, the meta data influences how information is prioritized and how information is presented. Useful meta data will mean that the user is more likely to find exactly what they want. From a representation perspective, it becomes difficult to argue that I am being underrepresented if I am not taking the relevant and available approaches to ensuring my work is seen. The little things matter.  
-                    </p>
-
-                <h2>
-                    Responsive design
-                </h2>
-
-                <p>
-                    Responsive design requires careful understanding of relative measurements especially. It is beneficial for the user such that on any device, the elements on the page are scalable and thus can be viewed comfortably for the most part. It ties in well with the theme of accessibility. The difficult thing with responsive design however, is that is requires a lot of time to get it right. It also depends on browser compatibility, making it difficult to ensure that across multiple browsers the designs are consistent.
-                </p>
-                
+            </div>
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
 
         </article>
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+
     </main>
 
 
     <!--SECONDARY NAV-->
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
+
 
     <footer class="footer">
         <p>Ivy C C</p>
