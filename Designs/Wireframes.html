@@ -9,18 +9,20 @@
 
    <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
    <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
    <link rel="stylesheet" href="../Styles/normalize.css">
-   <link rel="stylesheet" href="../Styles/style.css">
-   <link rel="stylesheet" href="../Styles/SecondNav.css">
+   <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+   <link rel="stylesheet" href="../Styles/designsubpage.css">
      
    <meta name = "keywords" content = "Playground,Designs, fun, HTML, wireframes ">
-   <title>WIREFRAMES</title>
+   <title>FIRST WIREFRAMES</title>
 </head>
 
 <body>
     <!--MAIN NAV AND TITLE-->
 
-       
+    <div class="scroll-watcher"></div>
 
 
     <header class="header">
@@ -31,73 +33,126 @@
 
 
    <main>
+
+        <div id="main">
+            <button class="openbtn">☰ Other Designs</button>  
+        </div>
          <!--WIREFRAMES IN TAULAR FORM-->
-    <article>
-        <h1 class="entry_heading" >WIREFRAMES</h1>
-     
-                <img src="../WebsitePictures/homepage.png" alt="Homepage Wireframe" width="400" height="320"/>
-                <h3>HOMEPAGE: </h3><P>
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="designHome" href="index.html">&lt;&lt; Designs Homepage</a></span>
+                <h1 class="entry_heading" data-text="FIRST_WIREFRAMES">FIRST_WIREFRAMES</h1>
+                <p> this was posted by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">16<sup>th </sup>March 2024</time> 
+                </p>
+            
+            </div>
+        </article>
+
+        <article class="maintext">
+            <div class="item">
+                <h2>HOMEPAGE: </h2>
+                <figure><img src="../WebsitePictures/homepage.png" alt="Homepage Wireframe" width="85%" height="85%"/></figure>
+                <P>
                     The homepage is simple and only contains 3 main components: 
                     <li>The website title in the middle of the page in big bold letters– “The Playground”. Placing the title and the hyperlinks in the middle grabs the user’s attention as it immediately catches the eye.</li>
                     <li>Two moveable images, as a means to get the users to interact with the website. This was an idea inspired by the websites I researched, and I was particularly fond of how the websites encourages user interaction by allowing the user to have a sense of control over the website (they can customize the webpage).</li>
                     <li>The list of hyperlinks to allow the user to explore other parts of the website.</li>  </P>
-
-                <img src="../WebsitePictures/BlogNav.png" alt="Blog Navigation Wireframe" width="400" height="320"/>
-                <h3>Blog Navigation Page: </h3><p>
+            </div>
+            <div class="item">
+                
+                <h2>Blog Navigation Page: </h2>
+                <figure><img src="../WebsitePictures/BlogNav.png" alt="Blog Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     The main page of the blogs that allows users to select which blog they would like to read first. The website title is moved to the top left corner and the main hyperlinks and search bar to the top right corner such that it is still in sight and the user has ease of access but does not interfere with the user’s exploration of the particular page they are on.
                     The title and summary are left aligned – it is natural for most users to read from left to right.
                     However, to keep in theme with the website’s title – “The playground” – the user can navigate to the specific blog of their choice by means of an infinite horizontal scroll bar. This again encourages user interaction instead of having static hyperlinks to the specific blogs. I also chose to represent the blog hyperlinks using pictures instead of text,
                     to make it more visually appealing and stimulating for the user – a picture can speak a thousand words. </p>
-       
-                <img src="../WebsitePictures/DesignNav.png" alt="Designs Navigation Wireframe" width="400" height="320"/>
-                <h3>Designs Navigation Page: </h3><p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Designs Navigation Page: </h2>
+                <figure><img src="../WebsitePictures/DesignNav.png" alt="Designs Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     The Designs Navigation page has the same layout as the Blogs Navigation page. 
                     The user has another opportunity explore with the infinite horizontal scroll bar.</p>
-          
-                <img src="../WebsitePictures/EssayNav.png" alt="Essay Navigation Wireframe" width="400" height="320"/>
-                <h3>Essays Navigation Page: </h3><p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Essays Navigation Page: </h2>
+                <figure><img src="../WebsitePictures/EssayNav.png" alt="Essay Navigation Wireframe" width="85%" height="85%"/></figure>
+                
+                <p>
                     The same layout as the other two navigation pages to keep consistency and uniformity in the website.</p>
-     
-                <img src="../WebsitePictures/PortfolioNav.png" alt="Portfolio Navigation Wireframe" width="400" height="320"/>
-                <h3>Portfolio Navigation Page: </h3><p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Portfolio Navigation Page: </h2>
+                <figure><img src="../WebsitePictures/PortfolioNav.png" alt="Portfolio Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     Same layout as the other navigation pages</p>
-   
-                <img src="../WebsitePictures/ProfiePage.png" alt="Profile  Wireframe" width="400" height="320"/>
-                <h3>Profile Page: </h3><p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Profile Page: </h2>
+                <figure><img src="../WebsitePictures/ProfiePage.png" alt="Profile  Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     The profile page is slightly different to other parts the website. I chose to reintroduce the moveable images and in addition moveable text areas/boxes. 
                     I decided to reintroduce this means of user interactivity because the profile page is more personal and less formal and thus to give the user a sense of
                     my personality, the moveable sections make for a better user experience.</p>
-       
-                <img src="../WebsitePictures/BlogSub.png" alt="Blogs Subpage Wireframe" width="400" height="320"/>
-                <h3>Blogs Sub-Page: </h3><p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Blogs Sub-Page: </h2>
+                <figure><img src="../WebsitePictures/BlogSub.png" alt="Blogs Subpage Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     This page is the general layout for each blog. The title on the top left and this time I decided to split the page vertically to layout the text and images.
                     The images are what catches the user’s eye first thus, it is placed on the far left and as the user scans the page, they will be met with the text that provides
                     further explanation concerning the images. All text is left aligned. At the bottom of the page, there will be three buttons that can help the user navigate to the other blogs
                     directly if they so wish to do so, instead of having to go back to the Blogs Nav page – less clicks and less time wasted finding what they need.</p>
-              
-                <img src="../WebsitePictures/DesignSub.png" alt="Designs Subpage Wireframe" width="400" height="320"/>
-                <h3>Designs Sub-Page (IxD): </h3><p>
-                    This is the general layout for both subpages that showcase my designs. Similar to the Blogs subpage, the image is on the left and the text on the right to keep consistent.
-                    Each subpage has a button navigating to the latter subpage.</p>
-              
-                <img src="../WebsitePictures/DesignSub2.png" alt="Designs Subpage Wireframe" width="400" height="320"/>
-                <h3>Designs Sub-Page (wireframe): </h3><p>
-                    This is the general layout for both subpages that showcase my designs. Similar to the Blogs subpage, the image is on the left and the text on the right to keep consistent.
-                    Each subpage has a button navigating to the latter subpage.</p>
+            </div>
+
+            <div class="item">
                 
-                <img src="../WebsitePictures/EssaySub.png" alt="Essays Subpage Wireframe" width="400" height="320"/>
-                <h3>Essays Sub-Page (wireframe): </h3><p>
+                <h2>Designs Sub-Page (IxD): </h2>
+                <figure><img src="../WebsitePictures/DesignSub.png" alt="Designs Subpage Wireframe" width="85%" height="85%"/></figure>
+                <p>
+                    This is the general layout for both subpages that showcase my designs. Similar to the Blogs subpage, the image is on the left and the text on the right to keep consistent.
+                    Each subpage has a button navigating to the latter subpage.</p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Designs Sub-Page (wireframe): </h2>
+                <figure><img src="../WebsitePictures/DesignSub2.png" alt="Designs Subpage Wireframe" width="85%" height="85%"/></figure>
+                <p>
+                    This is the general layout for both subpages that showcase my designs. Similar to the Blogs subpage, the image is on the left and the text on the right to keep consistent.
+                    Each subpage has a button navigating to the latter subpage.</p>
+            
+            </div>
+
+            <div class="item">
+                
+                <h2>Essays Sub-Page (wireframe): </h2>
+                <figure><img src="../WebsitePictures/EssaySub.png" alt="Essays Subpage Wireframe" width="85%" height="85%"/></figure>
+                <p>
                     Similar to the designs subpage. </p>
-                
+            </div>
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
 
     </article>
 
    </main>
    
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
 
@@ -108,6 +163,8 @@
 
     <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
     createDesignsMenu("First Wireframes") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>

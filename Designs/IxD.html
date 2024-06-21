@@ -9,9 +9,12 @@
 
    <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
    <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
    <link rel="stylesheet" href="../Styles/normalize.css">
-   <link rel="stylesheet" href="../Styles/style.css">
-   <link rel="stylesheet" href="../Styles/SecondNav.css">
+   <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+   <link rel="stylesheet" href="../Styles/designsubpage.css">
      
    <meta name = "keywords" content = "Playground, Designs, fun, HTML, IXD ">
    <title>INTERACTION DESIGN</title>
@@ -20,7 +23,7 @@
 <body>
     <!--MAIN NAV AND TITLE-->
 
-       
+    <div class="scroll-watcher"></div>
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
@@ -31,44 +34,57 @@
 
 
    <main>
-     <!--DESIGN CONTENT IN TABULAR FORM-->
-     <article>
-        <h1 class="entry_heading">INTERACTION DESIGN</h1>
-  
-                <img src="../WebsitePictures/infostructure.png" alt="Info structure" width="700" height="320"/>
-                <h3>Information Structure: </h3><br/>
-                    The information structure and hierarchy of the website is as shown in the image on the left hand side. 
+
+        <div id="main">
+            <button class="openbtn">☰ Other Designs</button>  
+        </div>
+
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="designHome" href="index.html">&lt;&lt; Designs Homepage</a></span>
+                <h1 class="entry_heading" data-text="INTERACTION_DESIGN">INTERACTION DESIGN</h1>
+                <p> this was posted by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">16<sup>th </sup>March 2024</time> 
+                </p>
+            
+            </div>
+        </article>
+
+        <article class="maintext">
+            <div class="item">
+                <h2>Information Structure: </h2>
+                <p>The information structure and hierarchy of the website is as shown in the image below</p>
                     
-                    <p>
-                    <em>Homepage:</em><br/>
+                    <figure><img src="../WebsitePictures/infostructure.png" alt="Info structure" width="85%" height="85%"></figure>
                     
-                    The user is met first with the homepage. The homepage is the simplest page with only a heading, navigation, search bar and two draggable objects (potentially images). 
+                    <h3 class="h3">Homepage:</h3>
+                    
+                    <p>The user is met first with the homepage. The homepage is the simplest page with only a heading, navigation, search bar and two draggable objects (potentially images). 
                     The main interface element on this page are the draggable elements. The title and the moveable images are the most important aspect of the homepage, hence
                     the title being in big font and in the middle of the page, with the images around it. Perhaps to encourage user interaction, one of the images could be placed on top
                     of the title to encourage the user to move it out the way (this however is something to experiment on when I understand CSS better and can play around with draggable elements.) </p>
                     
-                    <p>
-                    <em>Navigation pages:</em><br/>
                     
-                    The user can navigate from the homepage, to various navigation pages namely, the blog nav page, the essay nav page, and the designs nav page. 
+                    <h3 class="h3">Navigation pages:</h3>
+                    
+                    <p>The user can navigate from the homepage, to various navigation pages namely, the blog nav page, the essay nav page, and the designs nav page. 
                     All these nav pages have the same layout with the same interface elements to keep the website consistent and uniform.</p>
                     
-                    <p>
-                    <em>Subpages:</em><br/>
                     
-                    The user can navigate from the nav pages to the various subpages. The interface elements across the subpages are the same.
+                    <h3 class="h3">Subpages:</h3>
+                    
+                    <p>The user can navigate from the nav pages to the various subpages. The interface elements across the subpages are the same.
                     The subpages also allow the user to navigate to the nav pages, the homepage, and other subpages (within the same navigation category).</p>
                     
-                    <p>
-                    <em>Profile:</em><br/>
                     
-                    The profile is the only page that has slightly different interface elements. I reintroduced the draggable elements and made it central 
+                    <h3 class="h3">Profile:</h3>
+                    
+                    <p>The profile is the only page that has slightly different interface elements. I reintroduced the draggable elements and made it central 
                     to how the user interacts with the page.</p>
                     
-                    <p>
-                    <em>Portfolio:</em><br/>
+                   
+                    <h3 class="h3">Portfolio:</h3>
                     
-                    The portfolio page has the same interface elements as the nav pages, however, I might consider changing the horizontal scroll bar
+                    <p>The portfolio page has the same interface elements as the nav pages, however, I might consider changing the horizontal scroll bar
                     to be a vertical infinite scroll bar to showcase my portfolio works instead – but at the moment it is the same horizontal scroll bar 
                     as in the navigation pages. </p>
 
@@ -76,27 +92,29 @@
                     Overall however, the way the infomation is structured has not majorly changed since my first wireframes.
                     </p>
     
-                <img src="../WebsitePictures/userflow.png" alt="UserFlow" width="700" height="320"/>
-                <h3>User Flow: </h3>
+            </div>
+            <div class="item">
+                <h2>User Flow: </h2>
+                
                    <p> I have carefully considered the 3 click rule as I mapped out the user’s flow and therefore, particularly, 
                     between the subpages, there are navigational components allowing the user to access any 
                     subpage within the specific category, in addition to allowing the user to access the main pages 
                     of any category from the subpages. </p>
 
-                    
-                    <p>For example, if the user wants to navigate to Blog 2 from the homepage the flow is as follows: <br/>
+                    <figure><img src="../WebsitePictures/userflow.png" alt="UserFlow" width="85%" height="85%"></figure>
+                    <p>For example, if the user wants to navigate to Blog 2 from the homepage the flow is as follows: </p>
 
-                    <em>Homepage -> Blogs -> Blog 2</em><br/>
+                    <h3 class="h3">Homepage -> Blogs -> Blog 2</h3>
 
-                    If the user wants to navigate from Design 2 to Essay 2 the flow is as follows:<br/>
+                    <p>If the user wants to navigate from Design 2 to Essay 2 the flow is as follows:</p>
 
-                    <em>Design 2 -> Essays -> Essay 2</em><br/>
+                    <h3 class="h3">Design 2 -> Essays -> Essay 2</h3>
 
-                    In the last scenario the user was on Blog 1 and wants to go to Blog 4, thus the flow is as follows:<br/>
+                    <P>In the last scenario the user was on Blog 1 and wants to go to Blog 4, thus the flow is as follows:</P>
 
-                    <em>Blog 1 -> Blog 4</em><br/>
+                    <h3 class="h3">Blog 1 -> Blog 4</h3>
 
-                    In every instance, the user only clicks no more than 3 times to access the page they want 
+                    <p>In every instance, the user only clicks no more than 3 times to access the page they want 
                     (assuming the user takes the shortest route).</p>
 
                     <p>The user’s flow from the navigation pages is also straight forward. The navigation pages 
@@ -105,33 +123,42 @@
                     sub section of the section they want to navigate to 
                     by using the horizontal scroll bar and clicking the desired subpage. </p>
                    
-                <img src="../WebsitePictures/placeholder.png" alt="Placeholder" width="700" height="320"/>
-                <h3>Style: </h3>
+            </div>
 
-                    <p style = "color:lightsalmon;"><em>Colour</em><br/>
+
+            <div class="item">
+                <h2>Style: </h2>
+                    <h3 class="h3">Colour</h3>
+                    <p style = "color:lightsalmon;">
                     Mostly pastel colours and black and white. The pastel colours to express the “playful nature” of my website, however instead 
                     of bright bold colours, the pastel colours are more soft and relaxing. The black for the font (to keep it simple), and the white in the whitespace.</p>
 
-                    <p style = "font-family: Arial, Helvetica, sans-serif; font-size: 18px;"><em>Font</em><br/>
+                    <h3 class="h3">Font</h3>
+                    <p style = "font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
                     Arial font is far friendlier and more informal than Times New Roman given the fact that my website name is “The Playground”. 
                     However, it is still readable and legible. Additionally I am debating between a font size 16 and font size 18 for the general text, and for titles and headings font size
                     28 to font size 34 would be ideal. I am choosing slightly bigger font correspond with the theme of the website - playful, and relaxed</p>
 
-                    <p><em>Shape</em><br/>
-                    Round edges around boxes and images to give the website a friendly/gentle appeal.</p>
+                    <h3 class="h3">Shape</h3>
+                    <p>Round edges around boxes and images to give the website a friendly/gentle appeal.</p>
 
-                    <p><em>Space</em><br/>
+                    <h3 class="h3">Space</h3>
+                    <p>
                     The whitespace is so that the website does not appear overwhelming. As much as the website is playful, it is still meant to 
                     be simple and relaxing (from the user’s end). </p>
+                </div>
 
-    </article>
+
+                <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
+        </article>
 
    </main> 
    
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
 
@@ -141,6 +168,8 @@
 
     <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
     createDesignsMenu("IxD") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>

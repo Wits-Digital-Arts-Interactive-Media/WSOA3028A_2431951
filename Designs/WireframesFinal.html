@@ -9,9 +9,12 @@
 
    <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
    <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
    <link rel="stylesheet" href="../Styles/normalize.css">
-   <link rel="stylesheet" href="../Styles/style.css">
-   <link rel="stylesheet" href="../Styles/SecondNav.css">
+   <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+   <link rel="stylesheet" href="../Styles/designsubpage.css">
      
    <meta name = "keywords" content = "Playground,Designs, fun, HTML, wireframes ">
    <title>WIREFRAMES FINAL</title>
@@ -19,7 +22,7 @@
 
 <body>
     <!--MAIN NAV AND TITLE-->
-
+    <div class="scroll-watcher"></div>
         
 
     <header class="header">
@@ -29,43 +32,66 @@
     </header>
     
 
-
    <main>
-    <article>
-        <h1 class="entry_heading" >WIREFRAMES FINAL</h1>
 
-        <p> The wireframes have not changed a lot from the original planning. Only the homepage and subpages will change. The navigation pages remain the same essentially including the profile page.</p>
+        <div id="main">
+            <button class="openbtn">☰ Other Designs</button>  
+        </div>
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="designHome" href="index.html">&lt;&lt; Designs Homepage</a></span>
+                <h1 class="entry_heading" data-text="WIREFRAMES FINAL">WIREFRAMES FINAL</h1>
+                <p> this was posted by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">16<sup>th </sup>March 2024</time> 
+                </p>
+            
+            </div>
+        </article>
 
-               
-                <h3>HOMEPAGE: </h3>
-                <img src="../WebsitePictures/homepagefinal.png" alt="Homepage Wireframe" width="400" height="320"/>
+        <article class="maintext">
+            <div class="item">
+
+                <em> The wireframes have not changed a lot from the original planning. Only the homepage and subpages will change. The navigation pages remain the same essentially including the profile page.</em>
+
+                <h2>HOMEPAGE: </h2>
+                <figure><img src="../WebsitePictures/homepagefinal.png" alt="Homepage Wireframe" width="85%" height="85%"/></figure>
+                
                 <P>
                     The homepage is simple and now contains only contains 2 main components: 
                     <li>The title of the website will be on a "whiteboard", and users can drag the individual letter around within that space. Above the letters, a small guiding piece of text will tell the user to move the letters.</li>
 
                     <li>The list of hyperlinks to allow the user to explore other parts of the website.</li>  </P>
 
-                
-                <h3>Subpages: </h3>
-                <img src="../WebsitePictures/subpagefinal.png" alt="Blog Navigation Wireframe" width="400" height="320"/>
-                <img src="../WebsitePictures/subpage2final.png" alt="Designs Navigation Wireframe" width="400" height="320"/>
+            </div>
+
+            <div class="item">
+
+                <h2>Subpages: </h2>
+                <figure><img src="../WebsitePictures/subpagefinal.png" alt="Blog Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p></p>
+                <figure><img src="../WebsitePictures/subpage2final.png" alt="Designs Navigation Wireframe" width="85%" height="85%"/></figure>
                 <p>
                    All subpages will have the same formatting. This time, when directed to a specfic blog for example, each section/heading of that blog will be a clickable image to view the text associated with that heading. The idea is for the user to interact with the images as if they are flipping cards over in a game. This will be implemented with JS and CSS.</p>
-        <h2>Styling</h2>
-        <p>Styling overall remains the same</p>
-        <h3>Colour Scheme</h3>
-        <p>
-            Colours to be used include: green, white, black, purple, pink (all pastel). The green will be used to emphasize certain elements, the purple and pink will be used throoughout on buttons and as background colours. Text will remain black and general background will remain white. 
-        </p>
+            </div>
 
+            <div class="item">
+                <h2>Styling</h2>
+                    <p>Styling overall remains the same</p>
+                <h3 class="h3">Colour Scheme</h3>
+                    <p>
+                        Colours to be used include: green, white, black, purple, pink (all pastel). The green will be used to emphasize certain elements, the purple and pink will be used throoughout on buttons and as background colours. Text will remain black and general background will remain white. 
+                    </p>
+            </div>
+
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
     </article>
 
    </main>
    
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
 
@@ -75,6 +101,8 @@
 
     <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
     createDesignsMenu("Final Wireframes") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
 
 </body>
 </html>

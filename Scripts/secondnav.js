@@ -123,11 +123,11 @@ export function createDesignsMenu(current){
             li.appendChild(title);
         });
 
-        const date = document.createElement('h4')
+        /*const date = document.createElement('h4')
         fetchBlogDate(item.href).then(blogdate => {
             date.innerText = blogdate;
             li.appendChild(date);
-        });
+        });*/
 
 
         const text = document.createElement('figcaption')
@@ -147,7 +147,7 @@ export function createDesignsMenu(current){
             a.classList.add("not_active");
 
         } else { 
-            li.innerText = item.name; 
+            
             a.innerText = "You Are Here"; 
             //a.setAttribute("href", item.href);
             li.appendChild(a);
@@ -198,7 +198,7 @@ export function createEssaysMenu(current){
             li.appendChild(a);
             a.classList.add("not_active");
         } else { 
-            li.innerText = item.name;
+            
             a.innerText = "You Are Here"; 
             //a.setAttribute("href", item.href);
             li.appendChild(a);
