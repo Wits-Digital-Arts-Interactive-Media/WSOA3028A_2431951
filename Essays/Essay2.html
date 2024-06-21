@@ -11,9 +11,11 @@
 
     <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
     <link rel="icon" href="WebsitePictures/logo.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="../Styles/normalize.css">
-    <link rel="stylesheet" href="../Styles/style.css">
-    <link rel="stylesheet" href="../Styles/SecondNav.css">
+    <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+    <link rel="stylesheet" href="../Styles/essaysubpage.css">
       
     <meta name = "keywords" content = "Playground, Essays, fun, HTML, Ethics, websites ">
     <title>DIGITAL COLONIALISM</title>
@@ -21,7 +23,7 @@
 
 
 <body>
-
+    <div class="scroll-watcher"></div>
     <header class="header">
         <label class="logo">THE PLAYGROUND</label>
         <nav class="sidenav">
@@ -32,60 +34,90 @@
 
     <main>
 
+        <div id="main">
+            <button class="openbtn">☰ Other Essays</button>  
+        </div>
+
         <article class = "h-entry">
+            <div class="intro">
+                <span><a class="essayHome" href="index.html">&lt;&lt; Essays Homepage</a></span>
+                <h1 class="entry_heading" data-text="DIGITAL COLONIALISM">DIGITAL COLONIALISM</h1>
 
-            <h1 class="entry_heading">DIGITAL COLONIALISM</h1>
+                <p> this essay is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">17<sup>th </sup>June 2024</time> </p>
+            </div>
+        </article>
 
-            <p> this essay is by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-03-04 08:00:00">17<sup>th </sup>June 2024</time> </p>
+        <article class="maintext">
+            <div class="item">
+                <h2>INTRODUCTION</h2>
+                <p>As an African developer, digital colonialism is a topic of much debate and discussion. In an age where technology is ever expanding and developing, an age where AI is the current reality, the impact of this development is one that must be paid attention to, especially when the modern developments mimic the ways in which imperialism and colonialism has been perpetuated in the past. Digital colonialism, its role in the labour market, and what it means for South Africans is further unpacked in this essay. </p>
+            </div> 
+            <div class="item">
+                <h2>DIGITAL COLONIALSM</h2>
+                <p>Colonialism according to Sareeta Amrute’s framework [3] is defined as having full or partial control of a people, country or economy. The relationship therefore built between the colonizer and the colonised is hierarchical, extractive, exploitative. Hierarchical as it pertains to superiority vs inferiority, extractive as it pertains to the taking of resources, exploitative as it pertains to labour relations. Digital colonialism is defined therefore according to these three key structures in the context of the digital global expansion taking place currently. </p>
+                
+                
+                <p>“Big Data” is the key phrase in digital colonialism. Big Data refers to the large amounts of data sets that are collected, analysed and mined by organizations [9] for the sake of attainting information to further propel digital advancements, increase operational efficiency, and to personalize marketing further. Big Data therefore is a big enabler of “Global surveillance capitalism” [1]. Global surveillance capitalism refers to how capitalism is perpetuated through global surveillance (spying) by countries and big corporate companies that have access to Big Data globally. In the context of digital colonialism, big data is key phrase because what was once a conquest of land under western colonialism and imperialism is now a conquest of data [1] through the acquisition of large amounts of sensitive data of people around the world. Big Data in many ways, therefore, violates privacy inherently. </p>
+                <p>
+                    Countries that are also economic superpowers often have the most access to Big Data and the technologies and infrastructure to accommodate it. Such countries namely the US own, control and operate the most popular search engines, browsers, operating systems of all devices, software, cloud services and infrastructure, networking platforms (social media), streaming services, and advertising services around the world. Big data therefore is acquired through all these technologies. There is consequently a power imbalance created since US owned technologies dominate the global market creating technological dependencies such that middle-income and low-income countries become dependent on such technologies to access information in the context of the 21st century. In addition to this is the fact that there is a rush/urgency to adapt to the 21st century lifestyle especially for countries in the global south. This adoption of products and assimilation to this lifestyle that come from GAFAM [1] (an acronym referring to western corporate giants), creates a hierarchy in the relations between high-income countries and low-income countries. This is the hierarchical relationship described in the definition of digital colonialism. 
+                </p>
+            </div>
 
-            <p>Colonialism according to Sareeta Amrute’s framework [3] is defined as having full or partial control of a people, country or economy. The relationship therefore built between the colonizer and the colonised is hierarchical, extractive, exploitative. Hierarchical as it pertains to superiority vs inferiority, extractive as it pertains to the taking of resources, exploitative as it pertains to labour relations. Digital colonialism is defined therefore according to these three key structures in the context of the digital global expansion taking place currently. </p>
-            <p>“Big Data” is the key phrase in digital colonialism. Big Data refers to the large amounts of data sets that are collected, analysed and mined by organizations [9] for the sake of attainting information to further propel digital advancements, increase operational efficiency, and to personalize marketing further. Big Data therefore is a big enabler of “Global surveillance capitalism” [1]. Global surveillance capitalism refers to how capitalism is perpetuated through global surveillance (spying) by countries and big corporate companies that have access to Big Data globally. In the context of digital colonialism, big data is key phrase because what was once a conquest of land under western colonialism and imperialism is now a conquest of data [1] through the acquisition of large amounts of sensitive data of people around the world. Big Data in many ways, therefore, violates privacy inherently. </p>
-            <p>
-                Countries that are also economic superpowers often have the most access to Big Data and the technologies and infrastructure to accommodate it. Such countries namely the US own, control and operate the most popular search engines, browsers, operating systems of all devices, software, cloud services and infrastructure, networking platforms (social media), streaming services, and advertising services around the world. Big data therefore is acquired through all these technologies. There is consequently a power imbalance created since US owned technologies dominate the global market creating technological dependencies such that middle-income and low-income countries become dependent on such technologies to access information in the context of the 21st century. In addition to this is the fact that there is a rush/urgency to adapt to the 21st century lifestyle especially for countries in the global south. This adoption of products and assimilation to this lifestyle that come from GAFAM [1] (an acronym referring to western corporate giants), creates a hierarchy in the relations between high-income countries and low-income countries. This is the hierarchical relationship described in the definition of digital colonialism. 
-            </p>
-            <p>
-                Since colonialism thrives in the context of labour exploitation, it is important to unpack the impact of digital technologies upon the labour market. With the introduction of digital technologies and especially Artificial Intelligence, the need for high intensive, low skill routine tasks has decreased because of the increased use of AI and machine learning – socio-emotional skills are more in demand[5]. Skills needed in the current market climate have changed, meaning that those not up to par with the skillset needed are left behind[5]. The integration of digital technologies in the current market has made it such that those with low levels of education do not benefit nor cope better in contrast to those with high levels of education.
-            </p>
-            <p>
-                Due to the decline of some traditional labour, there is an increase in what is referred to as “digital labour”. This at first sounds hopeful in creating opportunities for those that can no longer rely of traditional labour as a stream of income, however, even in digital labour, there is exploitation perpetuated by those who benefit from it greatly. For context, digital labour refers to remote work.  
-            </p>
-            <p>
-                Demand for digital labour is high in the global north yet digital labour is sourced from low-income countries [6]. There is an incentive for people in low-income countries to work digital jobs. The salary is higher than if they were working in the same field locally [6]. In low-income countries, even middle-income countries, the introduction of digital technologies (amongst other reasons), in the labour market has increased unemployment, and thus job seeking is very difficult, in addition to the fact that wages and salaries of even some middle-level skill jobs are low, hence the incentive. While digital labour seems like a net positive, it was found that places such as south-east Asia some workers are willing to lower their rates below what would be considered fair (taking qualifications and experiences into consideration) for clients abroad. Additionally, even though the initial salary offered by these clients might seem higher than what they would earn locally, eventually with time finding clients becomes difficult therefore workers lower their rates to find employment easier[6]. It is worth noting that these clients are often from high-income countries, some belonging to the large corporations as described earlier. 
-            </p>
-            <p>
-                As briefly explained, digital labour comes with an opportunity for workers to work in spaces they would otherwise not be able to work in (economic reasons, discriminatory reasons etc). There is seemingly economic inclusion, particularly for older workers (those that are mature in their careers yet stagnant), and women that work from home. However, the economic exclusion is of greater impact. Some job listings have explicitly stated that people from certain countries can not apply regardless of qualification/experience. In addition, some workers have felt that concealing their nationality has helped them get better employment. There are reports from African digital workers particularly, that clients often make assumptions of African workers such as assuming that they are not proficient in languages such as French and English, or assuming that African workers are willing to work for any pay [6].  
-            </p>
-            <p>
-                Another example of digital labour exploitation is in the news of Google laying off hundred of their workers from core teams, only to transfer these roles to those in lower-income countries such as Mexico and India [4]. The core teams are those in charge of building the technical foundation of Google’s services. According to Ruth Porat (Google’s finance chief), he asserts that in addition to restructuring the core teams, the goal is to expand to cities such as Bangalore, Mexico City, and Dublin [7]. The reasons for the layoffs include supposed economic constraints [], AI developments, and the issue of customers cutting back on spending. The reasons for shifting toles to countries such as Mexico and India include, decreasing the cost of labour, and global expansion. 
-            </p>
+            <div class="item">
+                <h2>THE CURRENT LABOUR MARKET </h2>
+                <p>
+                    Since colonialism thrives in the context of labour exploitation, it is important to unpack the impact of digital technologies upon the labour market. With the introduction of digital technologies and especially Artificial Intelligence, the need for high intensive, low skill routine tasks has decreased because of the increased use of AI and machine learning – socio-emotional skills are more in demand[5]. Skills needed in the current market climate have changed, meaning that those not up to par with the skillset needed are left behind[5]. The integration of digital technologies in the current market has made it such that those with low levels of education do not benefit nor cope better in contrast to those with high levels of education.
+                </p>
+                <p>
+                    Due to the decline of some traditional labour, there is an increase in what is referred to as “digital labour”. This at first sounds hopeful in creating opportunities for those that can no longer rely of traditional labour as a stream of income, however, even in digital labour, there is exploitation perpetuated by those who benefit from it greatly. For context, digital labour refers to remote work.  
+                </p>
+                <p>
+                    Demand for digital labour is high in the global north yet digital labour is sourced from low-income countries [6]. There is an incentive for people in low-income countries to work digital jobs. The salary is higher than if they were working in the same field locally [6]. In low-income countries, even middle-income countries, the introduction of digital technologies (amongst other reasons), in the labour market has increased unemployment, and thus job seeking is very difficult, in addition to the fact that wages and salaries of even some middle-level skill jobs are low, hence the incentive. While digital labour seems like a net positive, it was found that places such as south-east Asia some workers are willing to lower their rates below what would be considered fair (taking qualifications and experiences into consideration) for clients abroad. Additionally, even though the initial salary offered by these clients might seem higher than what they would earn locally, eventually with time finding clients becomes difficult therefore workers lower their rates to find employment easier[6]. It is worth noting that these clients are often from high-income countries, some belonging to the large corporations as described earlier. 
+                </p>
+                <p>
+                    As briefly explained, digital labour comes with an opportunity for workers to work in spaces they would otherwise not be able to work in (economic reasons, discriminatory reasons etc). There is seemingly economic inclusion, particularly for older workers (those that are mature in their careers yet stagnant), and women that work from home. However, the economic exclusion is of greater impact. Some job listings have explicitly stated that people from certain countries can not apply regardless of qualification/experience. In addition, some workers have felt that concealing their nationality has helped them get better employment. There are reports from African digital workers particularly, that clients often make assumptions of African workers such as assuming that they are not proficient in languages such as French and English, or assuming that African workers are willing to work for any pay [6].  
+                </p>
+                <p>
+                    Another example of digital labour exploitation is in the news of Google laying off hundred of their workers from core teams, only to transfer these roles to those in lower-income countries such as Mexico and India [4]. The core teams are those in charge of building the technical foundation of Google’s services. According to Ruth Porat (Google’s finance chief), he asserts that in addition to restructuring the core teams, the goal is to expand to cities such as Bangalore, Mexico City, and Dublin [7]. The reasons for the layoffs include supposed economic constraints [8], AI developments, and the issue of customers cutting back on spending. The reasons for shifting toles to countries such as Mexico and India include, decreasing the cost of labour, and global expansion. 
+                </p>
 
-            <p>
-                Opportunities therefore are made through digital labour, however the opportunities available force workers in low-income countries have to settle. Everything that has been described therefore is a clear display of exploitation – another marker of colonialism – since those with economic power take advantage of workers that come from low-income countries, through the digital labour especially.
-            </p>
-            <p>
-                In South Africa a prominent government programme introduced in 2015 by President Jacob Zuma “Operation Phakisa” [2], sparked conversation about the enablement of digital colonialism. “Operation Phakisa” was a model to transform public education in South Africa by implementing computer technology in the classrooms. As much as such a project can propel can seemingly change education in a country plagued by poverty, it also enables and gives access to the US government in particular (a world superpower) to implement surveillance through their technology (since the technology is coming from the US). Details about the operation were kept secret which is somewhat a cause for concern. The reason this programme is included in the topic of digital colonialism, is because the privacy and autonomy of South African citizens is at risk and has been at risk with the mass integration of US owned technologies in various ways. 
-            </p>
-            <p>
-                Historically, surveillance has been a tool to perpetuate oppression, such as surveillance of Freedom Fighters during Apartheid and the intelligence collected that led to the US military invasion of the Philippines [1]. To be more specific, IBM (a US technology company) technology was used in the racial identification system during Apartheid – a clear enablement of the atrocities of the Apartheid government at the time. More recently, in 2016, MTN Group [2] was under surveillance by the GCHQ (a UK intelligence agency and American National Security Agency ally), and in 2015, the GCHQ spied on the South African Legal Resources Centre (advocates of  human rights)[2]. 
-            </p>
-            <p>
-                Other examples of the modern imperialism imposed by the US upon South Africa include the very fact that Google, takes up about 70% of online advertising in South Africa, while local media only takes up 8% [1]. Even the popularity of Uber in South Africa is a cause for concern. Uber’s net worth at a point was R1.65 billion, it has been the fuel for the feud between the taxi industry and the e-hailing taxi industry. In addition to the fact that uber takes 25% commission + hidden costs, and uber is offered at considerably low costs to customers – all in country where the 63% of black Africans are below the poverty line, and about 55% of South Africans earn less than R57 per day [1]. 
-            </p>
-            <p>
-                The integration of US owned technologies on a mass scale in South Africa, therefore, raises alarms and brings attention to the topic of digital colonialism. 
-            </p>
-            <p>
-                As am aspiring software developer myself, and one that is Kenyan-South African, it is vital that I keep informed about the current industry. The more informed I am, the less likely I will be taken advantage of in certain spaces, as thoroughly described above. By understanding the history of colonialism and keeping up-to-date with the current wave of digital coloniality, I know how to navigate the space better to avoid enabling large corporations, and to avoid falling victim to the strategies put in place to disempower many. Advocating for policies that protect user’s rights (especially with regards to data privacy), is also important such that technological corporations are pressured to use the data of users ethically and responsibly. Practically as a developer, it is important, to be ethically consistent in the technologies I develop such that the technologies are accessible. Engaging with different communities is also important to get insight in the various ways people are affected by digital imperialism and the ways in which they combat it – by listening, I can gain wisdom on ways on which I can improve in my own work. 
-            </p>
-           
-            <p>
-                In closing, although much more could be discussed and said about digital colonialism, even covering the surface of it reveals how much of a prominent issue it is especially with how rapid the growth and advancements in technology is. AI especially is the biggest cause of concern. It is important that individuals and communities alike pay close attention and hold accountable those that are perpetuating imperialism today. 
-            </p>
+                <p>
+                    Opportunities therefore are made through digital labour, however the opportunities available force workers in low-income countries have to settle. Everything that has been described therefore is a clear display of exploitation – another marker of colonialism – since those with economic power take advantage of workers that come from low-income countries, through the digital labour especially.
+                </p>
+            </div>
+            <div class="item">
+                <h2>IN A SOUTH AFRICAN CONTEXT</h2>
+                <p>
+                    In South Africa a prominent government programme introduced in 2015 by President Jacob Zuma “Operation Phakisa” [2], sparked conversation about the enablement of digital colonialism. “Operation Phakisa” was a model to transform public education in South Africa by implementing computer technology in the classrooms. As much as such a project can propel can seemingly change education in a country plagued by poverty, it also enables and gives access to the US government in particular (a world superpower) to implement surveillance through their technology (since the technology is coming from the US). Details about the operation were kept secret which is somewhat a cause for concern. The reason this programme is included in the topic of digital colonialism, is because the privacy and autonomy of South African citizens is at risk and has been at risk with the mass integration of US owned technologies in various ways. 
+                </p>
+                <p>
+                    Historically, surveillance has been a tool to perpetuate oppression, such as surveillance of Freedom Fighters during Apartheid and the intelligence collected that led to the US military invasion of the Philippines [1]. To be more specific, IBM (a US technology company) technology was used in the racial identification system during Apartheid – a clear enablement of the atrocities of the Apartheid government at the time. More recently, in 2016, MTN Group [2] was under surveillance by the GCHQ (a UK intelligence agency and American National Security Agency ally), and in 2015, the GCHQ spied on the South African Legal Resources Centre (advocates of  human rights)[2]. 
+                </p>
+                <p>
+                    Other examples of the modern imperialism imposed by the US upon South Africa include the very fact that Google, takes up about 70% of online advertising in South Africa, while local media only takes up 8% [1]. Even the popularity of Uber in South Africa is a cause for concern. Uber’s net worth at a point was R1.65 billion, it has been the fuel for the feud between the taxi industry and the e-hailing taxi industry. In addition to the fact that uber takes 25% commission + hidden costs, and uber is offered at considerably low costs to customers – all in country where the 63% of black Africans are below the poverty line, and about 55% of South Africans earn less than R57 per day [1]. 
+                </p>
+                <p>
+                    The integration of US owned technologies on a mass scale in South Africa, therefore, raises alarms and brings attention to the topic of digital colonialism. 
+                </p>
+            </div>
+            <div class="item">
+                <h2>MY ROLE AND WHAT CAN WE DO</h2>
+                <p>
+                    As an aspiring software developer myself, and one that is Kenyan-South African, it is vital that I keep informed about the current industry. The more informed I am, the less likely I will be taken advantage of in certain spaces, as thoroughly described above. By understanding the history of colonialism and keeping up-to-date with the current wave of digital coloniality, I know how to navigate the space better to avoid enabling large corporations, and to avoid falling victim to the strategies put in place to disempower many. Advocating for policies that protect user’s rights (especially with regards to data privacy), is also important such that technological corporations are pressured to use the data of users ethically and responsibly. Practically as a developer, it is important, to be ethically consistent in the technologies I develop such that the technologies are accessible. Engaging with different communities is also important to get insight in the various ways people are affected by digital imperialism and the ways in which they combat it – by listening, I can gain wisdom on ways on which I can improve in my own work. 
+                </p>
+            </div>
+            <div class="item">
+                <h2>CONCLUSION</h2>
+                <p>
+                    In closing, although much more could be discussed and said about digital colonialism, even covering the surface of it reveals how much of a prominent issue it is especially with how rapid the growth and advancements in technology is. AI especially is the biggest cause of concern. It is important that individuals and communities alike pay close attention and hold accountable those that are perpetuating imperialism today. 
+                </p>
+            </div>
+            </div>
 
-
+            <div class="item">
             <!--references go here !-->
-            <h2>References</h2> <!--refernce properly using <figure> -> <blockquote> -> <figcaption> -> <cite> -> href=website ... how to render certain text that uses special characters that would otherwise be misunderstood by the code: <code>&lt;text&gt;</code>-->
-                <figure>
+                <h2>References</h2> <!--refernce properly using <figure> -> <blockquote> -> <figcaption> -> <cite> -> href=website ... how to render certain text that uses special characters that would otherwise be misunderstood by the code: <code>&lt;text&gt;</code>-->
+                <figure class="Ref">
                     <blockquote>
                         <figcaption>
                             <ol>
@@ -120,19 +152,21 @@
                         </figcaption>
                     </blockquote>
                 </figure>
+            </div>
 
-
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
 
         </article>
 
-        <button onclick = "scrollUp()" id="scrollUp" title="Go to top">Go Up</button>
+ 
         
     </main>
 
-    <div class="navbar2">
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>Ivy C C</p>
     </footer>
 

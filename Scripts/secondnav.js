@@ -137,16 +137,21 @@ export function createDesignsMenu(current){
           });
 
         li.classList.add("revealUp")
-        
+        const a = document.createElement("a");
+
         if (current != item.name) {
-            const a = document.createElement("a");
+            
             a.innerText = "Read More";
-            //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
-            a.classList.add("active")
+            a.classList.add("not_active");
 
-        } else { li.innerText = item.name; 
+        } else { 
+            li.innerText = item.name; 
+            a.innerText = "You Are Here"; 
+            //a.setAttribute("href", item.href);
+            li.appendChild(a);
+            a.classList.add("active")
             
         }
 
@@ -184,15 +189,21 @@ export function createEssaysMenu(current){
 
 
         li.classList.add("revealUp")
+        const a = document.createElement("a");
 
         if (current != item.name) {
-            const a = document.createElement("a");
+            
             a.innerText = "Read More";
-            //a.href = item.name;
             a.setAttribute("href", item.href);
             li.appendChild(a);
+            a.classList.add("not_active");
+        } else { 
+            li.innerText = item.name;
+            a.innerText = "You Are Here"; 
+            //a.setAttribute("href", item.href);
+            li.appendChild(a);
             a.classList.add("active")
-        } else { li.innerText = item.name; }
+         }
 
         ul.appendChild(li);
   }
@@ -236,3 +247,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
     })
 
 });
+
+

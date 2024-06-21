@@ -24,7 +24,10 @@ export function createMenu(current){
             a.setAttribute("href", item.href)
             a.classList.add("active") 
             li.appendChild(a)
-        } else { li.innerText = item.name}
+        } else { 
+            li.innerText = item.name
+            
+        }
 
         ul.appendChild(li)
        
@@ -34,23 +37,5 @@ export function createMenu(current){
 
 };
 
-export function openNav() {
-     
-    //const div = document.querySelector('div');
-       //const logo = document.createElement('label')
-    //document.getElementById("mySidenav").width = "250px";
-   // document.getElementById("main").style.marginLeft = "250px";
-   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  };
-  
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 
-
-//document.addEventListener("DOMContentLoaded",()=> createMenu())
- /* const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.innerText = item.name;
-        a.href = item.name;
-        li.appendChild(a);
-        ul.appendChild(li);*/
 
