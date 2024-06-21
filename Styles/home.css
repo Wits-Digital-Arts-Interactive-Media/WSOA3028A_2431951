@@ -4,31 +4,137 @@ body{
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.874);
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
+    width:100vw;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.item3 {
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    width: 50%;
-    overflow: auto;
-    height:100vh;
-    border-radius: 30px;
-    margin: 10% auto 10% auto;
+h1{
+    grid-area: h1;
+    background-color: rgba(240, 255, 255, 0);
+    height:auto;
+    font-size: 100px;
+    border-radius: 50px ;
+    border-width: 50px;
+    justify-self: center;
+    font-weight: bolder;
+    position: relative;
+    -webkit-text-stroke: 1.5vw rgba(240, 255, 255, 0);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0);
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: azure;
+    -webkit-text-stroke: 0vw azure;
+    border-right: 4px solid  azure;
+    overflow: hidden;
+    animation: animate1 6s linear infinite;
     
 }
 
-.item3 h1{
-   
-    display: flex;
-    justify-content: center;
+@keyframes animate1 {
+
+
+    0% ,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
 }
+
+.item3 {
+    background-color: rgba(0, 0, 0, 0);
+    width: 50vw;
+    height:100vh;
+    border-radius: 30px;
+    position: relative;
+    
+}
+
+.draggable{
+    border-radius: 100px;
+    transform: scale(1.1); /* Increase size by 10% */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.616);
+    
+}
+
 .fa-solid fa-angles-right{
     font-family: "Font Awesome 5 Free"
 }
 
 
-/* Style buttons */
+
+
+
+  .sidenav{
+    background-color: azure;
+    backdrop-filter: blur(5px);
+    display: flex;
+    height:20%;
+
+}
+
+    .sidenav ul{
+        list-style-type: none;
+        margin: auto;
+        display: flex;
+        justify-content: space-between; /* Spread items horizontally */
+
+    }
+
+    .sidenav ul li{
+        margin-left:20px;
+        margin-right:20px;
+        font-size: 2em;
+        
+}
+
+    .active{
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.874); 
+        color: azure;
+        border-radius:100px ;
+        display: block;
+        padding: 8px 16px;
+        transition: font-size 0.8s ease-in;
+
+}
+
+
+
+    .not_active{
+        display: block;
+        padding: 8px 16px;
+        background-color: rgba(0, 0, 0, 0.874);
+        text-decoration: none;
+        transition: font-size 0.8s ease-in;
+        border-radius:100px ;
+        color: azure;
+    }
+
+    .sidenav a:hover {
+        background-color: #fbf0a1c8;
+        transform: scale(1.2); /* Increase size by 10% */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        color: black;
+    }
+ 
+
+
+
+    /* Style buttons */
 .btn {
     background-color: white;
     border: none; /* Remove borders */
@@ -43,43 +149,6 @@ body{
     background-color: #fbf0a1c8;
   }
 
-  .sidenav{
-    background-color: azure;
-  }
-
- .sidenav ul{
-    list-style-type: none;
-   
-}
-
-.sidenav ul li{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top:10px;
-    
-}
-
- .sidenav ul li a{
-    background-color: rgba(203, 57, 4, 0.534); 
-    padding:10px 30px;
-    color: rgb(0, 0, 0);
-    border-radius:100px ;
-}
-.sidenav ul li a.active{
-    display: block;
-    padding: 8px 16px;
-    font-size: 17px;
-    text-decoration: none;
-    transition: font-size 0.8s ease-in;
-}
-
-.sidenav a:hover {
-    background-color: #fbf0a1c8;
-    transform: scale(1.2); /* Increase size by 10% */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
- 
 /*
 
  border-radius: 30px;

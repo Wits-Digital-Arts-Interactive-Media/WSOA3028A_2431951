@@ -17,16 +17,22 @@ export function createMenu(current){
     for(let item of menuItem){
         const li = document.createElement('li');
         li.classList.add("transition");
+        const a = document.createElement("a")
+
         if (current != item.name) {
-            const a = document.createElement("a")
             a.innerText = item.name
             //a.href = item.name;
             a.setAttribute("href", item.href)
+            a.classList.add("not_active");
+            li.appendChild(a)
+
+        } else { 
+            a.innerText = item.name
+            //a.href = item.name;
+            //a.setAttribute("href", item.href)
             a.classList.add("active") 
             li.appendChild(a)
-        } else { 
-            li.innerText = item.name
-            
+
         }
 
         ul.appendChild(li)

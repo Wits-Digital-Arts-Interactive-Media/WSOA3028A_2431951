@@ -45,11 +45,18 @@ function dragElement(elmnt) {
   }
 }
 
+
 $(document).ready(function() {
   $(".item3 .draggable").each(function() {
-      var l = Math.floor(Math.random() * $(".item3").width());
-      var t = Math.floor(Math.random() * $(".item3").height());
-      $(this).css("left", l);
-      $(this).css("top", t);
+    var draggableWidth = $(this).outerWidth();
+    var draggableHeight = $(this).outerHeight();
+
+    var l = Math.floor(Math.random() * ($(".item3").width() - draggableWidth));
+    var t = Math.floor(Math.random() * ($(".item3").height() - draggableHeight));
+
+    console.log(l + " " + t)
+    $(this).css("left", l);
+    $(this).css("top", t);
   })
 })
+

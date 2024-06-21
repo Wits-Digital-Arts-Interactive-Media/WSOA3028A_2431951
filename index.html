@@ -23,6 +23,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./Styles/home.css">
+
     <link rel="stylesheet" href="./Styles/draggable.css">
 
 
@@ -35,84 +36,83 @@
 <!--notes from class 10/04/2024: Making the title, and h1 the same it increases the SCO visibility. Remember the footers!-->
 
 <body>
-    <!--Main TITLE AND MAIN NAV<h1>THE PLAYGROUND</h1>-->
-<div class="container">
-
     <div id="mySideNav" class="sidenav"> 
     </div>   
 
-    <div class="item3">
-        <h1>WELCOME....
-            <button class="btn"> <i class="fa-solid fa-angles-right fa-rotate-90"></i></button>
+    <!--Main TITLE AND MAIN NAV<h1>THE PLAYGROUND</h1>-->
+
+    <div class="container">
+        
+    
+
+        <h1 class="Main_Homepage" data-text="WELCOME...">WELCOME....
+            <!--<button class="btn"> <i class="fa-solid fa-angles-right fa-rotate-90"></i></button>-->
         </h1>
         
+        <div class="item3">
+            <div id="1draggable" class="draggable" style="color: #df080f;">
+                T
+            </div>
 
-        <div id="1draggable" class="draggable" style="color: #df080f;">
-            <p>T</p> 
+            <div id="2draggable" class="draggable" style="color: #ff8000;">
+                H
+            </div>
+
+            <div id="3draggable" class="draggable" style="color: #f4df00;">
+                E
+            </div>
+
+            <div id="4draggable" class="draggable" style="color: #00de1a;">
+                P
+            </div>
+
+            <div id="5draggable" class="draggable" style="color: #00cad4;">
+                L
+            </div>
+
+            <div id="6draggable" class="draggable" style="color: #0088ff;">
+                A 
+            </div>
+            
+            <div id="7draggable" class="draggable" style="color: #8847d2;">
+                Y
+            </div>
+
+            <div id="8draggable" class="draggable" style="color: #d521c0;">
+                G
+            </div>
+
+            <div id="9draggable" class="draggable" style=" color: #df080f;">
+                R
+            </div>
+            
+            <div id="10draggable" class="draggable" style="color: #ff8000;">
+                O
+            </div>
+
+            <div id="11draggable" class="draggable" style="color: #f4df00;">
+                U
+            </div>
+
+            <div id="12draggable" class="draggable" style=" color: #00de1a;">
+                N
+            </div>
+
+            <div id="13draggable" class="draggable" style="color: #00cad4;">
+                D
+            </div>
         </div>
 
-        <div id="2draggable" class="draggable" style="color: #ff8000;">
-            <p>H</p> 
-        </div>
-
-        <div id="3draggable" class="draggable" style="color: #f4df00;">
-            <p>E</p> 
-        </div>
-
-        <div id="4draggable" class="draggable" style="color: #00de1a;">
-            <p>P</p> 
-        </div>
-
-        <div id="5draggable" class="draggable" style="color: #00cad4;">
-            <p>L</p> 
-        </div>
-
-        <div id="6draggable" class="draggable" style="color: #0088ff;">
-            <p>A</p> 
-        </div>
-        
-        <div id="7draggable" class="draggable" style="color: #8847d2;">
-            <p>Y</p> 
-        </div>
-
-        <div id="8draggable" class="draggable" style="color: #d521c0;">
-            <p>G</p> 
-        </div>
-
-        <div id="9draggable" class="draggable" style=" color: #df080f;">
-            <p>R</p> 
-        </div>
-        
-        <div id="10draggable" class="draggable" style="color: #ff8000;">
-            <p>O</p> 
-        </div>
-
-        <div id="11draggable" class="draggable" style="color: #f4df00;">
-            <p>U</p> 
-        </div>
-
-        <div id="12draggable" class="draggable" style=" color: #00de1a;">
-            <p>N</p> 
-        </div>
-
-        <div id="13draggable" class="draggable" style="color: #00cad4;">
-            <p>D</p> 
-        </div>
     </div>
 
 
-
-</div>
     <!--placed at the end of the page so that the page renders faster-->
     <script type="module"> import { createMenu } from "./Scripts/menu.js"
         createMenu("Home") </script>
 
-    <script type="module"> import { openNav } from "./Scripts/menu.js"
-    openNav() </script>
-
     <script src = "Scripts/draggable.js" ></script>
 
-  
+    <script src = "../Scripts/AnimateLetters.js" ></script>
 
 </body>
 </html>
