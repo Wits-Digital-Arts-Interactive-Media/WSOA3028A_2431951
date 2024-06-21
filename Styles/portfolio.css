@@ -10,7 +10,7 @@ body{
     'navbar2 navbar2'
     'footer footer';
     grid-gap: 50px;
-
+    cursor: url('../WebsitePictures/cursor.png'), auto;
 }
 
 .header{

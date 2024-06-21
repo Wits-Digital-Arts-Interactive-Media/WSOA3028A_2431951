@@ -13,6 +13,7 @@ body{
     background-color: rgba(16, 131, 43, 0.681);
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
     font-weight: 300;
+    cursor: url('../WebsitePictures/cursor.png'), auto;
 }
 
 .section {
