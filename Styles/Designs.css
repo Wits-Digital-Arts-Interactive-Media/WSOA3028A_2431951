@@ -235,13 +235,6 @@ h1::before {
     margin-bottom: 10px; /* Space below the image */
   }
 
-.footer{
-    grid-area: footer;
-    background-color: azure;
-    font-size: 16px;
-}
-
-
 .scroll-watcher{
   border-radius: 100px;
   height:10px;
@@ -258,4 +251,38 @@ h1::before {
 
 @keyframes scroll-watcher{
   to{scale:1 1;}
+}
+
+
+/* Basic styling for the footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 2%;
+  text-align: center;
+}
+
+/* Style the list items within the footer */
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some spacing between list items */
+footer li {
+  margin-bottom: 0.5%;
+  padding: 0.2%;
+}
+
+/* Style the links within the list */
+footer a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Change link color on hover */
+footer a:hover {
+  color: rgba(61, 199, 233, 0.621);
+  transform: scale(1.5);
 }

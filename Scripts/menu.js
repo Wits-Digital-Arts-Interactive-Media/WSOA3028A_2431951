@@ -5,8 +5,8 @@ const menuItem = [
     { name: "Home",  href: `${root}/index.html` },
     { name: "Blogs", href: root +"/Blogs/index.html" },
     { name: "Essays", href:root + "/Essays/index.html"},
-    { name: "Portfolio", href: root +"/Portfolio/index.html" },
     { name: "Designs", href:root + "/Designs/index.html" },
+    { name: "Portfolio", href: root +"/Portfolio/index.html" },
     { name: "Profile", href: root +"/Profile/index.html" },
 ];
 
