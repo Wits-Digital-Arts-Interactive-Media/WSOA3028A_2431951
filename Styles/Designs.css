@@ -10,6 +10,8 @@ body{
     'navbar2 navbar2'
     'footer footer';
     grid-gap: 50px;
+    height:100vh;
+    width:100vw;
     cursor: url('../WebsitePictures/cursor.png'), auto;
 }
 
@@ -34,6 +36,10 @@ body{
     color: rgb(61, 198, 233);
     font-weight: bolder;
     font-size: 2em;
+  }
+
+  .sidenav{
+    overflow: hidden;
   }
 
 .header .sidenav ul{
@@ -256,7 +262,8 @@ h1::before {
 
 /* Basic styling for the footer */
 footer {
-  background-color: #f8f8f8;
+  grid-area:footer;
+  background-color: azure;
   padding: 2%;
   text-align: center;
 }
@@ -301,7 +308,7 @@ footer a:hover {
     float: right;
     display: block;
     font-size: 2em; /* Change this to the size you want */
-    color: rgba(203, 57, 4, 0.768);
+    color: rgba(61, 199, 233, 0.621);
     padding-right:3%;
     padding-top:3%;
   }

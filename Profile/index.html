@@ -40,22 +40,6 @@
 
     <main>
 
-        <!--<article class="Summary" >
-            <p class = "h-card">
-                <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website</a>,
-                <span id="part1" class = "p-name">Ivy Chepkwony</span>
-                <span id="part2" class = "p-org">Univerisity of Witwatersrand</span>
-                <span id="part3" class = "p-locality">JHB</span>
-                <span class = "p-country-name">South Africa</span>
-            </p>
-        </article>-->
-
-        <!--<article class="More">
-            <p>
-                Welcome to my website I hope you enjoy getting to know me and what goes on in my brain ! 
-            </p>
-        </article>-->
-
         <div class="item3">
             <div id="1draggable" class="draggable">
                 <h2>INTRODUCTION</h2>
@@ -73,14 +57,18 @@
                 </p>
             </div>
             <div id="2draggable" class="draggable">
-                <h2>SKILLS</h2>
-                <p></p>
+                <h2>CONTACT ME</h2>
+                <form action="https://formspree.io/f/xdknnzpg" method="POST">
+
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Submit">
+                
+                  </form>
             </div>
             <div id="3draggable" class="draggable">
-                <h2>INTERESTS AND HOBBIES</h2>
-                <p></p>
-            </div>
-            <div id="4draggable" class="draggable">
                 <h2>RANDOM FACTS ABOUT ME</h2>
                 <p id="randomSentence">Click the button to generate a random fact!</p>
                 <button id="generateButton">Random Fact</button>
@@ -121,6 +109,7 @@
     <!--<script src = "../Scripts/AnimateLetters.js" ></script>-->
     <script src = "../Scripts/draggable.js" ></script>
     <script src = "../Scripts/randomGenerator.js" ></script>
+    <script src = "../Scripts/contactform.js" ></script>
     <script src = "../Scripts/responsive.js" ></script>
 </body>
 </html>
