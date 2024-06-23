@@ -206,7 +206,7 @@ footer {
   
   /* Change link color on hover */
   footer a:hover {
-    color: rgba(203, 57, 4, 0.768);
+    color: #a08f10d7;
     transform: scale(1.5);
   }
 
