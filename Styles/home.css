@@ -1,21 +1,25 @@
 body{
     font-family:"Lucida Console", "Courier New", monospace;
-    /* backgorund image -- > background: url()*/
-    background-size: cover;
     background-color: rgba(0, 0, 0, 0.874);
-    height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
-    width:100vw;
-    cursor: url('..//WebsitePictures/cursor.png'), auto;
+    /*height: 100vh; vh = viewing height...this is so that on a smaller screen, there is no white space*/
+    display: grid; /* Use grid for the list as well */
+    grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+    grid-gap: 5%;
+    cursor: url('../WebsitePictures/cursor.png'), auto;
+
 }
 
 .container{
+    grid-area:main;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 h1{
-    grid-area: h1;
     background-color: rgba(240, 255, 255, 0);
     height:auto;
     font-size: 100px;
@@ -100,10 +104,11 @@ h1::before {
 
 
   .sidenav{
+    grid-area:header;
     background-color: azure;
     backdrop-filter: blur(5px);
     display: flex;
-    height:20%;
+    height:20vh;
 
 }
 
@@ -173,7 +178,8 @@ h1::before {
 
 /* Basic styling for the footer */
 footer {
-    background-color: #f8f8f8;
+    grid-area: footer;
+    background-color: azure;
     padding: 2%;
     text-align: center;
   }
