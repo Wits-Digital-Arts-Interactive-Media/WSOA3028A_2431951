@@ -9,8 +9,6 @@ body{
   'main main'
   'footer footer';
   grid-gap: 50px;
-  height:100vh;
-  width:100vw;
   cursor: url('../WebsitePictures/cursor.png'), auto;
   
 }
