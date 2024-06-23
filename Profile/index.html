@@ -17,8 +17,7 @@
      <script src="https://kit.fontawesome.com/8505d21db1.js" crossorigin="anonymous"></script>
 
      <link rel="stylesheet" href="../Styles/profile.css">
-
-     
+   
      <title>THIS IS ME...</title>
 </head>
 
@@ -41,39 +40,78 @@
     <main>
 
         <div class="item3">
+
+
             <div id="1draggable" class="draggable">
-                <h2>INTRODUCTION</h2>
-                <p class = "h-card">
-                    <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website!</a>,
-                    My name is <span id="part1" class = "p-name">Ivy Chepkwony</span>.
-                    I am a BEng in Digital Arts student, studying at the <span id="part2" class = "p-org">Univerisity of Witwatersrand</span>
-                    in my final year. 
-                    I live in<span id="part3" class = "p-locality"> JHB</span>, <span class = "p-country-name">South Africa</span>, and have lived here for the past 17
-                    years, but I was born in Kenya. So I consider myself Kenyan-South African at this point. 
-                    I enjoy coding and making games. 
-                    I am also a ballet dancer on the side, working towards
-                    attaining an official ballet teaching qualification.
-                    Enjoy my little playground that I have created here on my website!
-                </p>
+                <div id="el1" class="Elementflip"">
+                    <div class="flipFront">
+                        <h2>You can drag and move me around and flip the card to see a surprise!</h2>
+                        <button class="flipbutton" data-target="el1">Flip</button>
+                    </div>
+
+                    <div id = "text1"  class="flipBack">
+                        <h2>INTRODUCTION</h2>
+                        <p class = "h-card">
+                            <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website!</a>,
+                            My name is <span id="part1" class = "p-name">Ivy Chepkwony</span>.
+                            I am a BEng in Digital Arts student, studying at the <span id="part2" class = "p-org">Univerisity of Witwatersrand</span>
+                            in my final year. </br>
+                            I live in<span id="part3" class = "p-locality"> JHB</span>, <span class = "p-country-name">South Africa</span>, and have lived here for the past 17
+                            years, but I was born in Kenya. So I consider myself Kenyan-South African at this point. </br>
+                            I enjoy coding and making games. </br>
+                            I am also a ballet dancer on the side, working towards
+                            attaining an official ballet teaching qualification.
+                            Enjoy my little playground that I have created here on my website!
+                        </p>
+                        <button class="flipbutton" data-target="el1">Flip</button>
+                    </div>
+                    
+                </div>
             </div>
+
+
             <div id="2draggable" class="draggable">
-                <h2>CONTACT ME</h2>
-                <form action="https://formspree.io/f/xdknnzpg" method="POST">
+                <div id="el2" class="Elementflip"">
+                    <div class="flipFront">
+                        <h2>This one isn't a surprise, but flip over to contact me!</h2>
+                        
+                        <button class="flipbutton" data-target="el2">Flip</button>
+                    </div>
 
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <input type="hidden" name="_next" value="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Profile/thanks.html">
-                    <input type="submit" value="Submit">
 
-                
-                  </form>
+                    <div id = "text2"  class="flipBack">
+                        <h2>CONTACT ME</h2>
+                        <p>NB: Click submit and then fill in the form...</p>
+                        <form action="https://formspree.io/f/xdknnzpg" method="POST">
+
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                            <input type="hidden" name="_next" value="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/Profile/thanks.html">
+                            <input type="submit" value="Submit">
+
+                        </form>
+                        <button class="flipbutton" data-target="el2">Flip</button>
+                    </div>
+                </div>
             </div>
+
+
             <div id="3draggable" class="draggable">
-                <h2>RANDOM FACTS ABOUT ME</h2>
-                <p id="randomSentence">Click the button to generate a random fact!</p>
-                <button id="generateButton">Random Fact</button>
+                <div id="el3" class="Elementflip"">
+                    <div class="flipFront">
+                        <h2>You can drag and move me around and flip the card to see a surprise!</h2>
+                        <button class="flipbutton" data-target="el3">Flip</button>
+                    </div>
+
+                    <div id = "text3"  class="flipBack">
+                        <h2>RANDOM FACTS ABOUT ME</h2>
+                        <p id="randomSentence">Click the button to generate a random fact!</p>
+                        <button id="generateButton">Random Fact</button>
+                        <button class="flipbutton" data-target="el3">Flip</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -112,5 +150,6 @@
     <script src = "../Scripts/draggable.js" ></script>
     <script src = "../Scripts/randomGenerator.js" ></script>
     <script src = "../Scripts/responsive.js" ></script>
+    <script src = "../Scripts/FlipOver.js" ></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-    const flipButtons = document.querySelectorAll("button");
+    const flipButtons = document.querySelectorAll(".flipbutton");
     
     console.log(flipButtons.length);
 
