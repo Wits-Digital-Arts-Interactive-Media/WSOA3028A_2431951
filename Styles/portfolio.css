@@ -188,11 +188,14 @@ main{
   position: absolute;
   display: flex;
   animation: scroll-horizontal 20s linear infinite;
+  align-items: center;
 }
 
 .carousel-primary img {
   width: 100%;
-  align-self: center;
+  border-radius: 30px;
+  margin-top:25%;
+  
 }
 
 .carousel-primary .column.show {
@@ -241,6 +244,8 @@ main{
 
 
 .column{
+  border-radius: 30px;
+  height:auto;
   display:block;
   background-color: azure;
   padding: 10px;
@@ -252,13 +257,14 @@ main{
 
 /* Content */
 .project {
-  height:100%;
+  height:auto;
   width:100%;
   overflow: hidden; /* Prevent content overflow */
 }
 
 .project p{
   font-size:0.8em;
+
 }
 
 h3 a{
