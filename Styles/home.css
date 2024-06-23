@@ -5,7 +5,7 @@ body{
     background-color: rgba(0, 0, 0, 0.874);
     height: 100vh; /*vh = viewing height...this is so that on a smaller screen, there is no white space*/
     width:100vw;
-    cursor: url('../WebsitePictures/cursor.png'), auto;
+    cursor: url('..//WebsitePictures/cursor.png'), auto;
 }
 
 .container{

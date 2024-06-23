@@ -33,10 +33,11 @@
         </nav>
     </header>
 
-    <h1 class="Profile_Homepage" data-text="THIS IS ME...">THIS IS ME...</h1>
+    <h1 class="Profile_Homepage" data-text="THIS_IS_ME...">THIS IS ME...</h1>
 
     <main>
-        <article class="Summary" >
+
+        <!--<article class="Summary" >
             <p class = "h-card">
                 <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website</a>,
                 <span id="part1" class = "p-name">Ivy Chepkwony</span>
@@ -44,12 +45,46 @@
                 <span id="part3" class = "p-locality">JHB</span>
                 <span class = "p-country-name">South Africa</span>
             </p>
-        </article>
-        <article class="More">
+        </article>-->
+
+        <!--<article class="More">
             <p>
                 Welcome to my website I hope you enjoy getting to know me and what goes on in my brain ! 
             </p>
-        </article>
+        </article>-->
+
+        <div class="item3">
+            <div id="1draggable" class="draggable">
+                <h2>INTRODUCTION</h2>
+                <p class = "h-card">
+                    <a class="u-url" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/">Check out my Website!</a>,
+                    My name is <span id="part1" class = "p-name">Ivy Chepkwony</span>.
+                    I am a BEng in Digital Arts student, studying at the <span id="part2" class = "p-org">Univerisity of Witwatersrand</span>
+                    in my final year. 
+                    I live in<span id="part3" class = "p-locality"> JHB</span>, <span class = "p-country-name">South Africa</span>, and have lived here for the past 17
+                    years, but I was born in Kenya. So I consider myself Kenyan-South African at this point. 
+                    I enjoy coding and making games. 
+                    I am also a ballet dancer on the side, working towards
+                    attaining an official ballet teaching qualification.
+                    Enjoy my little playground that I have created here on my website!
+                </p>
+            </div>
+            <div id="2draggable" class="draggable">
+                <h2>SKILLS</h2>
+                <p></p>
+            </div>
+            <div id="3draggable" class="draggable">
+                <h2>INTERESTS AND HOBBIES</h2>
+                <p></p>
+            </div>
+            <div id="4draggable" class="draggable">
+                <h2>RANDOM FACTS ABOUT ME</h2>
+                <p id="randomSentence">Click the button to generate a random fact!</p>
+                <button id="generateButton">Random Fact</button>
+            </div>
+        </div>
+
+
     </main>
 
  
@@ -66,7 +101,9 @@
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Profile") </script>
 
-    <script src = "../Scripts/AnimateLetters.js" ></script>
+    <!--<script src = "../Scripts/AnimateLetters.js" ></script>-->
+    <script src = "../Scripts/draggable.js" ></script>
+    <script src = "../Scripts/randomGenerator.js" ></script>
     
 </body>
 </html>
