@@ -1,0 +1,111 @@
+body{
+    font-family:"Lucida Console", "Courier New", monospace;
+    background-color: rgba(0, 0, 0, 0.874);
+    /*background-color: rgba(16, 131, 43, 0.681); height: 100vh; vh = viewing height...this is so that on a smaller screen, there is no white space*/
+    display: grid; /* Use grid for the list as well */
+    grid-template-areas:
+    'header header'
+    'main main'
+    'footer footer';
+    grid-gap: 50px;
+    height:100vh;
+    width:100vw;
+    cursor: url('../WebsitePictures/cursor.png'), auto;
+}
+
+
+header{
+    grid-area: header;
+    background-color: rgba(240, 255, 255, 0);
+  }
+
+  header h1{
+    background-color: rgba(240, 255, 255, 0);
+    height:auto;
+    font-size: 100px;
+    border-radius: 50px ;
+    border-width: 50px;
+    justify-self: center;
+    font-weight: bolder;
+    position: relative;
+    -webkit-text-stroke: 1.5vw rgba(240, 255, 255, 0);
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  header h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color: rgb(230, 105, 221);
+    -webkit-text-stroke: 0vw azure;
+    border-right: 4px solid  rgb(230, 105, 221);
+    overflow: hidden;
+    animation: animate1 6s linear infinite;
+    
+  }
+  
+  @keyframes animate1 {
+  
+  
+      0% ,10%,100%{
+          width: 0;
+      }
+      70%,90%{
+          width: 100%;
+      }
+  }
+
+
+main{
+grid-area: main;
+font-size: 2em;
+}
+
+.message p{
+    text-align: center;
+}
+
+.message a{
+    text-decoration: none;
+    color: azure;
+
+}
+
+/* Basic styling for the footer */
+footer {
+    grid-area:footer;
+    background-color: azure;
+    padding: 2%;
+    text-align: center;
+  }
+  
+  /* Style the list items within the footer */
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add some spacing between list items */
+  footer li {
+    margin-bottom: 0.5%;
+    padding: 0.2%;
+  }
+  
+  /* Style the links within the list */
+  footer a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  /* Change link color on hover */
+  footer a:hover {
+    color: rgba(196, 107, 190, 0.639);
+    transform: scale(1.5);
+  }
+
