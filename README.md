@@ -1,5 +1,4 @@
 TO-DO:
-- portfolio content
-- profile content 
-- footers
+- update designs
+- go to sleep!!!!
 
