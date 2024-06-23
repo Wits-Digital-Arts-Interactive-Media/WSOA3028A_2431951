@@ -13,6 +13,7 @@
  
      <meta name = "keywords" content = "Playground, Blogs, fun, HTML, reflection ">
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <link rel="stylesheet" type="text/css" href="../Styles/normalize.css">
      <link rel="stylesheet" type="text/css" href="../Styles/portfolio.css">
      <!--<link rel="stylesheet" type="text/css" href="../Styles/SecondNav.css">-->
@@ -30,23 +31,71 @@
         </nav>
     </header>
     
-
+    <h1 class="Portfolio_Homepage" data-text="PORTFOLIO">PORTFOLIO</h1>
     <main>
-            <!--Blog posts summary-->
-            <article class="Summary">
-                <h1>PORTFOLIO HOMEPAGE</h1>
-                <p>
-                   Look through my catalogue... 
-                </p>
-            </article>
+
+        <!--Blog posts summary-->
+        <article class="Summary"> 
+            <span id="part1">Look through some of projects...</span>
+            <span id="part2">...individual projects, group projects, prototypes and complete games...</span>
+            <span id="part3">Click the title to download the project</span>
+        </article>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('individual')"> individual</button>
+            <button class="btn" onclick="filterSelection('group')"> group</button>
+            <button class="btn" onclick="filterSelection('prototype')"> prototype</button>
+            <button class="btn" onclick="filterSelection('complete')"> complete</button>
+        </div>
+
+                <!-- Portfolio Gallery Grid -->
+        <div class="container">
+
+            <div class="carousel-primary">
+                <div class="column individual prototype">
+                    <div  class="project">
+                        <img src="../WebsitePictures/escaperoom.png" alt="Nature" style="width:100%">
+                        <h3> <a href="https://ivystudent.itch.io/escape-the-room">Escape the Room</a></h3>
+                        <p>A 3D puzzle prototype in which the player must find the keys, solve puzzles and escape the room.</p>
+                    </div>
+                </div>
+
+                <div class="column individual prototype">
+                    <div  class="project">
+                        <img src="../WebsitePictures/pushpull.png" alt="Nature" style="width:100%">
+                        <h3><a href="https://ivystudent.itch.io/sound-prototype">The Physics of Push and Pull</a></h3>
+                        <p>A 3D prototype exploring the physics of push and pull in which the player pushes with constant force vs an impulsive push and pulls by magnetism vs grabbing a handle and dragging the object into a hole.</p>
+                    </div>
+                </div>
+            
+                <div class="column individual prototype">
+                    <div class="project">
+                        <img src="../WebsitePictures/sound.png" alt="Nature" style="width:100%">
+                        <h3> <a href="https://github.com/ivyycc/WSOA3003_Proto2.git" >Sound In A Closed Space</a></h3>
+                        <p>For this prototype, I really wanted to look at how the sound system in unity works and how sound changes with different environments. And particularly, to follow the theme, I looked at sound in a closed environment. To test this, I chose closed rooms of different sizes and compared it with a sound source in the open air. </p>
+                    </div>
+                </div>
+            
+                <div class="column individual complete">
+                    <div class="project">
+                        <img src="../WebsitePictures/switch.png" alt="Nature" style="width:100%">
+                        <h3><a href="https://ivystudent.itch.io/find-the-switch" >Find The Switch…</a></h3>
+                        <p>A simple 2D puzzle platformer game in which the player must get to the switches to turn on the lights.  </p>
+                    </div>
+                </div>
+
+                <div class="column groups complete">
+                    <div  class="project">
+                        <img src="../WebsitePictures/paws.png" alt="Nature" style="width:100%">
+                        <h3><a href="https://github.com/BlitzNoval/AfrikaJourney.git">Paws Across Africa</a></h3>
+                        <p>A 3D adventure game in which the player</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
     </main>
-
-
-    
-    <div class="navbar2">
-    </div>
-
-    <!--Secondary Nav to blog posts CHANGE THE WEEKS TO BLOGS -->
 
 
     <footer class="footer">
@@ -56,6 +105,10 @@
 
     <script type="module"> import { createMenu } from "../Scripts/menu.js"
         createMenu("Portfolio") </script>
+
+    <script src = "../Scripts/filter.js" ></script>
+
+    <script src = "../Scripts/AnimateLetters.js" ></script>
 
     <!--<script type="module"> import { createBlogsMenu } from "../Scripts/secondnav.js"
     createBlogsMenu("Blogs Home") </script>-->
