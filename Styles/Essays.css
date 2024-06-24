@@ -241,7 +241,7 @@ main{
 /* Basic styling for the footer */
 footer {
   grid-area:footer;
-  background-color: #f8f8f8;
+  background-color:  azure;
   padding: 2%;
   text-align: center;
 }
