@@ -40,7 +40,7 @@ h1::before {
     left:0;
     width: 0;
     height: 100%;
-    color: azure;
+    color: #7dbe15d7; 
     -webkit-text-stroke: 0vw azure;
     border-right: 4px solid  azure;
     overflow: hidden;
@@ -64,7 +64,7 @@ h1::before {
     width: 50vw;
     text-align: center;
     font-size: 4em;
-    color: azure;
+    color: #83c715e5; 
     margin-left:50px;
     margin-right:50px;
     margin-top:10%;
@@ -91,6 +91,7 @@ h1::before {
 
 .draggable:active {
     cursor: grabbing; /* Cursor while mouse is clicked down */
+    background-color: rgb(194, 194, 144);
 }
 
 
@@ -114,6 +115,7 @@ h1::before {
 
     .sidenav ul{
         list-style-type: none;
+        margin:auto;
         
     }
 
@@ -128,8 +130,8 @@ h1::before {
 
     .active{
         text-decoration: none;
-        background-color: rgba(0, 0, 0, 0.874); 
-        color: azure;
+        background-color: #7dbe15d7; 
+        color: black;
         border-radius:100px ;
         display: block;
         padding: 8px 16px;
@@ -142,11 +144,11 @@ h1::before {
     .not_active{
         display: block;
         padding: 8px 16px;
-        background-color: rgba(0, 0, 0, 0.874);
+        background-color: #7dbe15d7; 
         text-decoration: none;
         transition: font-size 0.8s ease-in;
         border-radius:100px ;
-        color: azure;
+        color: black;
     }
 
     .sidenav a:hover {
@@ -205,7 +207,7 @@ footer {
   
   /* Change link color on hover */
   footer a:hover {
-    color: #a08f10d7;
+    color: #69a010d7;
     transform: scale(1.5);
   }
 
