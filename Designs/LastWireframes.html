@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--META STUFF-->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name = "description" content = "The Last iteration of Wireframes, Style Guide and IxD of the website up to date.">
+   <meta name = "author" content = "Ivy Chepkwony">
+
+   <!--tried to make an icon but idk why it's not showing up....UPDATE: THE LOGO WORKS !! :) -->
+   <link rel="icon" href="../WebsitePictures/actual_logo.png" type="image/x-icon" />
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://kit.fontawesome.com/8505d21db1.js" crossorigin="anonymous"></script>
+
+   <!--<link rel="stylesheet" href="../Styles/SecondNav.css">-->
+   <link rel="stylesheet" href="../Styles/designsubpage.css">
+     
+   <meta name = "keywords" content = "Playground,Designs, fun, HTML, wireframes ">
+   <title>LAST ITERATION</title>
+</head>
+
+<body>
+    <!--MAIN NAV AND TITLE-->
+
+    <div class="scroll-watcher"></div>
+
+
+    <header class="header">
+        <label class="logo">THE PLAYGROUND</label>
+        <nav id="mySideNav" class="sidenav">
+            <a href="javascript:void(0);" class="icon" onclick="responsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+   <main>
+
+        <div id="main">
+            <button class="openbtn">☰ Other Designs</button>  
+        </div>
+         <!--WIREFRAMES IN TAULAR FORM-->
+        <article class = "h-entry">
+            <div class="intro">
+                <span><a class="designHome" href="index.html">&lt;&lt; Designs Homepage</a></span>
+                <h1 class="entry_heading" data-text="LAST_ITERATION">LAST ITERATION</h1>
+                <p> this was posted by <a class = "p-author h-card" href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2431951/index.html"> Ivy Chepkwony </a> on <time class = "dt-published" datetime="2024-06-23 08:00:00">23<sup>rd </sup>June 2024</time> 
+                </p>
+            
+            </div>
+        </article>
+
+        <article class="maintext">
+            <div class="item">
+                <h2>Wireframes</h2>
+                <h3 class="h3">HOMEPAGE: </h3>
+                <figure><img src="../WebsitePictures/homepage_last.png" alt="Homepage Wireframe" width="85%" height="85%"/></figure>
+                <P>
+                    The homepage is simple and only contains 4 main components: 
+                    <li>The main navigation area which contains the links to the main pages of the website. It is situated at the top in large writing for each of access.</li>
+                    <li>A text area for introductory text that has a "typing animation" to welcome the user to the website.</li> 
+                    <li>A group of draggable letter elements that are randomly spawned in the middle area. Users upon visiting the website interact immediately giving them a sense of control and to pique their curiosity.</li>
+                    <li>A footer area that contains my primary socials.</li>  </P>
+            
+                <h3 class="h3">Navigation Homepages: </h3>
+                <figure><img src="../WebsitePictures/page_last.png" alt="Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>
+                    All navigation pages have the same layout. The only difference is the colour scheme (further explained in the style guide). Tha website title is 
+                    situated in the top left corner, the main navigation in the top right corner. Together these two elements form the header. </p>
+                <p> Below the header, large text with "typing animation" display the heading of the homepage that the user is on. </p>
+                <p>Below the heading, a short summary of that specific group of pages is given, to give the user context into what the subpages will be about.</p>
+                <p>Below the summary, a secondary navigation to specfic subpages is displayed vertically in large boxes. Each "box" has the date the page was posted, a heading, a short summary of the page,
+                    and a "Read More" button. User's can decide which posts they want to read based off the date, title and summaries.
+                </p>
+                <p>At the bottom of the page, there is a footer - the same as the one on the homepage</p>
+                <h3 class="h3">Navigation Subpages: </h3>
+                <figure><img src="../WebsitePictures/subpage_last.png" alt="Designs Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>Each subpage - similar to the homepages - has the same layout with different colours. At the top the header is situated.</p>
+                <p>On the right, the secondary navigation to the other subpages is hidden initially to not disturb the user, but it is visisble when the user presses the button that says "Other..."
+                    The button is always visible to the user no matter how far they have scrolled down for ease of access and convience should the user wish to navigate to a different post quickly.
+                </p>
+                <p>On the left, there is a button to take the user back to the specfic homepage should the user wish to.</p>
+                <p>Below this button is the title of the post in big bold letters. Below the title is the author and date of the post, and below that is the content of the post itself.</p>
+                <p>At the bottom of the page, there is a scroll up button should the user wish to go back to the top of the page, and below this button is the footer.</p>
+                <h3 class="h3">Portfolio Page: </h3>
+                <figure><img src="../WebsitePictures/portfolio_last.png" alt="Essay Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>The portfolio page uses the old idea of the infinte horizontal scroll that was initially for the specific homepages.</p>
+                <p>There is a heading, and a short description of the portfolio projects</p>
+                <p>Underneath this description is a row of buttons that give the user the option to filter the projects by multiple groups. The user can easily find the projects there are interested in.</p>
+                <p>Each project in the horizontal scroll has an image, title with hyperlink to the respective project, and a text summary of the project. And underneath, the footer is displayed at the bottom of the page. </p>
+            
+                <h3 class="h3">Profile Page: </h3>
+                <figure><img src="../WebsitePictures/profile_last.png" alt="Portfolio Navigation Wireframe" width="85%" height="85%"/></figure>
+                <p>The profile page is similar to the old wireframe. Each grouping of information is displayed as a draggable box that the user can interact with, similar to the letters on the homepage.
+                    The profile page is more casual than other parts of website hence the interactable objects. The addition however, is in the implementation of the flip cards that was originally for 
+                    the blog posts. The flip card function is more appropriate in this section. And so each box is draggable and flippable.
+                </p>
+                <p>Another interactable addition is the implementation of a random fact generator on one of the cards.The user can have fun reading interesting facts about me.</p>
+
+            </div>
+
+            <div class="item">
+                <h2>Information Structure</h2>
+                <p>The final information structure and hierarchy of the website is as shown in the image below</p>
+                    
+                    <figure><img src="../WebsitePictures/infostructure.png" alt="Info structure" width="85%" height="85%"></figure>
+                    
+                    <h3 class="h3">Homepage:</h3>
+                    
+                    <p>The user is met first with the homepage.From here the user can navigate to the blogs, essays, profile, or portfolio. In the footer, the user can also navigate to various socials, and can directly send an email should they wish to. </p>
+                    
+                    
+                    <h3 class="h3">Navigation pages:</h3>
+                    
+                    <p>The user can navigate from the homepage, to various navigation pages namely, the blog nav page, the essay nav page, and the designs nav page. 
+                    All these nav pages have the same layout with the same interface elements to keep the website consistent and uniform.</p>
+                    
+                    
+                    <h3 class="h3">Subpages:</h3>
+                    
+                    <p>The user can navigate from the nav pages to the various subpages. The interface elements across the subpages are the same.
+                    The subpages also allow the user to navigate to other main pages, the homepage of that subpage, and other subpages (within the same navigation category).</p>
+                    
+                    
+                    <h3 class="h3">Profile:</h3>
+                    
+                    <p>The profile is the only page that has slightly different interface elements. I reintroduced the draggable elements and made it central 
+                    to how the user interacts with the page.</p>
+                    
+                   
+                    <h3 class="h3">Portfolio:</h3 >
+                    
+                    <p>The portfolio page has the same interface elements as the nav pages, however, I might consider changing the horizontal scroll bar
+                    to be a vertical infinite scroll bar to showcase my portfolio works instead – but at the moment it is the same horizontal scroll bar 
+                    as in the navigation pages. </p>
+
+                    <p>
+                    Overall however, the way the infomation is structured has not majorly changed since my first wireframes.
+                    </p>
+            </div>
+
+            <div class="item">
+                
+                <h2>User Flow</h2>
+                <figure><img src="../WebsitePictures/ProfiePage.png" alt="Profile  Wireframe" width="85%" height="85%"/></figure>
+                <p>
+                    The profile page is slightly different to other parts the website. I chose to reintroduce the moveable images and in addition moveable text areas/boxes. 
+                    I decided to reintroduce this means of user interactivity because the profile page is more personal and less formal and thus to give the user a sense of
+                    my personality, the moveable sections make for a better user experience.</p>
+            </div>
+
+            <div class="item">
+                
+                <h2>Style Guide</h2>
+                <figure><img src="../WebsitePictures/DesignSub.png" alt="Designs Subpage Wireframe" width="85%" height="85%"/></figure>
+                <p>
+                    This is the general layout for both subpages that showcase my designs. Similar to the Blogs subpage, the image is on the left and the text on the right to keep consistent.
+                    Each subpage has a button navigating to the latter subpage.</p>
+            </div>
+
+           
+            <button class="btnScroll" onclick = "scrollUp()" id="scrollUp" title="Go to top">Scroll Back Up</button>
+
+    </article>
+
+   </main>
+   
+    <div id="Sidebar" class="navbar2">
+        <a href="javascript:void(0)" class="closebtn">×</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer">
+
+            <div class="row">
+                <ul>
+                    <li><a href="mailto:ivy.chepkwony@gmail.com"><i class="fa fa-envelope-open"></i>ivy.chepkwony@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/i-c-1872a22a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2aym4v5BRLOGud%2BdUQbGbw%3D%3D"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                    <li><a href="https://github.com/ivyycc"><i class="fa fa-github"></i> Github</a></li>
+                    <li><a href="https://ivystudent.itch.io/"><i class="fab fa-itch-io"></i> Itch.io</a></li>
+                </ul>
+            </div>
+            
+            <div class="row">
+                THE PLAYGROUND Copyright © 2024 THE PLAYGROUND - All rights reserved || Designed By: Ivy C C 
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module"> import { createMenu } from "../Scripts/menu.js"
+        createMenu("Designs") </script> 
+
+
+    <script type="module"> import { createDesignsMenu } from "../Scripts/secondnav.js"
+    createDesignsMenu("Last Wireframes") </script>
+
+    <script src = "../Scripts/BackToTop.js" ></script>
+    <script src = "../Scripts/responsive.js" ></script>
+</body>
+</html>

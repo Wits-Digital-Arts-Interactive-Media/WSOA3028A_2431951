@@ -17,10 +17,9 @@ const BlogItems = [
 ];
 
 const DesignItems = [
-    { name: "IxD",  href:  root+"/Designs/IxD.html" },
-    { name: "First Wireframes", href:  root+"/Designs/Wireframes.html" },
-    { name: "Final Wireframes", href:  root+"/Designs/WireframesFinal.html" },
-    
+    { name: "First Iteration",  href:  root+"/Designs/IxD.html" },
+    { name: "Second Iteration", href:  root+"/Designs/WireframesFinal.html" },
+    { name: "Last Iteration", href:  root+"/Designs/LastWireframes.html" },
 ];
 
 const EssayItems = [
