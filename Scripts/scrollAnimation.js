@@ -14,6 +14,33 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(item);
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  // Add a class to trigger the reveal effect when the element enters the viewport
  /*const revealElement = document.querySelector(".revealUp");
  window.addEventListener("scroll", () => {

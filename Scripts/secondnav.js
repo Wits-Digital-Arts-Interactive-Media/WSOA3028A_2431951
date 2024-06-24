@@ -61,9 +61,6 @@ export function createBlogsMenu(current){
 
     for(let item of BlogItems){
         const li = document.createElement('li');
-        /*const img = document.createElement('img');
-        img.setAttribute("src", item.src);
-        li.appendChild(img);*/
 
         li.id = `blogItem${itemId++}`;
         li.classList.add("revealUp")
@@ -98,7 +95,7 @@ export function createBlogsMenu(current){
         } 
         else { 
             a.innerText = "You Are Here"; 
-            //a.setAttribute("href", item.href);
+            
             li.appendChild(a);
             a.classList.add("active")
         }
@@ -122,11 +119,11 @@ export function createDesignsMenu(current){
             li.appendChild(title);
         });
 
-        /*const date = document.createElement('h4')
+        const date = document.createElement('h4')
         fetchBlogDate(item.href).then(blogdate => {
             date.innerText = blogdate;
             li.appendChild(date);
-        });*/
+        });
 
 
         const text = document.createElement('figcaption')

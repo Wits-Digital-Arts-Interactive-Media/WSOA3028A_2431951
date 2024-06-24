@@ -1,30 +1,8 @@
-
-
-/*
-const randomElement = document.getElementById("randomSentence");
-const genButton = document.getElementById("generateButton");
-
-genButton.addEventListener("click", () => {
-    if (sentences.length === 0) {
-
-        return;
-    }
-
-    const randomIndex = Math.floor(Math.random() * sentences.length);
-    const selectedSentence = sentences.splice(randomIndex, 1)[0];
-    randomElement.textContent = selectedSentence;
-
-
-    /*const randomIndex = Math.floor(Math.random() * sentences.length);
-    randomSentenceElement.textContent = sentences[randomIndex];
-});*/
-
-
 function* sentenceGenerator() {
     const sentences = [
         "I have controversial food opinions. Exhibit A: Avocados are versatile and can work in any meal at any time :)",
         "Pink is my favourite colour (not that surprising). I firmly believe it is one of the best colours to exist.",
-        "I am super quiet except when I yap about apologetics or why Mr Sunshine is the best kdrama to exist.",
+        "I am super quiet except when I yap about apologetics(yes i'm a Jesus freak) or why Mr Sunshine is the best kdrama to exist.",
         "I have a love-hate relationship with cooking. Love experimenting but hate the cleaning up part.",
         "Barbie: The 12 Dancing Princesses, is the movie that convinced me to continue pursuing ballet seriously. I have a soft spot for that movie",
         "I sometimes sit in the car, look outside the window, and pretend I am shooting a music video",
@@ -48,3 +26,44 @@ const sentenceIterator = sentenceGenerator();
 genButton.addEventListener("click", () => {
     randomElement.textContent = sentenceIterator.next().value;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const randomElement = document.getElementById("randomSentence");
+const genButton = document.getElementById("generateButton");
+
+genButton.addEventListener("click", () => {
+    if (sentences.length === 0) {
+
+        return;
+    }
+
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    const selectedSentence = sentences.splice(randomIndex, 1)[0];
+    randomElement.textContent = selectedSentence;
+
+
+    /*const randomIndex = Math.floor(Math.random() * sentences.length);
+    randomSentenceElement.textContent = sentences[randomIndex];
+});*/
+

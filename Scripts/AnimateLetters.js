@@ -46,14 +46,3 @@ $(document).ready(function () {
 wordflick();
 });
 
-/*window.onload = function() {
-    var p = document.getElementById('animated-text');
-    var text = p.innerText;
-    p.innerHTML = '';
-    for (var i = 0; i < text.length; i++) {
-      var span = document.createElement('span');
-      span.innerText = text[i];
-      span.setAttribute('data-text', text[i]);
-      p.appendChild(span);
-    }
-  };*/
